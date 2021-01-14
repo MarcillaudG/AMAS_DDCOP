@@ -1,0 +1,50 @@
+name:scenario1
+objective: max
+
+domains:
+d:
+type: d
+values: [0,1]
+
+variables:
+var0:
+domain: d
+var1:
+domain: d
+var2:
+domain: d
+var3:
+domain: d
+var4:
+domain: d
+var5:
+domain: d
+var6:
+domain: d
+var7:
+domain: d
+var8:
+domain: d
+var9:
+domain: d
+var10:
+domain: d
+var11:
+domain: d
+var12:
+domain: d
+var13:
+domain: d
+var14:
+domain: d
+var15:
+domain: d
+var16:
+domain: d
+var17:
+domain: d
+var18:
+domain: d
+var19:
+domain: d
+agents: [a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19]
