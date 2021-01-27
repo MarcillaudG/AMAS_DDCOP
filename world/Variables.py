@@ -11,3 +11,6 @@ class Variables:
     def __repr__(self):
         return self.name + "[reliability: " + str(self.reliability) + " ,value: " +\
                str(self.value) + " ,size:"+str(self.size)
+
+    def __str__(self):
+        return self.name

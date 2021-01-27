@@ -9,7 +9,7 @@ class Environment:
         # Creation of nb_var variables
         self.variables = {}
         self.distribution_gauss_sensed = {}
-        for i in range(0, 20):
+        for i in range(0, nb_var):
             self.variables["var"+str(i)] = Variables("var"+str(i), 0, 1)
             self.distribution_gauss_sensed["var"+str(i)] = [gauss(5, 1.5) for i in range(100)]
 

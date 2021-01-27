@@ -5,16 +5,17 @@ from agents.Messages import Message
 from world.Environment import Environment
 from world.Network import Network
 from writers.DCOPWriter import DCOPWriter
+from writers.LogCriticality import LogCriticality
 
 
 class Amas:
     def __init__(self, experiment="DEFAULT", init_ag=9, proba_destr_agent=0.01, appar_ag=0.01, nb_data=20,
                  computation_max=10, variation_comp=0.25, communication_max=10, variation_comm=0.25,
-                 network_size=10000, max_cycle=10):
+                 network_size=10000, max_cycle=20):
         self.agents = []
         self.variables = {}
         self.experiment = experiment
-
+        self.logCriticality = LogCriticality(experiment)
         self.all_var = {
             "init_ag": init_ag,
             "proba_destr_agent": proba_destr_agent,
@@ -127,9 +128,11 @@ class Amas:
         print("Total for the cycle : " + str(total))
         print("NBMESSAGES : " + str(self.network.nb_messages()))
         cpt = 0
+        self.logCriticality.writeCriticality(self.cycle, self.agents)
         for agent_to_r in ag_to_remove:
             self.agents.remove(agent_to_r)
             self.writer.destroyAgent(agent_to_r.id_ag, self.cycle)
+            del agent_to_r
             cpt += 1
         if cpt > 0:
             print("DESTRUCTION -> " + str(ag_to_remove))
@@ -165,4 +168,5 @@ class Amas:
                 i = i + 1
                 stop = input("Continue ? 0 stop / 1 continue")
         print("RUN ENDED WITHOUT ERROR")
-        self.writer.writeDCOP()
+        self.writer.writeDCOP(self.environment)
+        self.logCriticality.endLog()

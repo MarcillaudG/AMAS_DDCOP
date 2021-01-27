@@ -1,14 +1,18 @@
 from agents.AgentStation import AgentStation
+from world.Environment import Environment
 from world.Variables import Variables
 from datetime import date
 
 
 class DCOPWriter:
 
-    def __init__(self, scenario: str, variables: [str]):
+    def __init__(self, scenario: str, variables: []):
         self.agents = {}
         self.variables = variables
         self.scenario = scenario
+        self.dict_env_var_to_ag_var = {}
+        for var in variables:
+            self.dict_env_var_to_ag_var[var] = {}
 
     def addAgent(self, ag: AgentStation, cycle: int):
         id_ag = ag.id_ag
@@ -17,9 +21,11 @@ class DCOPWriter:
         else:
             self.agents[id_ag] = {}
             self.agents[id_ag]["CycleBegin"] = cycle
-            self.agents[id_ag]["Variables"] = {}
+            self.agents[id_ag]["Variables"] = []
             for var in ag.decision_variable.keys():
-                self.agents[id_ag]["Variables"][var] = ag.decision_variable[var]
+                self.agents[id_ag]["Variables"].append(str(ag.decision_variable[var]) + "_" + str(id_ag))
+                var_name = str(ag.decision_variable[var]) + "_" + str(id_ag)
+                self.dict_env_var_to_ag_var[var][var_name] = {}
             self.agents[id_ag]["Computing"] = ag.computing_capacity
             self.agents[id_ag]["Communication"] = ag.communication_capacity
 
@@ -39,26 +45,73 @@ class DCOPWriter:
             if "CycleEnd" not in self.agents[id_ag].keys():
                 self.agents[id_ag]["CycleEnd"] = cycle
 
-    def writeDCOP(self):
+    def writeDCOP(self, env: Environment):
+        space = "    "
+        nb_space = 1
         # file_name = self.scenario + "_" + str(date.today())
         file_name = "DCOP/" + self.scenario
-        file = open(file_name, "w")
+        file = open(file_name + ".yaml", "w")
         # Head
         file.write("name:" + self.scenario + "\n")
         file.write("objective: max\n")
 
         # domain
-        file.write("\ndomains:\nd:\ntype: d\nvalues: [0,1]\n\n")
+        file.write("\ndomains:\nd:\ntype: d\nvalues: [0, 1]\n\n")
 
+        ##################################################################################################
         # variables
+        ##################################################################################################
+        all_var = []
         file.write("variables:\n")
-        for var in self.variables:
-            file.write(var + ":\ndomain: d\n")
+        for id_ag in self.agents.keys():
+            all_var += self.agents[id_ag]["Variables"]
+            for var in self.agents[id_ag]["Variables"]:
+                file.write(space + var + ":\n" + space + space + "domain: d\n" + space + space + "initial_value: 0\n\n")
 
+        line_cong = "a= " + str(all_var[0])
+        for i in range(1, len(all_var)):
+            var = all_var[i]
+            line_cong += " + " + str(var)
+
+        ##################################################################################################
         # constraints
-        # TODO
+        ##################################################################################################
+        file.write("constraints:\n")
+        for id_ag in self.agents.keys():
+            # charge computation
+            file.write("congestion_comput_ag"+str(id_ag) + ":\ntype:intention\n")
+            # function
+            file.write("function: |\n" + space + line_cong)
+            # TODO Function
+            file.write("\n" + space + "return - max(a - " + str(self.agents[id_ag]["Computing"]) + ", 0 * function\n")
 
-        file_event = open(file_name+"_events", "w")
+            # Rempli chaque variable
+            for var in self.dict_env_var_to_ag_var.keys():
+                var_name = var + "_" + str(id_ag)
+                self.dict_env_var_to_ag_var[var][var_name] = {}
+                for other_ag in self.agents.keys():
+                    if other_ag != id_ag:
+                        other_ag_var_name = var + "_" + str(other_ag)
+                        value_sensed = env.distribution_gauss_sensed[var][other_ag]
+                        self.dict_env_var_to_ag_var[var][var_name][other_ag_var_name] = value_sensed
+                    else:
+                        other_ag_var_name = var + "_" + str(other_ag)
+                        value_sensed = env.distribution_gauss_sensed[var][other_ag]
+                        self.dict_env_var_to_ag_var[var][var_name][other_ag_var_name] = value_sensed
+
+        for var in self.dict_env_var_to_ag_var.keys():
+            for ag_var in self.dict_env_var_to_ag_var[var].keys():
+                file.write("C_utility_ag_" + str(ag_var))
+                file.write(":\n" + space + "type: extensional\n" + space + "values:\n" + space + "function: max([")
+                all_var_used = []
+                for other_ag_var_name in self.dict_env_var_to_ag_var[var][ag_var]:
+                    file.write(other_ag_var_name + " * ")
+                    file.write(str(self.dict_env_var_to_ag_var[var][ag_var][other_ag_var_name]) + ", ")
+                    all_var_used.append(other_ag_var_name)
+
+                file.write("])\n")
+                file.write(space + "variables: " + str(all_var_used) + "\n\n")
+        file_event = open(file_name+"_events.yaml", "w")
         # agents
         file.write("agents: [")
         list_agents = ""
@@ -73,7 +126,18 @@ class DCOPWriter:
                 cycle_end = self.agents[id_ag]["CycleEnd"]
                 file_event.write("AgentDestruction:\na" + str(id_ag) + ": " + str(cycle_end) + "\n")
         file.write(list_agents)
-        file.write("]")
+        file.write("]\n\n")
+
+        ##################################################################################################
+        # HOSTING COSTs
+        ##################################################################################################
+        file.write("hosting_costs:\n" + space + "default: -10000\n")
+        for id_ag in self.agents.keys():
+            file.write(space + "a" + str(id_ag) + ":\n" + space + "computations:\n")
+            for var in self.agents[id_ag]["Variables"]:
+                file.write(space + space + "C_utility_ag_" + str(var) + ": 0" + "\n")
+            for var in self.agents[id_ag]["Variables"]:
+                file.write(space + space + str(var) + ": 0" + "\n")
         file.close()
         file_event.close()
 
