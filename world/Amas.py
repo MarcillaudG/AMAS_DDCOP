@@ -119,8 +119,10 @@ class Amas:
     def __endCycle__(self) -> None:
         total = 0
         ag_to_remove = []
+        self.network.__cycleEnd__()
         for agent in self.agents:
             agent.receive_message_from_netowrk()
+            agent.computeCriticality()
             total += agent.computeEfficiencyLimit()
             tirage = random.random()
             if tirage < self.all_var["proba_destr_agent"]:
@@ -157,7 +159,7 @@ class Amas:
                 self.__agentsCycle__()
                 self.__endCycle__()
                 print("END cyle " + str(i))
-                sleep(time)
+                # sleep(time)
         if mode == "manuel":
             i = 0
             stop = False

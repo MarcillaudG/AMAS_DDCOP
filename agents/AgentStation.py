@@ -1,6 +1,5 @@
 import math
 from time import sleep
-
 from agents.Messages import Message, MessageCrit
 
 from world.Environment import Environment
@@ -68,6 +67,7 @@ class AgentStation:
         self.received_messages = []
         self.received_crit = []
         self.last_score = 0
+        self.last_worst_crit = 0.0
         self.scores = {"min": 0, "max": 0}
         self.__initUtility__()
 
@@ -91,7 +91,7 @@ class AgentStation:
             if new_neighbour in self.neighborhood.keys():
                 new_dict[new_neighbour] = self.neighborhood[new_neighbour]
         self.neighborhood = new_dict
-        print(str(self.neighborhood))
+        self.receive_criticalities_from_network()
         # what my sensors gather
         # not used for now
         # self.sensors_variable = sensed
@@ -102,71 +102,9 @@ class AgentStation:
     def decide(self):
         print("DECIDE PHASE " + str(self.id_ag))
         # compute the best variable to send (to put at 1)
-        # if an information less reliable than mine si shared, i share it
-        # contrary, i do not
-        # best_messages = {}
-
-        # Manage criticality
-        sum_weight = 0
-        self.to_send.clear()
-        for mess in self.received_messages:
-            if mess.sender != self.id_ag:
-                sum_weight += mess.weight
-
-        # CCRIT
-        # CRIT 2 -> TROP DE MESSAGES
-        self.criticality = 0.0
-        crit_neg = 0.0
-        nb_exced_message = max(0, sum_weight - self.computing_capacity)
-        pourcent_exced = nb_exced_message / self.computing_capacity * 100
-        if pourcent_exced > THRESHOLD_TOO_MUCH_RECEIVED_MIN * 100:
-            crit_neg = min(MAX_TMR, COEFF_A_TMR * pourcent_exced + COEFF_B_TMR)
 
         # MANAGE USELESS MESSAGES
         nb_useless, nb_useful, less_reliable = self.computeUselessMessage()
-        self.crits[2] = crit_neg
-        # useless_over_threshold = max(nb_useless - self.computing_capacity * THRESHOLD_TOO_MUCH_USELESS_MIN, 0)
-        pourcent_useless = nb_useless / self.computing_capacity * 100
-
-        # CCRIT
-        # CRIT 3 -> TROP DE MESSAGES INUTILES
-        # crit_neg = math.pow(nb_exced_message + useless_over_threshold, POW_BASE)
-        crit_useless = 0
-        if pourcent_useless > THRESHOLD_TOO_MUCH_USELESS_MIN * 100:
-            crit_useless = min(MAX_TMU, COEFF_A_TMU * pourcent_useless + COEFF_B_TMU)
-        usefull_missing = len(self.received_messages) - nb_useful
-        self.crits[3] = crit_useless
-
-        # CCRIT
-        # CRIT 1 -> PAS ASSEZ DE MESSAGES INUTILES
-        nb_envie = max(nb_useless - self.computing_capacity * THRESHOLD_NOT_ENOUGH_USELESS_MIN, 0)
-        pourcent_envie = nb_useless / self.computing_capacity * 100
-        nb_envie = min(nb_envie, usefull_missing)
-        crit_pos = 0
-        if pourcent_envie < THRESHOLD_NOT_ENOUGH_USELESS_MIN * 100:
-            crit_pos = min(MAX_NE, COEFF_A_NE * pourcent_envie + COEFF_B_NE)
-        self.crits[1] = crit_pos
-
-        # CCRIT
-        # CRIT 4 -> DIFFERENCE AVEC MEILLEUR SCORE
-        max_diff_score = self.scores["max"] - self.scores["min"]
-        crit_score = 0.0
-        if self.scores["max"] > self.last_score:
-            pourcent_diff = (self.scores["max"] - self.last_score) / max_diff_score
-            crit_score = min(MAX_TS, COEFF_A_TS * pourcent_diff + COEFF_B_TS)
-        crit_pos += crit_score
-        # crit_pos = math.log(nb_envie, LOG_BASE)
-
-        self.criticality = crit_pos - crit_neg - crit_useless
-
-        self.to_send.append(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
-        print("NBUSELESS : " + str(nb_useless))
-        if self.criticality < 0:
-            print(str(self) + " -> too many messages received " + str(self.criticality))
-        else:
-            if self.criticality > 0:
-                print(str(self) + " -> need messages please " + str(self.criticality))
-
         # when an information is no longer shared  because of an agent missing and i can share it, i share it
         # first we delete all the items
         self.received_messages.clear()
@@ -181,7 +119,7 @@ class AgentStation:
                     worst_crit = criticalities.crit
                 if abs(best_crit) > abs(criticalities.crit):
                     best_crit = criticalities.crit
-                self.neighborhood[criticalities.sender] =criticalities.crit
+                self.neighborhood[criticalities.sender] = criticalities.crit
         '''if worst_crit < 0 or self.criticality == best_crit:
             if self.criticality > 0:
                 self.communication_capacity -= 1
@@ -193,7 +131,7 @@ class AgentStation:
         if worst_crit > 0:
             self.communication_capacity += 1
         self.received_crit.clear()
-
+        self.last_worst_crit = worst_crit
         # pour toutes les variables
         for var in self.decision_variable.keys():
             # si je suis encore capable d'en envoyer
@@ -213,6 +151,7 @@ class AgentStation:
     def receive_messages(self, sent: [Message]):
         self.received_messages = sent
 
+    # Receives messages sent by neighbors
     def receive_message_from_netowrk(self):
         for mess in self.network.releaseMessages():
             if mess.sender != self.id_ag:
@@ -220,6 +159,13 @@ class AgentStation:
                     self.received_crit.append(mess)
                 else:
                     self.received_messages.append(mess)
+
+    # Receives criticalities from neighbors
+    def receive_criticalities_from_network(self):
+        for mess in self.network.releaseMessagesCrit():
+            if mess.sender != self.id_ag:
+                if isinstance(mess, MessageCrit):
+                    self.received_crit.append(mess)
 
     # return the variable sent with the value analysed
     def analyse_message(self, mess: Message):
@@ -310,6 +256,69 @@ class AgentStation:
                 # CCRIT
                 nb_useless_message += 1
         return nb_useless_message, nb_usefull, less_reliable
+
+    # compute the agent criticality
+    def computeCriticality(self) -> None:
+        # Manage criticality
+        sum_weight = 0
+        self.to_send.clear()
+        for mess in self.received_messages:
+            if mess.sender != self.id_ag:
+                sum_weight += mess.weight
+
+        # CCRIT
+        # CRIT 2 -> TROP DE MESSAGES
+        self.criticality = 0.0
+        crit_neg = 0.0
+        nb_exced_message = max(0, sum_weight - self.computing_capacity)
+        pourcent_exced = nb_exced_message / self.computing_capacity * 100
+        if pourcent_exced > THRESHOLD_TOO_MUCH_RECEIVED_MIN * 100:
+            crit_neg = min(MAX_TMR, COEFF_A_TMR * pourcent_exced + COEFF_B_TMR)
+
+        # MANAGE USELESS MESSAGES
+        nb_useless, nb_useful, less_reliable = self.computeUselessMessage()
+        self.crits[2] = crit_neg
+        # useless_over_threshold = max(nb_useless - self.computing_capacity * THRESHOLD_TOO_MUCH_USELESS_MIN, 0)
+        pourcent_useless = nb_useless / self.computing_capacity * 100
+
+        # CCRIT
+        # CRIT 3 -> TROP DE MESSAGES INUTILES
+        # crit_neg = math.pow(nb_exced_message + useless_over_threshold, POW_BASE)
+        crit_useless = 0
+        if pourcent_useless > THRESHOLD_TOO_MUCH_USELESS_MIN * 100:
+            crit_useless = min(MAX_TMU, COEFF_A_TMU * pourcent_useless + COEFF_B_TMU)
+        usefull_missing = len(self.received_messages) - nb_useful
+        self.crits[3] = crit_useless
+
+        # CCRIT
+        # CRIT 1 -> PAS ASSEZ DE MESSAGES INUTILES
+        nb_envie = max(nb_useless - self.computing_capacity * THRESHOLD_NOT_ENOUGH_USELESS_MIN, 0)
+        pourcent_envie = nb_useless / self.computing_capacity * 100
+        nb_envie = min(nb_envie, usefull_missing)
+        crit_pos = 0
+        if pourcent_envie < THRESHOLD_NOT_ENOUGH_USELESS_MIN * 100:
+            crit_pos = min(MAX_NE, COEFF_A_NE * pourcent_envie + COEFF_B_NE)
+        self.crits[1] = crit_pos
+
+        # CCRIT
+        # CRIT 4 -> DIFFERENCE AVEC MEILLEUR SCORE
+        max_diff_score = self.scores["max"] - self.scores["min"]
+        crit_score = 0.0
+        if self.scores["max"] > self.last_score:
+            pourcent_diff = (self.scores["max"] - self.last_score) / max_diff_score
+            crit_score = min(MAX_TS, COEFF_A_TS * pourcent_diff + COEFF_B_TS)
+        crit_pos += crit_score
+        # crit_pos = math.log(nb_envie, LOG_BASE)
+
+        self.criticality = crit_pos - crit_neg - crit_useless
+
+        self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
+        print("NBUSELESS : " + str(nb_useless))
+        if self.criticality < 0:
+            print(str(self) + " -> too many messages received " + str(self.criticality))
+        else:
+            if self.criticality > 0:
+                print(str(self) + " -> need messages please " + str(self.criticality))
 
     def __str__(self):
         return "Agent " + str(self.id_ag) + " Criticality : " + str(self.criticality) + "\n" + str(self.crits) \
