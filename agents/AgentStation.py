@@ -117,19 +117,19 @@ class AgentStation:
             if criticalities.sender != self.id_ag and criticalities.sender in self.neighborhood.keys():
                 if abs(worst_crit) < abs(criticalities.crit):
                     worst_crit = criticalities.crit
-                if abs(best_crit) > abs(criticalities.crit):
-                    best_crit = criticalities.crit
+                if best_crit > abs(criticalities.crit):
+                    best_crit = abs(criticalities.crit)
                 self.neighborhood[criticalities.sender] = criticalities.crit
-        '''if worst_crit < 0 or self.criticality == best_crit:
-            if self.criticality > 0:
+        if worst_crit < 0 :
+            if self.criticality > 0 or abs(self.criticality) <= best_crit:
                 self.communication_capacity -= 1
         if worst_crit > 0:
-            if self.criticality < 0 or self.criticality == best_crit:
-                self.communication_capacity += 1'''
-        if worst_crit < 0:
+            if self.criticality < 0 or abs(self.criticality) <= best_crit:
+                self.communication_capacity += 1
+        '''if worst_crit < 0:
             self.communication_capacity -= 1
         if worst_crit > 0:
-            self.communication_capacity += 1
+            self.communication_capacity += 1'''
         self.received_crit.clear()
         self.last_worst_crit = worst_crit
         # pour toutes les variables
