@@ -57,7 +57,6 @@ class AgentStation:
         self.var = {}
         self.neighborhood = {}
         self.decision_variable = {}
-        self.sensors_variable = []
         self.computing_capacity = computing_capacity
         self.communication_capacity = communication_capacity
         self.useless_variable = []
@@ -94,7 +93,6 @@ class AgentStation:
         self.receive_criticalities_from_network()
         # what my sensors gather
         # not used for now
-        # self.sensors_variable = sensed
         self.sent.extend(self.to_send)
         # perceive the variable sorted by reliability
         self.decision_variable = dict(sorted(self.decision_variable.items(), key=lambda item: item[1], reverse=True))
@@ -120,12 +118,12 @@ class AgentStation:
                 if best_crit > abs(criticalities.crit):
                     best_crit = abs(criticalities.crit)
                 self.neighborhood[criticalities.sender] = criticalities.crit
-        if worst_crit < 0 :
+        if worst_crit < 0:
             if self.criticality > 0 or abs(self.criticality) <= best_crit:
-                self.communication_capacity -= 1
+                self.communication_capacity = max(0, self.communication_capacity - 1)
         if worst_crit > 0:
             if self.criticality < 0 or abs(self.criticality) <= best_crit:
-                self.communication_capacity += 1
+                self.communication_capacity = min(len(self.decision_variable.keys()), self.communication_capacity + 1)
         '''if worst_crit < 0:
             self.communication_capacity -= 1
         if worst_crit > 0:
@@ -228,7 +226,6 @@ class AgentStation:
         less_reliable = []
         nb_useless_message = 0
         nb_usefull = 0
-        worst_crit = 0
         for mess in self.received_messages:
             # if isinstance(mess, MessageCrit):
             #     worst_crit = max(mess.crit, worst_crit)
@@ -294,6 +291,7 @@ class AgentStation:
         # CRIT 1 -> PAS ASSEZ DE MESSAGES INUTILES
         nb_envie = max(nb_useless - self.computing_capacity * THRESHOLD_NOT_ENOUGH_USELESS_MIN, 0)
         pourcent_envie = nb_useless / self.computing_capacity * 100
+        # pourcent_envie = nb_useless / len(self.received_messages) * 100
         nb_envie = min(nb_envie, usefull_missing)
         crit_pos = 0
         if pourcent_envie < THRESHOLD_NOT_ENOUGH_USELESS_MIN * 100:
@@ -307,7 +305,7 @@ class AgentStation:
         if self.scores["max"] > self.last_score:
             pourcent_diff = (self.scores["max"] - self.last_score) / max_diff_score
             crit_score = min(MAX_TS, COEFF_A_TS * pourcent_diff + COEFF_B_TS)
-        crit_pos += crit_score
+        # crit_pos += crit_score
         # crit_pos = math.log(nb_envie, LOG_BASE)
 
         self.criticality = crit_pos - crit_neg - crit_useless
