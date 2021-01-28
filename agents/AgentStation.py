@@ -104,7 +104,8 @@ class AgentStation:
         sum_weight = 0
         self.to_send.clear()
         for mess in self.received_messages:
-            sum_weight += mess.weight
+            if mess.sender != self.id_ag:
+                sum_weight += mess.weight
 
         # CCRIT
         # CRIT 2 -> TROP DE MESSAGES
@@ -167,9 +168,19 @@ class AgentStation:
         print("SIZE : " + str(len(self.decision_variable.keys())))
         cumul_weight = 0
         worst_crit = 0.0
+        best_crit = 100.0
         for criticalities in self.received_crit:
-            if abs(worst_crit) < abs(criticalities.crit):
-                worst_crit = criticalities.crit
+            if criticalities.sender != self.id_ag:
+                if abs(worst_crit) < abs(criticalities.crit):
+                    worst_crit = criticalities.crit
+                if abs(best_crit) > abs(criticalities.crit):
+                    best_crit = criticalities.crit
+        '''if worst_crit < 0 or self.criticality == best_crit:
+            if self.criticality > 0:
+                self.communication_capacity -= 1
+        if worst_crit > 0:
+            if self.criticality < 0 or self.criticality == best_crit:
+                self.communication_capacity += 1'''
         if worst_crit < 0:
             self.communication_capacity -= 1
         if worst_crit > 0:
@@ -197,10 +208,11 @@ class AgentStation:
 
     def receive_message_from_netowrk(self):
         for mess in self.network.releaseMessages():
-            if isinstance(mess, MessageCrit):
-                self.received_crit.append(mess)
-            else:
-                self.received_messages.append(mess)
+            if mess.sender != self.id_ag:
+                if isinstance(mess, MessageCrit):
+                    self.received_crit.append(mess)
+                else:
+                    self.received_messages.append(mess)
 
     # return the variable sent with the value analysed
     def analyse_message(self, mess: Message):
@@ -244,11 +256,12 @@ class AgentStation:
         # select the best messages in the receive order
         # if it cannot compute more, it doest treat anymore
         for mess in self.received_messages:
-            if not isinstance(mess, MessageCrit):
-                if sum_weight <= self.computing_capacity and mess.name in var_used.keys():
-                    if var_used[mess.name] < self.environment.distribution_gauss_sensed[mess.name][mess.sender]:
-                        var_used[mess.name] = self.environment.distribution_gauss_sensed[mess.name][mess.sender]
-                        sum_weight += mess.weight
+            if mess.sender != self.id_ag:
+                if not isinstance(mess, MessageCrit):
+                    if sum_weight <= self.computing_capacity and mess.name in var_used.keys():
+                        if var_used[mess.name] < self.environment.distribution_gauss_sensed[mess.name][mess.sender]:
+                            var_used[mess.name] = self.environment.distribution_gauss_sensed[mess.name][mess.sender]
+                            sum_weight += mess.weight
         # compute the efficiency
         for var_name in var_used.keys():
             efficiency += var_used[var_name]

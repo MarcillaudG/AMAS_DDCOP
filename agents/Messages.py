@@ -10,7 +10,7 @@ class Message:
 
 
 class MessageCrit:
-    def __init__(self, id_ag:int, crit: float):
+    def __init__(self, id_ag: int, crit: float):
         self.sender = id_ag
         self.crit = crit
         self.weight = 1
