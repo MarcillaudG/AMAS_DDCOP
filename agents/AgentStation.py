@@ -56,7 +56,7 @@ class AgentStation:
         self.environment = environment
         self.network = network
         self.var = {}
-        self.neighborhood = []
+        self.neighborhood = {}
         self.decision_variable = {}
         self.sensors_variable = []
         self.computing_capacity = computing_capacity
@@ -83,9 +83,15 @@ class AgentStation:
 
     def perceive(self, neighbors: []):
         print("PERCEIVE PHASE " + str(self.id_ag))
-        # perceive my neighbours
-        self.neighborhood = neighbors
 
+        # perceive my neighbours
+        new_dict = {}
+        for new_neighbour in neighbors:
+            new_dict[new_neighbour] = 0.0
+            if new_neighbour in self.neighborhood.keys():
+                new_dict[new_neighbour] = self.neighborhood[new_neighbour]
+        self.neighborhood = new_dict
+        print(str(self.neighborhood))
         # what my sensors gather
         # not used for now
         # self.sensors_variable = sensed
@@ -170,11 +176,12 @@ class AgentStation:
         worst_crit = 0.0
         best_crit = 100.0
         for criticalities in self.received_crit:
-            if criticalities.sender != self.id_ag:
+            if criticalities.sender != self.id_ag and criticalities.sender in self.neighborhood.keys():
                 if abs(worst_crit) < abs(criticalities.crit):
                     worst_crit = criticalities.crit
                 if abs(best_crit) > abs(criticalities.crit):
                     best_crit = criticalities.crit
+                self.neighborhood[criticalities.sender] =criticalities.crit
         '''if worst_crit < 0 or self.criticality == best_crit:
             if self.criticality > 0:
                 self.communication_capacity -= 1
@@ -281,7 +288,7 @@ class AgentStation:
             #     worst_crit = max(mess.crit, worst_crit)
             #     self.received_messages.remove(mess)
             # else:
-            if mess.name in self.decision_variable.keys() and mess.sender in self.neighborhood:
+            if mess.name in self.decision_variable.keys() and mess.sender in self.neighborhood.keys():
                 var_tmp = self.analyse_message(mess)
                 if var_tmp.reliability > self.decision_variable[mess.name].reliability:
                     if mess.name not in best_messages.keys():
