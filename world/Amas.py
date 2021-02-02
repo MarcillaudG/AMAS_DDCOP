@@ -186,7 +186,7 @@ class Amas:
             j = 0
             str_to_write = ""
             while j < int(nb_col):
-                str_to_write += " ____  "
+                str_to_write += "O____O "
                 j += 1
             str_to_write += "\n"
             j = 0
@@ -201,40 +201,9 @@ class Amas:
             str_to_write += "\n"
             j = 0
             while j < int(nb_col):
-                str_to_write += " ¯¯¯¯  "
+                str_to_write += "O¯¯¯¯O "
                 j += 1
-            print(str_to_write)
+            print(Fore.RED + str_to_write)
+            print(Style.RESET_ALL)
             i += nb_col
 
-
-    def __drawAgentOld__(self) -> None:
-        i = 0
-        nb_col = int(len(self.agents) / 3)
-        while i + nb_col - 1 <= len(self.agents):
-            print(" ____   ____   ____")
-            print("|" + self.agents[i].strID() + "|\\ |" + self.agents[i+1].strID() + "|\\ |" + self.agents[i+2].strID() + "|\\")
-            print("|" + self.agents[i].strCrit() + "|/ |" + self.agents[i+1].strCrit() + "|/ |" + self.agents[i+2].strCrit() + "|/")
-            print(" ¯¯¯¯   ¯¯¯¯   ¯¯¯¯")
-            i += nb_col
-        j = i
-        if i * (nb_col - 1) < len(self.agents):
-            str_to_write = ""
-            while j < len(self.agents):
-                str_to_write += " ____  "
-                j += 1
-            str_to_write += "\n"
-            j = i
-            while j < len(self.agents):
-                str_to_write += "|" + self.agents[j].strID() + "|\\"
-                j += 1
-            str_to_write += "\n"
-            j = i
-            while j < len(self.agents):
-                str_to_write += "|" + self.agents[j].strCrit() + "|/"
-                j += 1
-            str_to_write += "\n"
-            j = i
-            while j < len(self.agents):
-                str_to_write += " ¯¯¯¯  "
-                j += 1
-            print(str_to_write)
