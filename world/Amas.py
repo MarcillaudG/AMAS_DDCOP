@@ -4,9 +4,10 @@ from agents.AgentStation import AgentStation
 from agents.Messages import Message
 from world.Environment import Environment
 from world.Network import Network
+from writers.CSVWriter import CSVWriter
 from writers.DCOPWriter import DCOPWriter
 from writers.LogCriticality import LogCriticality
-
+from colorama import *
 
 class Amas:
     def __init__(self, experiment="DEFAULT", init_ag=9, proba_destr_agent=0.01, appar_ag=0.01, nb_data=20,
@@ -93,6 +94,7 @@ class Amas:
             self.agents.append(agent)
             self.writer.addAgent(agent, 0)
             self.all_id_ag += 1
+        self.writerCSV = CSVWriter(self.experiment, self.agents)
 
     # First implementation, messages are sent to all
     def send_messages(self, to_send: [Message]) -> None:
@@ -124,6 +126,8 @@ class Amas:
             agent.receive_message_from_netowrk()
             agent.computeCriticality()
             total += agent.computeEfficiencyLimit()
+        self.__drawAgent__()
+        for agent in self.agents:
             tirage = random.random()
             if tirage < self.all_var["proba_destr_agent"]:
                 ag_to_remove.append(agent)
@@ -131,6 +135,7 @@ class Amas:
         print("NBMESSAGES : " + str(self.network.nb_messages()))
         cpt = 0
         self.logCriticality.writeCriticality(self.cycle, self.agents)
+        self.writerCSV.writeLine(self.agents)
         for agent_to_r in ag_to_remove:
             self.agents.remove(agent_to_r)
             self.writer.destroyAgent(agent_to_r.id_ag, self.cycle)
@@ -172,3 +177,64 @@ class Amas:
         print("RUN ENDED WITHOUT ERROR")
         self.writer.writeDCOP(self.environment)
         self.logCriticality.endLog()
+        self.writerCSV.end()
+
+    def __drawAgent__(self) -> None:
+        i = 0
+        nb_col = int(len(self.agents) / 3)
+        while i + nb_col - 1 <= len(self.agents):
+            j = 0
+            str_to_write = ""
+            while j < int(nb_col):
+                str_to_write += " ____  "
+                j += 1
+            str_to_write += "\n"
+            j = 0
+            while j < int(nb_col):
+                str_to_write += "|" + self.agents[i+j].strID() + "|\\ "
+                j += 1
+            str_to_write += "\n"
+            j = 0
+            while j < int(nb_col):
+                str_to_write += "|" + self.agents[i+j].strCrit() + "|/ "
+                j += 1
+            str_to_write += "\n"
+            j = 0
+            while j < int(nb_col):
+                str_to_write += " ¯¯¯¯  "
+                j += 1
+            print(str_to_write)
+            i += nb_col
+
+
+    def __drawAgentOld__(self) -> None:
+        i = 0
+        nb_col = int(len(self.agents) / 3)
+        while i + nb_col - 1 <= len(self.agents):
+            print(" ____   ____   ____")
+            print("|" + self.agents[i].strID() + "|\\ |" + self.agents[i+1].strID() + "|\\ |" + self.agents[i+2].strID() + "|\\")
+            print("|" + self.agents[i].strCrit() + "|/ |" + self.agents[i+1].strCrit() + "|/ |" + self.agents[i+2].strCrit() + "|/")
+            print(" ¯¯¯¯   ¯¯¯¯   ¯¯¯¯")
+            i += nb_col
+        j = i
+        if i * (nb_col - 1) < len(self.agents):
+            str_to_write = ""
+            while j < len(self.agents):
+                str_to_write += " ____  "
+                j += 1
+            str_to_write += "\n"
+            j = i
+            while j < len(self.agents):
+                str_to_write += "|" + self.agents[j].strID() + "|\\"
+                j += 1
+            str_to_write += "\n"
+            j = i
+            while j < len(self.agents):
+                str_to_write += "|" + self.agents[j].strCrit() + "|/"
+                j += 1
+            str_to_write += "\n"
+            j = i
+            while j < len(self.agents):
+                str_to_write += " ¯¯¯¯  "
+                j += 1
+            print(str_to_write)

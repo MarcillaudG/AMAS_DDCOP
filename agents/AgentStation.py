@@ -81,7 +81,7 @@ class AgentStation:
         self.last_score = score
 
     def perceive(self, neighbors: []):
-        print("PERCEIVE PHASE " + str(self.id_ag))
+        # print("PERCEIVE PHASE " + str(self.id_ag))
 
         # perceive my neighbours
         new_dict = {}
@@ -98,7 +98,7 @@ class AgentStation:
         self.decision_variable = dict(sorted(self.decision_variable.items(), key=lambda item: item[1], reverse=True))
 
     def decide(self):
-        print("DECIDE PHASE " + str(self.id_ag))
+        # print("DECIDE PHASE " + str(self.id_ag))
         # compute the best variable to send (to put at 1)
 
         # MANAGE USELESS MESSAGES
@@ -107,7 +107,7 @@ class AgentStation:
         # first we delete all the items
         self.received_messages.clear()
         # when i know nothing, I send the ones I know useful for me
-        print("SIZE : " + str(len(self.decision_variable.keys())))
+        # print("SIZE : " + str(len(self.decision_variable.keys())))
         cumul_weight = 0
         worst_crit = 0.0
         best_crit = 100.0
@@ -139,7 +139,7 @@ class AgentStation:
                 cumul_weight += var_weight
 
     def act(self):
-        print("ACT PHASE " + str(self.id_ag))
+        # print("ACT PHASE " + str(self.id_ag))
         # send messages
         # print("TOSEND : -> " + str(self.to_send))
         # for var in self.to_send:
@@ -311,16 +311,25 @@ class AgentStation:
         self.criticality = crit_pos - crit_neg - crit_useless
 
         self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
-        print("NBUSELESS : " + str(nb_useless))
-        if self.criticality < 0:
-            print(str(self) + " -> too many messages received " + str(self.criticality))
-        else:
-            if self.criticality > 0:
-                print(str(self) + " -> need messages please " + str(self.criticality))
+        # print("NBUSELESS : " + str(nb_useless))
 
     def __str__(self):
         return "Agent " + str(self.id_ag) + " Criticality : " + str(self.criticality) + "\n" + str(self.crits) \
                + " CommCapa: " + str(self.communication_capacity)
+
+    def strID(self):
+        if self.id_ag < 10:
+            return "00" + str(self.id_ag)
+        if self.id_ag < 100:
+            return "0" + str(self.id_ag)
+        return str(self.id_ag)
+
+    def strCrit(self):
+        if abs(self.criticality) < 10:
+            return "00" + str(int(abs(self.criticality)))
+        if abs(self.criticality) < 100:
+            return "0" + str(int(abs(self.criticality)))
+        return str(int(abs(self.criticality)))
 
     def __repr__(self):
         return str(self)

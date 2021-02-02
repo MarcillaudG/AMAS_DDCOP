@@ -1,6 +1,6 @@
 init_ag=30
-proba_destr_agent=0.01
-proba_appar_agent=0.01
+proba_destr_agent=0.00
+proba_appar_agent=0.00
 nb_data=20
 computation_max=20
 variation_comp=0.25
