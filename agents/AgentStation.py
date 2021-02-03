@@ -1,4 +1,5 @@
 import math
+import random
 from time import sleep
 from agents.Messages import Message, MessageCrit
 
@@ -38,9 +39,8 @@ MIN_TS = 0.0
 COEFF_A_TS = (MAX_TS - MIN_TS) / ((THRESHOLD_SCORE_MAX - THRESHOLD_SCORE_MIN) * 100)
 COEFF_B_TS = MAX_TS - COEFF_A_TS * (THRESHOLD_SCORE_MAX * 100)
 
-# IN CASE OF LOG
-LOG_BASE = 2
-POW_BASE = 2
+# IMPROVEMENT THRESHOLD
+IMPROVEMENT_THRESHOLD = 0.03
 
 
 class AgentStation:

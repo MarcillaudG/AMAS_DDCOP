@@ -52,11 +52,11 @@ class DCOPWriter:
         file_name = "DCOP/" + self.scenario
         file = open(file_name + ".yaml", "w")
         # Head
-        file.write("name:" + self.scenario + "\n")
+        file.write("name: " + self.scenario + "\n")
         file.write("objective: max\n")
 
         # domain
-        file.write("\ndomains:\nd:\ntype: d\nvalues: [0, 1]\n\n")
+        file.write("\ndomains:\n" + space + "d: \n" + space + space + "values: [0, 1]\n\n")
 
         ##################################################################################################
         # variables
@@ -79,11 +79,12 @@ class DCOPWriter:
         file.write("constraints:\n")
         for id_ag in self.agents.keys():
             # charge computation
-            file.write("congestion_comput_ag"+str(id_ag) + ":\ntype:intention\n")
+            file.write(space + "congestion_comput_ag"+str(id_ag) + ":\n" + space + space + "type: intention\n")
             # function
-            file.write("function: |\n" + space + line_cong)
+            file.write(space + space + "function: |\n" + space + space + space + line_cong)
             # TODO Function
-            file.write("\n" + space + "return - max(a - " + str(self.agents[id_ag]["Computing"]) + ", 0 * function\n")
+            file.write("\n" + space + space + space +
+                       "return - max(a - " + str(self.agents[id_ag]["Computing"]) + ", 0)\n\n")
 
             # Rempli chaque variable
             for var in self.dict_env_var_to_ag_var.keys():
@@ -101,8 +102,8 @@ class DCOPWriter:
 
         for var in self.dict_env_var_to_ag_var.keys():
             for ag_var in self.dict_env_var_to_ag_var[var].keys():
-                file.write("C_utility_ag_" + str(ag_var))
-                file.write(":\n" + space + "type: extensional\n" + space + "values:\n" + space + "function: max([")
+                file.write(space + "C_utility_ag_" + str(ag_var))
+                file.write(":\n" + space + space + "type: extensional\n" + space + space + "function: max([")
                 all_var_used = []
                 for other_ag_var_name in self.dict_env_var_to_ag_var[var][ag_var]:
                     file.write(other_ag_var_name + " * ")
