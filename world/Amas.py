@@ -182,7 +182,7 @@ class Amas:
     def __drawAgent__(self) -> None:
         i = 0
         nb_col = int(len(self.agents) / 3)
-        while i + nb_col - 1 <= len(self.agents):
+        while i + nb_col - 1 < len(self.agents):
             j = 0
             str_to_write = ""
             while j < int(nb_col):

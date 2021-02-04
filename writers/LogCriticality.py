@@ -3,7 +3,7 @@ class LogCriticality:
     def __init__(self, scenario: str):
         self.file = open("logs/" + scenario, "w")
 
-    def writeCriticality(self, cycle: int, agents: [])->None:
+    def writeCriticality(self, cycle: int, agents: []) -> None:
         self.file.write("#################################################\n")
         self.file.write("Cycle: " + str(cycle) + "\n")
         self.file.write("#################################################\n")

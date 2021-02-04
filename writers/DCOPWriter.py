@@ -62,22 +62,32 @@ class DCOPWriter:
         # variables
         ##################################################################################################
         all_var = []
+        all_var_ag = {}
+        for id_ag in self.agents.keys():
+            all_var_ag[id_ag] = []
         file.write("variables:\n")
         for id_ag in self.agents.keys():
+            for other_ag in self.agents.keys():
+                if other_ag != id_ag:
+                    all_var_ag[other_ag] += self.agents[id_ag]["Variables"]
             all_var += self.agents[id_ag]["Variables"]
             for var in self.agents[id_ag]["Variables"]:
                 file.write(space + var + ":\n" + space + space + "domain: d\n" + space + space + "initial_value: 0\n\n")
 
-        line_cong = "a= " + str(all_var[0])
+        '''line_cong = "a= " + str(all_var[0])
         for i in range(1, len(all_var)):
             var = all_var[i]
-            line_cong += " + " + str(var)
+            line_cong += " + " + str(var)'''
 
         ##################################################################################################
         # constraints
         ##################################################################################################
         file.write("constraints:\n")
         for id_ag in self.agents.keys():
+            line_cong = "a= " + str(all_var_ag[id_ag][0])
+            for i in range(1, len(all_var_ag[id_ag])):
+                var = all_var_ag[id_ag][i]
+                line_cong += " + " + str(var)
             # charge computation
             file.write(space + "congestion_comput_ag"+str(id_ag) + ":\n" + space + space + "type: intention\n")
             # function
@@ -88,30 +98,31 @@ class DCOPWriter:
 
             # Rempli chaque variable
             for var in self.dict_env_var_to_ag_var.keys():
-                var_name = var + "_" + str(id_ag)
-                self.dict_env_var_to_ag_var[var][var_name] = {}
-                for other_ag in self.agents.keys():
-                    if other_ag != id_ag:
+                for var_name in self.dict_env_var_to_ag_var[var]:
+                    # var_name = var + "_" + str(id_ag)
+                    # self.dict_env_var_to_ag_var[var][var_name] = {}
+                    for other_ag in self.agents.keys():
                         other_ag_var_name = var + "_" + str(other_ag)
-                        value_sensed = env.distribution_gauss_sensed[var][other_ag]
-                        self.dict_env_var_to_ag_var[var][var_name][other_ag_var_name] = value_sensed
-                    else:
-                        other_ag_var_name = var + "_" + str(other_ag)
-                        value_sensed = env.distribution_gauss_sensed[var][other_ag]
-                        self.dict_env_var_to_ag_var[var][var_name][other_ag_var_name] = value_sensed
+                        if other_ag_var_name in self.agents[other_ag]["Variables"]:
+                            if other_ag != id_ag:
+                                value_sensed = env.distribution_gauss_sensed[var][other_ag]
+                                self.dict_env_var_to_ag_var[var][var_name][other_ag_var_name] = value_sensed
+                            else:
+                                value_sensed = env.distribution_gauss_sensed[var][other_ag]
+                                self.dict_env_var_to_ag_var[var][var_name][other_ag_var_name] = value_sensed
 
         for var in self.dict_env_var_to_ag_var.keys():
             for ag_var in self.dict_env_var_to_ag_var[var].keys():
                 file.write(space + "C_utility_ag_" + str(ag_var))
-                file.write(":\n" + space + space + "type: extensional\n" + space + space + "function: max([")
+                file.write(":\n" + space + space + "type: intention\n" + space + space + "function: max([")
                 all_var_used = []
                 for other_ag_var_name in self.dict_env_var_to_ag_var[var][ag_var]:
                     file.write(other_ag_var_name + " * ")
                     file.write(str(self.dict_env_var_to_ag_var[var][ag_var][other_ag_var_name]) + ", ")
                     all_var_used.append(other_ag_var_name)
 
-                file.write("])\n")
-                file.write(space + "variables: " + str(all_var_used) + "\n\n")
+                file.write("])\n\n")
+                # file.write(space + space + "variables: " + str(all_var_used) + "\n\n")
         file_event = open(file_name+"_events.yaml", "w")
         # agents
         file.write("agents: [")
