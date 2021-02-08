@@ -48,3 +48,8 @@ class AVT:
         self.acc = 2.0
         self.decc = 1.0 / 3.0
 
+    def __str__(self):
+        return "DELTAT: " + str(self.delta) + " SCORE: " + str(self.score)
+
+    def __repr__(self):
+        return str(self)
