@@ -11,7 +11,7 @@ class Environment:
         self.distribution_gauss_sensed = {}
         for i in range(0, nb_var):
             self.variables["var"+str(i)] = Variables("var"+str(i), 0, 1)
-            self.distribution_gauss_sensed["var"+str(i)] = [gauss(5, 1.5) for i in range(100)]
+            self.distribution_gauss_sensed["var"+str(i)] = [gauss(5, 1.5) for i in range(1000)]
 
     def getReliability(self, name: str, id_com: int):
         return self.distribution_gauss_sensed[name][id_com % len(self.distribution_gauss_sensed[name])]

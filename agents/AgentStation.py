@@ -2,6 +2,7 @@ import math
 import random
 from time import sleep
 from agents.Messages import Message, MessageCrit
+from tool.AVT import AVT
 
 from world.Environment import Environment
 from world.Network import Network
@@ -42,7 +43,7 @@ COEFF_A_TS = (MAX_TS - MIN_TS) / ((THRESHOLD_SCORE_MAX - THRESHOLD_SCORE_MIN) * 
 COEFF_B_TS = MAX_TS - COEFF_A_TS * (THRESHOLD_SCORE_MAX * 100)
 
 # IMPROVEMENT THRESHOLD
-IMPROVEMENT_THRESHOLD = 5.0
+IMPROVEMENT_THRESHOLD = 10.0
 
 
 class AgentStation:
@@ -72,6 +73,7 @@ class AgentStation:
         self.weight_messages = 0
         self.nb_useless = 0
         self.nb_messages_sent = 0
+        self.avt = AVT(IMPROVEMENT_THRESHOLD)
         self.__initUtility__()
 
     def __initUtility__(self):
@@ -125,21 +127,26 @@ class AgentStation:
                     best_crit = abs(criticalities.crit)
                 self.neighborhood[criticalities.sender] = criticalities.crit
 
+        self.histoAVT(worst_crit)
         if worst_crit < 0:
             impact_reduce = COEFF_A_TMR + COEFF_A_TMU
 
             tirage = random.random()
-            if tirage * 100 < IMPROVEMENT_THRESHOLD:
+            # if tirage * 100 < IMPROVEMENT_THRESHOLD:
+            if tirage * 100 < self.avt.score:
                 if self.communication_capacity > 0:
                     self.communication_capacity -= 1
+                self.avt.clean()
             # if self.criticality > 0 or abs(self.criticality) <= best_crit:
             #     self.communication_capacity = max(0, self.communication_capacity - 1)
         if worst_crit > 0:
             impact_reduce = COEFF_A_NE
             tirage = random.random()
-            if tirage * 100 < IMPROVEMENT_THRESHOLD:
+            # if tirage * 100 < IMPROVEMENT_THRESHOLD:
+            if tirage * 100 < self.avt.score:
                 if self.communication_capacity < len(self.decision_variable.keys()) - len(less_reliable):
                     self.communication_capacity += 1
+                self.avt.clean()
             # if self.criticality < 0 or abs(self.criticality) <= best_crit:
             #    self.communication_capacity = min(len(self.decision_variable.keys()), self.communication_capacity + 1)
         '''if worst_crit < 0:
@@ -335,6 +342,18 @@ class AgentStation:
         self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
         # print("NBUSELESS : " + str(nb_useless))
 
+    def histoAVT(self, worst_crit: float):
+        if worst_crit > 0 and self.last_worst_crit < 0:
+            self.avt.clean()
+        if worst_crit < 0 and self.last_worst_crit > 0:
+            self.avt.clean()
+        histo = worst_crit
+        if histo < 0:
+            histo = -1
+        if histo > 0:
+            histo = 1
+        self.avt.add_histo(histo)
+
     def __str__(self):
         return "Agent " + str(self.id_ag) + " Criticality : " + str(self.criticality) + "\n" + str(self.crits) \
                + " CommCapa: " + str(self.communication_capacity)
@@ -356,3 +375,4 @@ class AgentStation:
     def __repr__(self):
         return str(self)
         # return "Agent " + str(self.id_ag) + " Criticality : " + str(self.criticality)
+

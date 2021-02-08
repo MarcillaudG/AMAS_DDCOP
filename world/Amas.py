@@ -63,7 +63,7 @@ class Amas:
     def __beginExperimentDefault__(self) -> None:
         print("BEGIN of the test Experiment with parameters: " + str(self.all_var))
         self.environment = Environment(self.all_var["nb_data"])
-        self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
+        # self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
         # Creation of 9 agents
         for i in range(0, self.all_var["init_ag"]):
             # No limit for communication
@@ -74,14 +74,14 @@ class Amas:
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''
             self.agents.append(agent)
-            self.writer.addAgent(agent, 0)
+            # self.writer.addAgent(agent, 0)
             self.all_id_ag += 1
 
     # The method use to start the experiment
     def __beginExperiment__(self) -> None:
         self.network = Network(self.all_var["network_size"])
         self.environment = Environment(self.all_var["nb_data"])
-        self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
+        # self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
         # Creation of agents
         for i in range(0, self.all_var["init_ag"]):
             # Specification of agent
@@ -92,7 +92,7 @@ class Amas:
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''
             self.agents.append(agent)
-            self.writer.addAgent(agent, 0)
+            # self.writer.addAgent(agent, 0)
             self.all_id_ag += 1
         self.writerCSV = CSVWriter(self.experiment, self.agents)
 
@@ -138,7 +138,7 @@ class Amas:
         self.writerCSV.writeLine(self.agents)
         for agent_to_r in ag_to_remove:
             self.agents.remove(agent_to_r)
-            self.writer.destroyAgent(agent_to_r.id_ag, self.cycle)
+            # self.writer.destroyAgent(agent_to_r.id_ag, self.cycle)
             del agent_to_r
             cpt += 1
         if cpt > 0:
@@ -151,7 +151,7 @@ class Amas:
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''
             self.agents.append(agent)
-            self.writer.addAgent(agent, self.cycle)
+            # self.writer.addAgent(agent, self.cycle)
             self.all_id_ag += 1
             cpt -= 1
 
@@ -175,7 +175,7 @@ class Amas:
                 i = i + 1
                 stop = input("Continue ? 0 stop / 1 continue")
         print("RUN ENDED WITHOUT ERROR")
-        self.writer.writeDCOP(self.environment)
+        # self.writer.writeDCOP(self.environment)
         self.logCriticality.endLog()
         self.writerCSV.end()
 

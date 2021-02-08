@@ -2,10 +2,10 @@ SIZE_HISTO = 10
 
 
 class AVT:
-    def __init__(self):
+    def __init__(self, score_init: float):
         self.histos = []
         self.delta = 1.0
-        self.score = 5.0
+        self.score = score_init
         self.acc = 2.0
         self.decc = 1.0 / 3.0
         self.ind_histo = 0
@@ -47,6 +47,7 @@ class AVT:
         self.score = 5.0
         self.acc = 2.0
         self.decc = 1.0 / 3.0
+        self.ind_histo = 0
 
     def __str__(self):
         return "DELTAT: " + str(self.delta) + " SCORE: " + str(self.score)
