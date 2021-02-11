@@ -9,6 +9,7 @@ from writers.DCOPWriter import DCOPWriter
 from writers.LogCriticality import LogCriticality
 from colorama import *
 
+
 class Amas:
     def __init__(self, experiment="DEFAULT", init_ag=9, proba_destr_agent=0.01, appar_ag=0.01, nb_data=20,
                  computation_max=10, variation_comp=0.25, communication_max=10, variation_comm=0.25,
@@ -63,7 +64,7 @@ class Amas:
     def __beginExperimentDefault__(self) -> None:
         print("BEGIN of the test Experiment with parameters: " + str(self.all_var))
         self.environment = Environment(self.all_var["nb_data"])
-        # self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
+        self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
         # Creation of 9 agents
         for i in range(0, self.all_var["init_ag"]):
             # No limit for communication
@@ -81,7 +82,7 @@ class Amas:
     def __beginExperiment__(self) -> None:
         self.network = Network(self.all_var["network_size"])
         self.environment = Environment(self.all_var["nb_data"])
-        # self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
+        self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
         # Creation of agents
         for i in range(0, self.all_var["init_ag"]):
             # Specification of agent
@@ -92,7 +93,7 @@ class Amas:
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''
             self.agents.append(agent)
-            # self.writer.addAgent(agent, 0)
+            self.writer.addAgent(agent, 0)
             self.all_id_ag += 1
         self.writerCSV = CSVWriter(self.experiment, self.agents)
 
@@ -151,7 +152,7 @@ class Amas:
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''
             self.agents.append(agent)
-            # self.writer.addAgent(agent, self.cycle)
+            self.writer.addAgent(agent, self.cycle)
             self.all_id_ag += 1
             cpt -= 1
 
@@ -175,7 +176,7 @@ class Amas:
                 i = i + 1
                 stop = input("Continue ? 0 stop / 1 continue")
         print("RUN ENDED WITHOUT ERROR")
-        # self.writer.writeDCOP(self.environment)
+        self.writer.writeDCOP(self.environment)
         self.logCriticality.endLog()
         self.writerCSV.end()
 
@@ -191,12 +192,12 @@ class Amas:
             str_to_write += "\n"
             j = 0
             while j < int(nb_col):
-                str_to_write += "|" + self.agents[i+j].strID() + "|\\ "
+                str_to_write += "|" + self.agents[i + j].strID() + "|\\ "
                 j += 1
             str_to_write += "\n"
             j = 0
             while j < int(nb_col):
-                str_to_write += "|" + self.agents[i+j].strCrit() + "|/ "
+                str_to_write += "|" + self.agents[i + j].strCrit() + "|/ "
                 j += 1
             str_to_write += "\n"
             j = 0
@@ -206,4 +207,3 @@ class Amas:
             print(Fore.RED + str_to_write)
             print(Style.RESET_ALL)
             i += nb_col
-

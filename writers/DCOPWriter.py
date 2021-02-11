@@ -89,7 +89,7 @@ class DCOPWriter:
                 var = all_var_ag[id_ag][i]
                 line_cong += " + " + str(var)
             # charge computation
-            file.write(space + "congestion_comput_ag"+str(id_ag) + ":\n" + space + space + "type: intention\n")
+            file.write(space + "congestion_comput_ag" + str(id_ag) + ":\n" + space + space + "type: intention\n")
             # function
             file.write(space + space + "function: |\n" + space + space + space + line_cong)
             # TODO Function
@@ -116,14 +116,19 @@ class DCOPWriter:
                 file.write(space + "C_utility_ag_" + str(ag_var))
                 file.write(":\n" + space + space + "type: intention\n" + space + space + "function: max([")
                 all_var_used = []
+                first = True
                 for other_ag_var_name in self.dict_env_var_to_ag_var[var][ag_var]:
+                    if not first:
+                        file.write(", ")
+                    else:
+                        first = False
                     file.write(other_ag_var_name + " * ")
-                    file.write(str(self.dict_env_var_to_ag_var[var][ag_var][other_ag_var_name]) + ", ")
+                    file.write(str(self.dict_env_var_to_ag_var[var][ag_var][other_ag_var_name]))
                     all_var_used.append(other_ag_var_name)
 
                 file.write("])\n\n")
                 # file.write(space + space + "variables: " + str(all_var_used) + "\n\n")
-        file_event = open(file_name+"_events.yaml", "w")
+        file_event = open(file_name + "_events.yaml", "w")
         # agents
         file.write("agents: [")
         list_agents = ""
@@ -131,7 +136,7 @@ class DCOPWriter:
             # file.write("a"+str(id_ag) + ",")
             if list_agents != "":
                 list_agents += ","
-            list_agents += "a"+str(id_ag)
+            list_agents += "a" + str(id_ag)
             cycle_begin = self.agents[id_ag]["CycleBegin"]
             file_event.write("AgentCreation:\na" + str(id_ag) + ": " + str(cycle_begin) + "\n")
             if "CycleEnd" in self.agents[id_ag].keys():
@@ -143,7 +148,7 @@ class DCOPWriter:
         ##################################################################################################
         # HOSTING COSTs
         ##################################################################################################
-        file.write("hosting_costs:\n" + space + "default: -10000\n")
+        '''file.write("hosting_costs:\n" + space + "default: -10000\n")
         for id_ag in self.agents.keys():
             file.write(space + "a" + str(id_ag) + ":\n" + space + "computations:\n")
             for var in self.agents[id_ag]["Variables"]:
@@ -151,7 +156,21 @@ class DCOPWriter:
             for var in self.agents[id_ag]["Variables"]:
                 file.write(space + space + str(var) + ": 0" + "\n")
         file.close()
-        file_event.close()
+        file_event.close()'''
+
+        file_distri = open("DCOP/distri_" + self.scenario + ".yaml", "w")
+        file_distri.write("distribution:\n")
+        for id_ag in self.agents.keys():
+            file_distri.write(space + "a" + str(id_ag) + ": [")
+            first = True
+            for var in self.agents[id_ag]["Variables"]:
+                if not first:
+                    file_distri.write(", ")
+                else:
+                    first = False
+                file_distri.write(var)
+            file_distri.write("]\n")
+        file_distri.close()
 
 
 class AgentAlreadyExistError:

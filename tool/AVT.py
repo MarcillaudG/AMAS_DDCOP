@@ -9,6 +9,7 @@ class AVT:
         self.acc = 2.0
         self.decc = 1.0 / 3.0
         self.ind_histo = 0
+        self.score_init= score_init
 
     def add_histo(self, value: int):
         if len(self.histos) < SIZE_HISTO:
@@ -20,7 +21,7 @@ class AVT:
         if len(self.histos) > 1:
             last_histo = self.ind_histo - 1
             if last_histo < 0:
-                last_histo = SIZE_HISTO -1
+                last_histo = SIZE_HISTO - 1
             if value == -1:
                 if self.histos[last_histo] == -1:
                     self.delta = self.delta * self.acc
@@ -44,7 +45,7 @@ class AVT:
     def clean(self):
         self.histos.clear()
         self.delta = 1.0
-        self.score = 5.0
+        self.score = self.score_init
         self.acc = 2.0
         self.decc = 1.0 / 3.0
         self.ind_histo = 0

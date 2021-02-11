@@ -1,5 +1,5 @@
 init_ag=9
-proba_destr_agent=0.005
+proba_destr_agent=0.00
 proba_appar_agent=0.0
 nb_data=100
 computation_max=50
