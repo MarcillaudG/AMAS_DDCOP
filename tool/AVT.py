@@ -25,7 +25,7 @@ class AVT:
             if value == -1:
                 if self.histos[last_histo] == -1:
                     self.delta = self.delta * self.acc
-                    self.score -= self.delta
+                    self.score += self.delta
                 if self.histos[last_histo] == 0:
                     self.score -= self.delta
                 if self.histos[last_histo] == 1:
