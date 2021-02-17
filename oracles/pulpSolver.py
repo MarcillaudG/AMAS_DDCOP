@@ -2,7 +2,7 @@ from pulp import *
 
 if __name__ == '__main__':
     print("SOLVING BEGIN")
-    file_name = "scenario_test_yaml.yaml"
+    file_name = "scenario1.yaml"
     file = open("../DCOP/" + file_name, "r")
     variables = {}
 
@@ -22,7 +22,6 @@ if __name__ == '__main__':
         # Objective
         # if "objective" in line_split[0]:
         #    model = pulp.LpProblem(file, pulp.LpMaximize)
-
 
         if switch == 0:
             if "variables" in line_split[0]:
@@ -49,15 +48,13 @@ if __name__ == '__main__':
                 for i in range(1, len(all_var_split)):
                     if "var" in all_var_split[i]:
                         if "\n" in all_var_split[i]:
-                            print("LA" + str(all_var_split[i].split("\n")[0]))
                             all_var_in_constraint.append(all_var_split[i].split("\n")[0])
                         else:
-                            print("ba" + all_var_split[i])
                             all_var_in_constraint.append(all_var_split[i])
             if "return" in line:
                 split_coma = line.split(",")
-                capa = split_coma[0][len(split_coma[0]) - 1]
-                print("ICI" + str(all_var_in_constraint))
+                split_coma_minus = split_coma[0].split("-")[2]
+                capa = split_coma_minus.lstrip()
                 model += lpSum([dict_vars[vn] for vn in all_var_in_constraint]) <= int(capa), name_constraint
 
             if "C_utili" in line:
@@ -74,7 +71,10 @@ if __name__ == '__main__':
                     vn = vn.split(" ")[0]
                     value = split_times[1].lstrip()
                     di[vn] = float(value)
-                    util[vn] = float(value)
+                    if vn in util.keys():
+                        util[vn] += float(value)
+                    else:
+                        util[vn] = float(value)
 
                     if vn not in already_added:
                         already_added[vn] = float(value)
@@ -92,6 +92,7 @@ if __name__ == '__main__':
         print(v.name, "=", v.varValue)
         file_result.write(v.name + ";" + str(v.varValue) + "\n")
         result += v.varValue * util[v.name[1:]]
+    file_result.write(str(model.objective) + "\n")
     file_result.write(str(result))
     file_result.close()
 

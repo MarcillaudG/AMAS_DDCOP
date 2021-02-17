@@ -26,7 +26,7 @@ class DCOPWriter:
                 self.agents[id_ag]["Variables"].append(str(ag.decision_variable[var]) + "_" + str(id_ag))
                 var_name = str(ag.decision_variable[var]) + "_" + str(id_ag)
                 self.dict_env_var_to_ag_var[var][var_name] = {}
-            self.agents[id_ag]["Computing"] = ag.computing_capacity
+            self.agents[id_ag]["Computing"] = ag.getComputingCapacity()
             self.agents[id_ag]["Communication"] = ag.communication_capacity
 
     # Precise the end cycle

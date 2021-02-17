@@ -376,3 +376,6 @@ class AgentStation:
         return str(self)
         # return "Agent " + str(self.id_ag) + " Criticality : " + str(self.criticality)
 
+    def getComputingCapacity(self):
+        return self.computing_capacity
+
