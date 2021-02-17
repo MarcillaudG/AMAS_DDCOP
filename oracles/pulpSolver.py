@@ -86,7 +86,13 @@ if __name__ == '__main__':
 
     print("Status:", LpStatus[model.status])
 
+    file_result = open("result.csv", "w")
+    result = 0.0
     for v in model.variables():
         print(v.name, "=", v.varValue)
+        file_result.write(v.name + ";" + str(v.varValue) + "\n")
+        result += v.varValue * util[v.name[1:]]
+    file_result.write(str(result))
+    file_result.close()
 
-    print("SCORE : ", value(model.objective))
+    file.close()

@@ -1,0 +1,381 @@
+name: scenario_test_yaml
+objective: max
+
+domains:
+    d: 
+        values: [0, 1]
+
+variables:
+    var0_0:
+        domain: d
+        initial_value: 0
+
+    var1_0:
+        domain: d
+        initial_value: 0
+
+    var2_0:
+        domain: d
+        initial_value: 0
+
+    var3_0:
+        domain: d
+        initial_value: 0
+
+    var4_0:
+        domain: d
+        initial_value: 0
+
+    var5_0:
+        domain: d
+        initial_value: 0
+
+    var6_0:
+        domain: d
+        initial_value: 0
+
+    var7_0:
+        domain: d
+        initial_value: 0
+
+    var8_0:
+        domain: d
+        initial_value: 0
+
+    var9_0:
+        domain: d
+        initial_value: 0
+
+    var10_0:
+        domain: d
+        initial_value: 0
+
+    var11_0:
+        domain: d
+        initial_value: 0
+
+    var12_0:
+        domain: d
+        initial_value: 0
+
+    var13_0:
+        domain: d
+        initial_value: 0
+
+    var14_0:
+        domain: d
+        initial_value: 0
+
+    var0_1:
+        domain: d
+        initial_value: 0
+
+    var1_1:
+        domain: d
+        initial_value: 0
+
+    var2_1:
+        domain: d
+        initial_value: 0
+
+    var3_1:
+        domain: d
+        initial_value: 0
+
+    var4_1:
+        domain: d
+        initial_value: 0
+
+    var5_1:
+        domain: d
+        initial_value: 0
+
+    var6_1:
+        domain: d
+        initial_value: 0
+
+    var7_1:
+        domain: d
+        initial_value: 0
+
+    var8_1:
+        domain: d
+        initial_value: 0
+
+    var9_1:
+        domain: d
+        initial_value: 0
+
+    var10_1:
+        domain: d
+        initial_value: 0
+
+    var11_1:
+        domain: d
+        initial_value: 0
+
+    var12_1:
+        domain: d
+        initial_value: 0
+
+    var13_1:
+        domain: d
+        initial_value: 0
+
+    var14_1:
+        domain: d
+        initial_value: 0
+
+    var0_2:
+        domain: d
+        initial_value: 0
+
+    var1_2:
+        domain: d
+        initial_value: 0
+
+    var2_2:
+        domain: d
+        initial_value: 0
+
+    var4_2:
+        domain: d
+        initial_value: 0
+
+    var5_2:
+        domain: d
+        initial_value: 0
+
+    var6_2:
+        domain: d
+        initial_value: 0
+
+    var7_2:
+        domain: d
+        initial_value: 0
+
+    var8_2:
+        domain: d
+        initial_value: 0
+
+    var9_2:
+        domain: d
+        initial_value: 0
+
+    var10_2:
+        domain: d
+        initial_value: 0
+
+    var11_2:
+        domain: d
+        initial_value: 0
+
+    var12_2:
+        domain: d
+        initial_value: 0
+
+    var13_2:
+        domain: d
+        initial_value: 0
+
+    var14_2:
+        domain: d
+        initial_value: 0
+
+constraints:
+    congestion_comput_ag0:
+        type: intention
+        function: |
+            a= var0_1 + var1_1 + var2_1 + var3_1 + var4_1 + var5_1 + var6_1 + var7_1 + var8_1 + var9_1 + var10_1 + var11_1 + var12_1 + var13_1 + var14_1 + var0_2 + var1_2 + var2_2 + var4_2 + var5_2 + var6_2 + var7_2 + var8_2 + var9_2 + var10_2 + var11_2 + var12_2 + var13_2 + var14_2
+            return - max(a - 8, 0)
+
+    congestion_comput_ag1:
+        type: intention
+        function: |
+            a= var0_0 + var1_0 + var2_0 + var3_0 + var4_0 + var5_0 + var6_0 + var7_0 + var8_0 + var9_0 + var10_0 + var11_0 + var12_0 + var13_0 + var14_0 + var0_2 + var1_2 + var2_2 + var4_2 + var5_2 + var6_2 + var7_2 + var8_2 + var9_2 + var10_2 + var11_2 + var12_2 + var13_2 + var14_2
+            return - max(a - 8, 0)
+
+    congestion_comput_ag2:
+        type: intention
+        function: |
+            a= var0_0 + var1_0 + var2_0 + var3_0 + var4_0 + var5_0 + var6_0 + var7_0 + var8_0 + var9_0 + var10_0 + var11_0 + var12_0 + var13_0 + var14_0 + var0_1 + var1_1 + var2_1 + var3_1 + var4_1 + var5_1 + var6_1 + var7_1 + var8_1 + var9_1 + var10_1 + var11_1 + var12_1 + var13_1 + var14_1
+            return - max(a - 8, 0)
+
+    C_utility_ag_var0_0:
+        type: intention
+        function: max([var0_0 * 3.6139529873705394, var0_1 * 8.618461755871866, var0_2 * 6.7967026838423426, ])
+
+    C_utility_ag_var0_1:
+        type: intention
+        function: max([var0_0 * 3.6139529873705394, var0_1 * 8.618461755871866, var0_2 * 6.7967026838423426, ])
+
+    C_utility_ag_var0_2:
+        type: intention
+        function: max([var0_0 * 3.6139529873705394, var0_1 * 8.618461755871866, var0_2 * 6.7967026838423426, ])
+
+    C_utility_ag_var1_0:
+        type: intention
+        function: max([var1_0 * 4.064232007584017, var1_1 * 5.601588083641014, var1_2 * 4.228584372909601, ])
+
+    C_utility_ag_var1_1:
+        type: intention
+        function: max([var1_0 * 4.064232007584017, var1_1 * 5.601588083641014, var1_2 * 4.228584372909601, ])
+
+    C_utility_ag_var1_2:
+        type: intention
+        function: max([var1_0 * 4.064232007584017, var1_1 * 5.601588083641014, var1_2 * 4.228584372909601, ])
+
+    C_utility_ag_var2_0:
+        type: intention
+        function: max([var2_0 * 5.334862811152895, var2_1 * 4.438364945597059, var2_2 * 8.338292112359651, ])
+
+    C_utility_ag_var2_1:
+        type: intention
+        function: max([var2_0 * 5.334862811152895, var2_1 * 4.438364945597059, var2_2 * 8.338292112359651, ])
+
+    C_utility_ag_var2_2:
+        type: intention
+        function: max([var2_0 * 5.334862811152895, var2_1 * 4.438364945597059, var2_2 * 8.338292112359651, ])
+
+    C_utility_ag_var3_0:
+        type: intention
+        function: max([var3_0 * 7.365096233988128, var3_1 * 5.6553701594062895, ])
+
+    C_utility_ag_var3_1:
+        type: intention
+        function: max([var3_0 * 7.365096233988128, var3_1 * 5.6553701594062895, ])
+
+    C_utility_ag_var4_0:
+        type: intention
+        function: max([var4_0 * 4.1588217461667885, var4_1 * 3.342769582578807, var4_2 * 2.2885958120166396, ])
+
+    C_utility_ag_var4_1:
+        type: intention
+        function: max([var4_0 * 4.1588217461667885, var4_1 * 3.342769582578807, var4_2 * 2.2885958120166396, ])
+
+    C_utility_ag_var4_2:
+        type: intention
+        function: max([var4_0 * 4.1588217461667885, var4_1 * 3.342769582578807, var4_2 * 2.2885958120166396, ])
+
+    C_utility_ag_var5_0:
+        type: intention
+        function: max([var5_0 * 6.335044694863729, var5_1 * 5.9263262039451625, var5_2 * 5.47625071638305, ])
+
+    C_utility_ag_var5_1:
+        type: intention
+        function: max([var5_0 * 6.335044694863729, var5_1 * 5.9263262039451625, var5_2 * 5.47625071638305, ])
+
+    C_utility_ag_var5_2:
+        type: intention
+        function: max([var5_0 * 6.335044694863729, var5_1 * 5.9263262039451625, var5_2 * 5.47625071638305, ])
+
+    C_utility_ag_var6_0:
+        type: intention
+        function: max([var6_0 * 4.105419158702894, var6_1 * 4.6453871747193345, var6_2 * 6.465650308612369, ])
+
+    C_utility_ag_var6_1:
+        type: intention
+        function: max([var6_0 * 4.105419158702894, var6_1 * 4.6453871747193345, var6_2 * 6.465650308612369, ])
+
+    C_utility_ag_var6_2:
+        type: intention
+        function: max([var6_0 * 4.105419158702894, var6_1 * 4.6453871747193345, var6_2 * 6.465650308612369, ])
+
+    C_utility_ag_var7_0:
+        type: intention
+        function: max([var7_0 * 2.508697765388848, var7_1 * 5.244697937609038, var7_2 * 3.597512954203085, ])
+
+    C_utility_ag_var7_1:
+        type: intention
+        function: max([var7_0 * 2.508697765388848, var7_1 * 5.244697937609038, var7_2 * 3.597512954203085, ])
+
+    C_utility_ag_var7_2:
+        type: intention
+        function: max([var7_0 * 2.508697765388848, var7_1 * 5.244697937609038, var7_2 * 3.597512954203085, ])
+
+    C_utility_ag_var8_0:
+        type: intention
+        function: max([var8_0 * 8.04646079858075, var8_1 * 3.4215489702921116, var8_2 * 3.362395871951686, ])
+
+    C_utility_ag_var8_1:
+        type: intention
+        function: max([var8_0 * 8.04646079858075, var8_1 * 3.4215489702921116, var8_2 * 3.362395871951686, ])
+
+    C_utility_ag_var8_2:
+        type: intention
+        function: max([var8_0 * 8.04646079858075, var8_1 * 3.4215489702921116, var8_2 * 3.362395871951686, ])
+
+    C_utility_ag_var9_0:
+        type: intention
+        function: max([var9_0 * 4.752274524910306, var9_1 * 5.91519272423782, var9_2 * 4.306685537654069, ])
+
+    C_utility_ag_var9_1:
+        type: intention
+        function: max([var9_0 * 4.752274524910306, var9_1 * 5.91519272423782, var9_2 * 4.306685537654069, ])
+
+    C_utility_ag_var9_2:
+        type: intention
+        function: max([var9_0 * 4.752274524910306, var9_1 * 5.91519272423782, var9_2 * 4.306685537654069, ])
+
+    C_utility_ag_var10_0:
+        type: intention
+        function: max([var10_0 * 6.473862805929968, var10_1 * 4.374724380796731, var10_2 * 5.570336846965283, ])
+
+    C_utility_ag_var10_1:
+        type: intention
+        function: max([var10_0 * 6.473862805929968, var10_1 * 4.374724380796731, var10_2 * 5.570336846965283, ])
+
+    C_utility_ag_var10_2:
+        type: intention
+        function: max([var10_0 * 6.473862805929968, var10_1 * 4.374724380796731, var10_2 * 5.570336846965283, ])
+
+    C_utility_ag_var11_0:
+        type: intention
+        function: max([var11_0 * 6.268103702412374, var11_1 * 5.430449086712307, var11_2 * 5.652775763358736, ])
+
+    C_utility_ag_var11_1:
+        type: intention
+        function: max([var11_0 * 6.268103702412374, var11_1 * 5.430449086712307, var11_2 * 5.652775763358736, ])
+
+    C_utility_ag_var11_2:
+        type: intention
+        function: max([var11_0 * 6.268103702412374, var11_1 * 5.430449086712307, var11_2 * 5.652775763358736, ])
+
+    C_utility_ag_var12_0:
+        type: intention
+        function: max([var12_0 * 7.370907209714769, var12_1 * 5.243180303803221, var12_2 * 4.587231831321741, ])
+
+    C_utility_ag_var12_1:
+        type: intention
+        function: max([var12_0 * 7.370907209714769, var12_1 * 5.243180303803221, var12_2 * 4.587231831321741, ])
+
+    C_utility_ag_var12_2:
+        type: intention
+        function: max([var12_0 * 7.370907209714769, var12_1 * 5.243180303803221, var12_2 * 4.587231831321741, ])
+
+    C_utility_ag_var13_0:
+        type: intention
+        function: max([var13_0 * 7.650671501346984, var13_1 * 4.578295450555978, var13_2 * 5.762893610310213, ])
+
+    C_utility_ag_var13_1:
+        type: intention
+        function: max([var13_0 * 7.650671501346984, var13_1 * 4.578295450555978, var13_2 * 5.762893610310213, ])
+
+    C_utility_ag_var13_2:
+        type: intention
+        function: max([var13_0 * 7.650671501346984, var13_1 * 4.578295450555978, var13_2 * 5.762893610310213, ])
+
+    C_utility_ag_var14_0:
+        type: intention
+        function: max([var14_0 * 3.821266627684311, var14_1 * 6.515753778637578, var14_2 * 7.23831224344191, ])
+
+    C_utility_ag_var14_1:
+        type: intention
+        function: max([var14_0 * 3.821266627684311, var14_1 * 6.515753778637578, var14_2 * 7.23831224344191, ])
+
+    C_utility_ag_var14_2:
+        type: intention
+        function: max([var14_0 * 3.821266627684311, var14_1 * 6.515753778637578, var14_2 * 7.23831224344191, ])
+
+agents: [a0,a1,a2]
+
