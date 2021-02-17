@@ -1,9 +1,10 @@
 from pulp import *
 
-if __name__ == '__main__':
+
+def run(scenario: str) -> None:
     print("SOLVING BEGIN")
-    file_name = "scenario1.yaml"
-    file = open("../DCOP/" + file_name, "r")
+    file_name = scenario + ".yaml"
+    file = open("DCOP/" + file_name, "r")
     variables = {}
 
     switch = 0
@@ -80,20 +81,29 @@ if __name__ == '__main__':
                         already_added[vn] = float(value)
                 model += lpSum([dict_vars[vn] for vn in di.keys()]) <= 1, name_constraint
     model += lpSum([dict_vars[vn] * util[vn] for vn in already_added.keys()]), "obj"
-    model.writeLP("SocialCAV.lp")
+    model.writeLP("oracles/SocialCAV.lp")
     print(str(model.variables()))
     model.solve()
 
     print("Status:", LpStatus[model.status])
 
-    file_result = open("result.csv", "w")
+    file_result = open("oracles/result_" + file_name + ".csv", "w")
     result = 0.0
+    sum_message = 0
     for v in model.variables():
         print(v.name, "=", v.varValue)
         file_result.write(v.name + ";" + str(v.varValue) + "\n")
         result += v.varValue * util[v.name[1:]]
+        sum_message += v.varValue
     file_result.write(str(model.objective) + "\n")
-    file_result.write(str(result))
+    file_result.write(str(result) + "\n")
+    file_result.write(str(sum_message))
     file_result.close()
 
     file.close()
+
+
+if __name__ == '__main__':
+    print("SOLVING BEGIN")
+    file_name = "scenario1.yaml"
+    run(file_name)

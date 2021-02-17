@@ -229,7 +229,7 @@ class AgentStation:
 
         # copy the decision variable
         for env_var in self.decision_variable.keys():
-            var_used[env_var] = self.decision_variable[env_var].reliability
+            var_used[env_var] = 0.0
 
         # select the best messages in the receive order
         # if it cannot compute more, it doest treat anymore
