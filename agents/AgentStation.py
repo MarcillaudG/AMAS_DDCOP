@@ -240,6 +240,10 @@ class AgentStation:
                         if var_used[mess.name] < self.environment.distribution_gauss_sensed[mess.name][mess.sender]:
                             var_used[mess.name] = self.environment.distribution_gauss_sensed[mess.name][mess.sender]
                             sum_weight += mess.weight
+            else:
+                if var_used[mess.name] < self.environment.distribution_gauss_sensed[mess.name][mess.sender]:
+                    var_used[mess.name] = self.environment.distribution_gauss_sensed[mess.name][mess.sender]
+                    sum_weight += mess.weight
         # compute the efficiency
         for var_name in var_used.keys():
             efficiency += var_used[var_name]

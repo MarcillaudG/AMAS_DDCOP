@@ -9,12 +9,13 @@ class CSVWriter:
             self.file.write(str(agent.id_ag) + separator)
         self.file.write("max_crit" + separator)
         self.file.write("moyenne" + separator)
+        self.file.write("resultat" + separator)
         self.file.write("creation" + separator)
         self.file.write("destruction" + "\n")
         self.last_agents = []
         self.last_agents.extend(agents)
 
-    def writeLine(self, agents: []) -> None:
+    def writeLine(self, agents: [], total: float) -> None:
         max_crit = 0.0
         moyenne = 0.0
         new = []
@@ -32,6 +33,7 @@ class CSVWriter:
         self.file.write(str(max_crit) + separator)
         moyenne = moyenne / len(agents)
         self.file.write(str(moyenne) + separator)
+        self.file.write(str(total) + separator)
 
         for ag in new:
             self.file.write(str(ag.id_ag) + "|")

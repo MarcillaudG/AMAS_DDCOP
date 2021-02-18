@@ -82,16 +82,12 @@ def run(scenario: str) -> None:
                 model += lpSum([dict_vars[vn] for vn in di.keys()]) <= 1, name_constraint
     model += lpSum([dict_vars[vn] * util[vn] for vn in already_added.keys()]), "obj"
     model.writeLP("oracles/SocialCAV.lp")
-    print(str(model.variables()))
     model.solve()
-
-    print("Status:", LpStatus[model.status])
 
     file_result = open("oracles/result_" + file_name + ".csv", "w")
     result = 0.0
     sum_message = 0
     for v in model.variables():
-        print(v.name, "=", v.varValue)
         file_result.write(v.name + ";" + str(v.varValue) + "\n")
         result += v.varValue * util[v.name[1:]]
         sum_message += v.varValue

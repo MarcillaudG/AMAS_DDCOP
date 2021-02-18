@@ -9,6 +9,8 @@ from writers.DCOPWriter import DCOPWriter
 from writers.LogCriticality import LogCriticality
 from colorama import *
 
+from writers.NetworkWriter import NetworkWriter
+
 
 class Amas:
     def __init__(self, experiment="DEFAULT", init_ag=9, proba_destr_agent=0.01, appar_ag=0.01, nb_data=20,
@@ -96,6 +98,7 @@ class Amas:
             self.writer.addAgent(agent, 0)
             self.all_id_ag += 1
         self.writerCSV = CSVWriter(self.experiment, self.agents)
+        self.writerNetwork = NetworkWriter(self.experiment)
 
     # First implementation, messages are sent to all
     def send_messages(self, to_send: [Message]) -> None:
@@ -136,7 +139,8 @@ class Amas:
         print("NBMESSAGES : " + str(self.network.nb_messages()))
         cpt = 0
         self.logCriticality.writeCriticality(self.cycle, self.agents)
-        self.writerCSV.writeLine(self.agents)
+        self.writerCSV.writeLine(self.agents, total)
+        self.writerNetwork.writeCycle(self.cycle, self.network)
         for agent_to_r in ag_to_remove:
             self.agents.remove(agent_to_r)
             # self.writer.destroyAgent(agent_to_r.id_ag, self.cycle)
@@ -179,6 +183,7 @@ class Amas:
         self.writer.writeDCOP(self.environment)
         self.logCriticality.endLog()
         self.writerCSV.end()
+        self.writerNetwork.end()
 
     def __drawAgent__(self) -> None:
         i = 0
