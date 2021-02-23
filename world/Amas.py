@@ -82,13 +82,16 @@ class Amas:
 
     # The method use to start the experiment
     def __beginExperiment__(self) -> None:
+        self.distri_capa = [random.gauss(self.all_var["computation_max"],
+                                         self.all_var["variation_comp"]) for i in range(1000)]
         self.network = Network(self.all_var["network_size"])
         self.environment = Environment(self.all_var["nb_data"])
         self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
         # Creation of agents
         for i in range(0, self.all_var["init_ag"]):
             # Specification of agent
-            agent = AgentStation(self.all_id_ag, computing_capacity=self.all_var["computation_max"],
+            agent = AgentStation(self.all_id_ag,
+                                 computing_capacity=int(self.distri_capa[self.all_id_ag % len(self.distri_capa)]),
                                  communication_capacity=self.all_var["communication_max"],
                                  environment=self.environment, network=self.network)
             '''self.agents.append(AgentStation(self.all_id_ag, computing_capacity=self.all_var["computation_max"],

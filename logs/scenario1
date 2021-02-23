@@ -23,2178 +23,2178 @@ WORST AGENT: 0 With 100.0
 #################################################
 Cycle: 1
 #################################################
-Agent 0 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 1 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 2 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 0 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 1 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 2 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
 Agent 3 Criticality : 100.0
-{1: 100.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 4 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 5 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 6 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 7 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 8 Criticality : 98.0
-{1: 98.0, 2: 0.0, 3: 0} CommCapa: 0
-WORST AGENT: 3 With 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 4 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 5 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 6 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 7 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 8 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+WORST AGENT: 0 With 100.0
 #################################################
 Cycle: 2
 #################################################
-Agent 0 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 1 Criticality : 96.0
-{1: 96.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 2 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 3 Criticality : 96.0
-{1: 96.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 4 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 5 Criticality : 96.0
-{1: 96.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 6 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 7 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 8 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 0
-WORST AGENT: 1 With 96.0
+Agent 0 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 1 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 2 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 3 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 4 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 5 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 6 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 7 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 8 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+WORST AGENT: 0 With 100.0
 #################################################
 Cycle: 3
 #################################################
-Agent 0 Criticality : 92.0
-{1: 92.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 1 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 2 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 3 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 4 Criticality : 92.0
-{1: 92.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 5 Criticality : 94.0
-{1: 94.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 6 Criticality : 92.0
-{1: 92.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 7 Criticality : 92.0
-{1: 92.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 8 Criticality : 92.0
-{1: 92.0, 2: 0.0, 3: 0} CommCapa: 0
-WORST AGENT: 1 With 94.0
+Agent 0 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 1 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 2 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 3 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 4 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 5 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 6 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 7 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+Agent 8 Criticality : 100.0
+{1: 100.0, 2: 0.0, 3: 0} CommCapa: 0
+WORST AGENT: 0 With 100.0
 #################################################
 Cycle: 4
 #################################################
-Agent 0 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 1 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 2 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 3 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 4 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 5 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 6 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 7 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 8 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-WORST AGENT: 1 With 88.0
+Agent 0 Criticality : 96.07843137254902
+{1: 96.07843137254902, 2: 0.0, 3: 0} CommCapa: 0
+Agent 1 Criticality : 96.22641509433963
+{1: 96.22641509433963, 2: 0.0, 3: 0} CommCapa: 0
+Agent 2 Criticality : 95.45454545454545
+{1: 95.45454545454545, 2: 0.0, 3: 0} CommCapa: 0
+Agent 3 Criticality : 95.91836734693877
+{1: 95.91836734693877, 2: 0.0, 3: 0} CommCapa: 0
+Agent 4 Criticality : 84.12246351014595
+{1: 84.12246351014595, 2: 0.0, 3: 0} CommCapa: 0
+Agent 5 Criticality : 95.83333333333334
+{1: 95.83333333333334, 2: 0.0, 3: 0} CommCapa: 0
+Agent 6 Criticality : 97.87234042553192
+{1: 97.87234042553192, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 7 Criticality : 96.22641509433963
+{1: 96.22641509433963, 2: 0.0, 3: 0} CommCapa: 0
+Agent 8 Criticality : 97.95918367346938
+{1: 97.95918367346938, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+WORST AGENT: 8 With 97.95918367346938
 #################################################
 Cycle: 5
 #################################################
-Agent 0 Criticality : 84.0
-{1: 84.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 1 Criticality : 88.0
-{1: 88.0, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 2 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 3 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 4 Criticality : 84.0
-{1: 84.0, 2: 0.0, 3: 0} CommCapa: 0
-Agent 5 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 6 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 7 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 8 Criticality : 86.0
-{1: 86.0, 2: 0.0, 3: 0} CommCapa: 1
-WORST AGENT: 1 With 88.0
+Agent 0 Criticality : 90.19607843137256
+{1: 90.19607843137256, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 1 Criticality : 88.67924528301887
+{1: 88.67924528301887, 2: 0.0, 3: 0} CommCapa: 0
+Agent 2 Criticality : 88.63636363636364
+{1: 88.63636363636364, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 3 Criticality : 87.75510204081633
+{1: 87.75510204081633, 2: 0.0, 3: 0} CommCapa: 0
+Agent 4 Criticality : 67.78212887148452
+{1: 67.78212887148452, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 5 Criticality : 87.5
+{1: 87.5, 2: 0.0, 3: 0} CommCapa: 0
+Agent 6 Criticality : 89.36170212765957
+{1: 89.36170212765957, 2: 0.0, 3: 0} CommCapa: 1
+Agent 7 Criticality : 90.56603773584906
+{1: 90.56603773584906, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 8 Criticality : 89.79591836734694
+{1: 89.79591836734694, 2: 0.0, 3: 0} CommCapa: 1
+WORST AGENT: 7 With 90.56603773584906
 #################################################
 Cycle: 6
 #################################################
-Agent 0 Criticality : 78.0
-{1: 78.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 1 Criticality : 80.0
-{1: 80.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 2 Criticality : 80.0
-{1: 80.0, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 3 Criticality : 80.0
-{1: 80.0, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 4 Criticality : 78.0
-{1: 78.0, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
-Agent 5 Criticality : 78.0
-{1: 78.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 6 Criticality : 78.0
-{1: 78.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 7 Criticality : 78.0
-{1: 78.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 8 Criticality : 78.0
-{1: 78.0, 2: 0.0, 3: 0} CommCapa: 1
-WORST AGENT: 1 With 80.0
+Agent 0 Criticality : 80.3921568627451
+{1: 80.3921568627451, 2: 0.0, 3: 0} CommCapa: 1
+Agent 1 Criticality : 70.92678295953482
+{1: 70.92678295953482, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 2 Criticality : 79.54545454545455
+{1: 79.54545454545455, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 3 Criticality : 79.59183673469387
+{1: 79.59183673469387, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 4 Criticality : 60.721490447371544
+{1: 60.721490447371544, 2: 0.0, 3: 0} CommCapa: 1
+Agent 5 Criticality : 79.16666666666666
+{1: 79.16666666666666, 2: 0.0, 3: 0} CommCapa: 1 Modif : 1
+Agent 6 Criticality : 78.72340425531915
+{1: 78.72340425531915, 2: 0.0, 3: 0} CommCapa: 1
+Agent 7 Criticality : 70.92678295953482
+{1: 70.92678295953482, 2: 0.0, 3: 0} CommCapa: 1
+Agent 8 Criticality : 81.63265306122449
+{1: 81.63265306122449, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+WORST AGENT: 8 With 81.63265306122449
 #################################################
 Cycle: 7
 #################################################
-Agent 0 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 1 Criticality : 78.0
-{1: 78.0, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 2 Criticality : 76.0
-{1: 76.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 3 Criticality : 76.0
-{1: 76.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 4 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 5 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 6 Criticality : 76.0
-{1: 76.0, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 7 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 8 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 1
-WORST AGENT: 1 With 78.0
+Agent 0 Criticality : 80.3921568627451
+{1: 80.3921568627451, 2: 0.0, 3: 0} CommCapa: 1
+Agent 1 Criticality : 70.92678295953482
+{1: 70.92678295953482, 2: 0.0, 3: 0} CommCapa: 1
+Agent 2 Criticality : 79.54545454545455
+{1: 79.54545454545455, 2: 0.0, 3: 0} CommCapa: 2
+Agent 3 Criticality : 79.59183673469387
+{1: 79.59183673469387, 2: 0.0, 3: 0} CommCapa: 1
+Agent 4 Criticality : 60.721490447371544
+{1: 60.721490447371544, 2: 0.0, 3: 0} CommCapa: 1
+Agent 5 Criticality : 79.16666666666666
+{1: 79.16666666666666, 2: 0.0, 3: 0} CommCapa: 1
+Agent 6 Criticality : 78.72340425531915
+{1: 78.72340425531915, 2: 0.0, 3: 0} CommCapa: 1
+Agent 7 Criticality : 70.92678295953482
+{1: 70.92678295953482, 2: 0.0, 3: 0} CommCapa: 1
+Agent 8 Criticality : 81.63265306122449
+{1: 81.63265306122449, 2: 0.0, 3: 0} CommCapa: 2
+WORST AGENT: 8 With 81.63265306122449
 #################################################
 Cycle: 8
 #################################################
-Agent 0 Criticality : 72.0
-{1: 72.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 1 Criticality : 76.0
-{1: 76.0, 2: 0.0, 3: 0} CommCapa: 3
-Agent 2 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 3 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 4 Criticality : 72.0
-{1: 72.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 5 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 6 Criticality : 74.0
-{1: 74.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 7 Criticality : 72.0
-{1: 72.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 8 Criticality : 72.0
-{1: 72.0, 2: 0.0, 3: 0} CommCapa: 1
-WORST AGENT: 1 With 76.0
+Agent 0 Criticality : 80.3921568627451
+{1: 80.3921568627451, 2: 0.0, 3: 0} CommCapa: 1
+Agent 1 Criticality : 70.92678295953482
+{1: 70.92678295953482, 2: 0.0, 3: 0} CommCapa: 1
+Agent 2 Criticality : 79.54545454545455
+{1: 79.54545454545455, 2: 0.0, 3: 0} CommCapa: 2
+Agent 3 Criticality : 79.59183673469387
+{1: 79.59183673469387, 2: 0.0, 3: 0} CommCapa: 1
+Agent 4 Criticality : 60.721490447371544
+{1: 60.721490447371544, 2: 0.0, 3: 0} CommCapa: 1
+Agent 5 Criticality : 79.16666666666666
+{1: 79.16666666666666, 2: 0.0, 3: 0} CommCapa: 1
+Agent 6 Criticality : 78.72340425531915
+{1: 78.72340425531915, 2: 0.0, 3: 0} CommCapa: 1
+Agent 7 Criticality : 70.92678295953482
+{1: 70.92678295953482, 2: 0.0, 3: 0} CommCapa: 1
+Agent 8 Criticality : 81.63265306122449
+{1: 81.63265306122449, 2: 0.0, 3: 0} CommCapa: 2
+WORST AGENT: 8 With 81.63265306122449
 #################################################
 Cycle: 9
 #################################################
-Agent 0 Criticality : 68.0
-{1: 68.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 1 Criticality : 72.0
-{1: 72.0, 2: 0.0, 3: 0} CommCapa: 3
-Agent 2 Criticality : 72.0
-{1: 72.0, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 3 Criticality : 72.0
-{1: 72.0, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 4 Criticality : 49.86666666666667
-{1: 49.86666666666667, 2: 0.0, 3: 0} CommCapa: 1
-Agent 5 Criticality : 70.0
-{1: 70.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 6 Criticality : 60.666666666666664
-{1: 60.666666666666664, 2: 0.0, 3: 0} CommCapa: 2
-Agent 7 Criticality : 68.0
-{1: 68.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 8 Criticality : 68.0
-{1: 68.0, 2: 0.0, 3: 0} CommCapa: 1
-WORST AGENT: 1 With 72.0
+Agent 0 Criticality : 78.43137254901961
+{1: 78.43137254901961, 2: 0.0, 3: 0} CommCapa: 1
+Agent 1 Criticality : 69.27732289070843
+{1: 69.27732289070843, 2: 0.0, 3: 0} CommCapa: 1
+Agent 2 Criticality : 77.27272727272727
+{1: 77.27272727272727, 2: 0.0, 3: 0} CommCapa: 2
+Agent 3 Criticality : 77.55102040816327
+{1: 77.55102040816327, 2: 0.0, 3: 0} CommCapa: 1
+Agent 4 Criticality : 59.30936276254895
+{1: 59.30936276254895, 2: 0.0, 3: 0} CommCapa: 1
+Agent 5 Criticality : 79.16666666666666
+{1: 79.16666666666666, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 6 Criticality : 76.59574468085107
+{1: 76.59574468085107, 2: 0.0, 3: 0} CommCapa: 1
+Agent 7 Criticality : 69.27732289070843
+{1: 69.27732289070843, 2: 0.0, 3: 0} CommCapa: 1
+Agent 8 Criticality : 79.59183673469387
+{1: 79.59183673469387, 2: 0.0, 3: 0} CommCapa: 2
+WORST AGENT: 8 With 79.59183673469387
 #################################################
 Cycle: 10
 #################################################
-Agent 0 Criticality : 62.0
-{1: 62.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 1 Criticality : 66.0
-{1: 66.0, 2: 0.0, 3: 0} CommCapa: 3
-Agent 2 Criticality : 66.0
-{1: 66.0, 2: 0.0, 3: 0} CommCapa: 3
-Agent 3 Criticality : 68.0
-{1: 68.0, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 4 Criticality : 45.46666666666666
-{1: 45.46666666666666, 2: 0.0, 3: 0} CommCapa: 1
-Agent 5 Criticality : 64.0
-{1: 64.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 6 Criticality : 57.2
-{1: 57.2, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 7 Criticality : 53.733333333333334
-{1: 53.733333333333334, 2: 0.0, 3: 0} CommCapa: 1
-Agent 8 Criticality : 64.0
-{1: 64.0, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-WORST AGENT: 3 With 68.0
+Agent 0 Criticality : 72.54901960784314
+{1: 72.54901960784314, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 1 Criticality : 62.67948261540286
+{1: 62.67948261540286, 2: 0.0, 3: 0} CommCapa: 1
+Agent 2 Criticality : 68.18181818181817
+{1: 68.18181818181817, 2: 0.0, 3: 0} CommCapa: 2
+Agent 3 Criticality : 69.38775510204081
+{1: 69.38775510204081, 2: 0.0, 3: 0} CommCapa: 1
+Agent 4 Criticality : 55.072979708081164
+{1: 55.072979708081164, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 5 Criticality : 70.83333333333334
+{1: 70.83333333333334, 2: 0.0, 3: 0} CommCapa: 2
+Agent 6 Criticality : 70.2127659574468
+{1: 70.2127659574468, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 7 Criticality : 64.32894268422925
+{1: 64.32894268422925, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 8 Criticality : 71.42857142857143
+{1: 71.42857142857143, 2: 0.0, 3: 0} CommCapa: 2
+WORST AGENT: 0 With 72.54901960784314
 #################################################
 Cycle: 11
 #################################################
-Agent 0 Criticality : 52.0
-{1: 52.0, 2: 0.0, 3: 0} CommCapa: 1
-Agent 1 Criticality : 55.46666666666667
-{1: 55.46666666666667, 2: 0.0, 3: 0} CommCapa: 3
-Agent 2 Criticality : 55.46666666666667
-{1: 55.46666666666667, 2: 0.0, 3: 0} CommCapa: 3
-Agent 3 Criticality : 57.2
-{1: 57.2, 2: 0.0, 3: 0} CommCapa: 4
-Agent 4 Criticality : 32.8
-{1: 36.0, 2: 0.0, 3: 3.200000000000003} CommCapa: 1
-Agent 5 Criticality : 53.733333333333334
-{1: 53.733333333333334, 2: 0.0, 3: 0} CommCapa: 2
-Agent 6 Criticality : 55.46666666666667
-{1: 55.46666666666667, 2: 0.0, 3: 0} CommCapa: 3
-Agent 7 Criticality : 53.733333333333334
-{1: 53.733333333333334, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 8 Criticality : 53.733333333333334
-{1: 53.733333333333334, 2: 0.0, 3: 0} CommCapa: 2
-WORST AGENT: 3 With 57.2
+Agent 0 Criticality : 66.66666666666666
+{1: 66.66666666666666, 2: 0.0, 3: 0} CommCapa: 2
+Agent 1 Criticality : 57.73110240892369
+{1: 57.73110240892369, 2: 0.0, 3: 0} CommCapa: 1
+Agent 2 Criticality : 63.63636363636363
+{1: 63.63636363636363, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 3 Criticality : 65.3061224489796
+{1: 65.3061224489796, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 4 Criticality : 50.836596653613384
+{1: 50.836596653613384, 2: 0.0, 3: 0} CommCapa: 2
+Agent 5 Criticality : 64.58333333333334
+{1: 64.58333333333334, 2: 0.0, 3: 0} CommCapa: 2
+Agent 6 Criticality : 63.829787234042556
+{1: 63.829787234042556, 2: 0.0, 3: 0} CommCapa: 2
+Agent 7 Criticality : 59.38056247775008
+{1: 59.38056247775008, 2: 0.0, 3: 0} CommCapa: 2
+Agent 8 Criticality : 67.3469387755102
+{1: 67.3469387755102, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+WORST AGENT: 8 With 67.3469387755102
 #################################################
 Cycle: 12
 #################################################
-Agent 0 Criticality : 48.53333333333334
-{1: 48.53333333333334, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 1 Criticality : 52.0
-{1: 52.0, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 2 Criticality : 57.99999999999999
-{1: 57.99999999999999, 2: 0.0, 3: 0} CommCapa: 3
-Agent 3 Criticality : 52.0
-{1: 52.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 4 Criticality : 41.06666666666667
-{1: 41.06666666666667, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
-Agent 5 Criticality : 48.53333333333334
-{1: 48.53333333333334, 2: 0.0, 3: 0} CommCapa: 2
-Agent 6 Criticality : 42.533333333333324
-{1: 42.533333333333324, 2: 0.0, 3: 0} CommCapa: 3
-Agent 7 Criticality : 48.53333333333334
-{1: 48.53333333333334, 2: 0.0, 3: 0} CommCapa: 2
-Agent 8 Criticality : 41.06666666666667
-{1: 41.06666666666667, 2: 0.0, 3: 0} CommCapa: 2
-WORST AGENT: 2 With 57.99999999999999
+Agent 0 Criticality : 66.66666666666666
+{1: 66.66666666666666, 2: 0.0, 3: 0} CommCapa: 2
+Agent 1 Criticality : 57.73110240892369
+{1: 57.73110240892369, 2: 0.0, 3: 0} CommCapa: 1
+Agent 2 Criticality : 63.63636363636363
+{1: 63.63636363636363, 2: 0.0, 3: 0} CommCapa: 3
+Agent 3 Criticality : 65.3061224489796
+{1: 65.3061224489796, 2: 0.0, 3: 0} CommCapa: 2
+Agent 4 Criticality : 50.836596653613384
+{1: 50.836596653613384, 2: 0.0, 3: 0} CommCapa: 2
+Agent 5 Criticality : 64.58333333333334
+{1: 64.58333333333334, 2: 0.0, 3: 0} CommCapa: 2
+Agent 6 Criticality : 63.829787234042556
+{1: 63.829787234042556, 2: 0.0, 3: 0} CommCapa: 2
+Agent 7 Criticality : 59.38056247775008
+{1: 59.38056247775008, 2: 0.0, 3: 0} CommCapa: 2
+Agent 8 Criticality : 67.3469387755102
+{1: 67.3469387755102, 2: 0.0, 3: 0} CommCapa: 3
+WORST AGENT: 8 With 67.3469387755102
 #################################################
 Cycle: 13
 #################################################
-Agent 0 Criticality : 56.00000000000001
-{1: 56.00000000000001, 2: 0.0, 3: 0} CommCapa: 2
-Agent 1 Criticality : 60.0
-{1: 60.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 2 Criticality : 57.99999999999999
-{1: 57.99999999999999, 2: 0.0, 3: 0} CommCapa: 3
-Agent 3 Criticality : 60.0
-{1: 60.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 4 Criticality : 48.53333333333334
-{1: 48.53333333333334, 2: 0.0, 3: 0} CommCapa: 2
-Agent 5 Criticality : 56.00000000000001
-{1: 56.00000000000001, 2: 0.0, 3: 0} CommCapa: 2
-Agent 6 Criticality : 50.266666666666666
-{1: 50.266666666666666, 2: 0.0, 3: 0} CommCapa: 3
-Agent 7 Criticality : 56.00000000000001
-{1: 56.00000000000001, 2: 0.0, 3: 0} CommCapa: 2
-Agent 8 Criticality : 48.53333333333334
-{1: 48.53333333333334, 2: 0.0, 3: 0} CommCapa: 2
-WORST AGENT: 1 With 60.0
+Agent 0 Criticality : 62.745098039215684
+{1: 62.745098039215684, 2: 0.0, 3: 0} CommCapa: 2
+Agent 1 Criticality : 56.0816423400973
+{1: 56.0816423400973, 2: 0.0, 3: 0} CommCapa: 2 Modif : 1
+Agent 2 Criticality : 59.09090909090909
+{1: 59.09090909090909, 2: 0.0, 3: 0} CommCapa: 3
+Agent 3 Criticality : 61.224489795918366
+{1: 61.224489795918366, 2: 0.0, 3: 0} CommCapa: 2
+Agent 4 Criticality : 49.42446896879079
+{1: 49.42446896879079, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 5 Criticality : 60.416666666666664
+{1: 60.416666666666664, 2: 0.0, 3: 0} CommCapa: 2
+Agent 6 Criticality : 59.57446808510638
+{1: 59.57446808510638, 2: 0.0, 3: 0} CommCapa: 2
+Agent 7 Criticality : 48.0123412839682
+{1: 48.0123412839682, 2: 0.0, 3: 0} CommCapa: 2
+Agent 8 Criticality : 63.26530612244898
+{1: 63.26530612244898, 2: 0.0, 3: 0} CommCapa: 3
+WORST AGENT: 8 With 63.26530612244898
 #################################################
 Cycle: 14
 #################################################
-Agent 0 Criticality : 52.0
-{1: 52.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 1 Criticality : 56.00000000000001
-{1: 56.00000000000001, 2: 0.0, 3: 0} CommCapa: 4
-Agent 2 Criticality : 54.0
-{1: 54.0, 2: 0.0, 3: 0} CommCapa: 3
-Agent 3 Criticality : 57.99999999999999
-{1: 57.99999999999999, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 4 Criticality : 45.06666666666667
-{1: 45.06666666666667, 2: 0.0, 3: 0} CommCapa: 2
-Agent 5 Criticality : 46.800000000000004
-{1: 46.800000000000004, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 6 Criticality : 46.800000000000004
-{1: 46.800000000000004, 2: 0.0, 3: 0} CommCapa: 3
-Agent 7 Criticality : 52.0
-{1: 52.0, 2: 0.0, 3: 0} CommCapa: 2
-Agent 8 Criticality : 45.06666666666667
-{1: 45.06666666666667, 2: 0.0, 3: 0} CommCapa: 2
-WORST AGENT: 3 With 57.99999999999999
+Agent 0 Criticality : 60.78431372549019
+{1: 60.78431372549019, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 1 Criticality : 52.78272220244452
+{1: 52.78272220244452, 2: 0.0, 3: 0} CommCapa: 2
+Agent 2 Criticality : 54.54545454545454
+{1: 54.54545454545454, 2: 0.0, 3: 0} CommCapa: 3
+Agent 3 Criticality : 57.14285714285714
+{1: 57.14285714285714, 2: 0.0, 3: 0} CommCapa: 2
+Agent 4 Criticality : 46.6002135991456
+{1: 46.6002135991456, 2: 0.0, 3: 0} CommCapa: 3
+Agent 5 Criticality : 56.25
+{1: 56.25, 2: 0.0, 3: 0} CommCapa: 2
+Agent 6 Criticality : 57.446808510638306
+{1: 57.446808510638306, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 7 Criticality : 45.188085914323004
+{1: 45.188085914323004, 2: 0.0, 3: 0} CommCapa: 2
+Agent 8 Criticality : 59.183673469387756
+{1: 59.183673469387756, 2: 0.0, 3: 0} CommCapa: 3
+WORST AGENT: 0 With 60.78431372549019
 #################################################
 Cycle: 15
 #################################################
-Agent 0 Criticality : 48.0
-{1: 48.0, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 1 Criticality : 50.0
-{1: 50.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 2 Criticality : 50.0
-{1: 50.0, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 3 Criticality : 52.0
-{1: 52.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 4 Criticality : 33.733333333333334
-{1: 33.733333333333334, 2: 0.0, 3: 0} CommCapa: 2
-Agent 5 Criticality : 41.6
-{1: 41.6, 2: 0.0, 3: 0} CommCapa: 3
-Agent 6 Criticality : 43.333333333333336
-{1: 43.333333333333336, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 7 Criticality : 39.86666666666667
-{1: 39.86666666666667, 2: 0.0, 3: 0} CommCapa: 2
-Agent 8 Criticality : 39.86666666666667
-{1: 39.86666666666667, 2: 0.0, 3: 0} CommCapa: 2
-WORST AGENT: 3 With 52.0
+Agent 0 Criticality : 52.94117647058824
+{1: 52.94117647058824, 2: 0.0, 3: 0} CommCapa: 3
+Agent 1 Criticality : 46.18488192713895
+{1: 46.18488192713895, 2: 0.0, 3: 0} CommCapa: 2
+Agent 2 Criticality : 47.72727272727273
+{1: 47.72727272727273, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 3 Criticality : 51.02040816326531
+{1: 51.02040816326531, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 4 Criticality : 42.36383054467782
+{1: 42.36383054467782, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 5 Criticality : 50.0
+{1: 50.0, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 6 Criticality : 48.93617021276596
+{1: 48.93617021276596, 2: 0.0, 3: 0} CommCapa: 3
+Agent 7 Criticality : 39.53957517503263
+{1: 39.53957517503263, 2: 0.0, 3: 0} CommCapa: 2
+Agent 8 Criticality : 51.02040816326531
+{1: 51.02040816326531, 2: 0.0, 3: 0} CommCapa: 3
+WORST AGENT: 0 With 52.94117647058824
 #################################################
 Cycle: 16
 #################################################
-Agent 0 Criticality : 36.4
-{1: 36.4, 2: 0.0, 3: 0} CommCapa: 3
-Agent 1 Criticality : 39.86666666666667
-{1: 39.86666666666667, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 2 Criticality : 44.0
-{1: 44.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 3 Criticality : 39.86666666666667
-{1: 39.86666666666667, 2: 0.0, 3: 0} CommCapa: 5
-Agent 4 Criticality : 30.799999999999997
-{1: 30.799999999999997, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 5 Criticality : 30.799999999999997
-{1: 30.799999999999997, 2: 0.0, 3: 0} CommCapa: 3
-Agent 6 Criticality : 32.266666666666666
-{1: 32.266666666666666, 2: 0.0, 3: 0} CommCapa: 4
-Agent 7 Criticality : 29.333333333333332
-{1: 29.333333333333332, 2: 0.0, 3: 0} CommCapa: 2
-Agent 8 Criticality : 30.799999999999997
-{1: 30.799999999999997, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-WORST AGENT: 2 With 44.0
+Agent 0 Criticality : 52.94117647058824
+{1: 52.94117647058824, 2: 0.0, 3: 0} CommCapa: 3
+Agent 1 Criticality : 46.18488192713895
+{1: 46.18488192713895, 2: 0.0, 3: 0} CommCapa: 2
+Agent 2 Criticality : 47.72727272727273
+{1: 47.72727272727273, 2: 0.0, 3: 0} CommCapa: 4
+Agent 3 Criticality : 51.02040816326531
+{1: 51.02040816326531, 2: 0.0, 3: 0} CommCapa: 3
+Agent 4 Criticality : 42.36383054467782
+{1: 42.36383054467782, 2: 0.0, 3: 0} CommCapa: 4
+Agent 5 Criticality : 50.0
+{1: 50.0, 2: 0.0, 3: 0} CommCapa: 3
+Agent 6 Criticality : 48.93617021276596
+{1: 48.93617021276596, 2: 0.0, 3: 0} CommCapa: 3
+Agent 7 Criticality : 39.53957517503263
+{1: 39.53957517503263, 2: 0.0, 3: 0} CommCapa: 2
+Agent 8 Criticality : 51.02040816326531
+{1: 51.02040816326531, 2: 0.0, 3: 0} CommCapa: 3
+WORST AGENT: 0 With 52.94117647058824
 #################################################
 Cycle: 17
 #################################################
-Agent 0 Criticality : 34.66666666666667
-{1: 34.66666666666667, 2: 0.0, 3: 0} CommCapa: 3
-Agent 1 Criticality : 38.13333333333333
-{1: 38.13333333333333, 2: 0.0, 3: 0} CommCapa: 5
-Agent 2 Criticality : 36.4
-{1: 36.4, 2: 0.0, 3: 0} CommCapa: 4
-Agent 3 Criticality : 38.13333333333333
-{1: 38.13333333333333, 2: 0.0, 3: 0} CommCapa: 5
-Agent 4 Criticality : 29.333333333333332
-{1: 29.333333333333332, 2: 0.0, 3: 0} CommCapa: 3
-Agent 5 Criticality : 29.333333333333332
-{1: 29.333333333333332, 2: 0.0, 3: 0} CommCapa: 3
-Agent 6 Criticality : 36.4
-{1: 36.4, 2: 0.0, 3: 0} CommCapa: 4
-Agent 7 Criticality : 34.66666666666667
-{1: 34.66666666666667, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
-Agent 8 Criticality : 29.333333333333332
-{1: 29.333333333333332, 2: 0.0, 3: 0} CommCapa: 3
-WORST AGENT: 1 With 38.13333333333333
+Agent 0 Criticality : 49.01960784313725
+{1: 49.01960784313725, 2: 0.0, 3: 0} CommCapa: 3
+Agent 1 Criticality : 42.885961789486174
+{1: 42.885961789486174, 2: 0.0, 3: 0} CommCapa: 2
+Agent 2 Criticality : 43.18181818181818
+{1: 43.18181818181818, 2: 0.0, 3: 0} CommCapa: 4
+Agent 3 Criticality : 46.93877551020408
+{1: 46.93877551020408, 2: 0.0, 3: 0} CommCapa: 3
+Agent 4 Criticality : 39.53957517503263
+{1: 39.53957517503263, 2: 0.0, 3: 0} CommCapa: 4
+Agent 5 Criticality : 45.83333333333333
+{1: 45.83333333333333, 2: 0.0, 3: 0} CommCapa: 3
+Agent 6 Criticality : 44.680851063829785
+{1: 44.680851063829785, 2: 0.0, 3: 0} CommCapa: 3
+Agent 7 Criticality : 38.12744749021004
+{1: 38.12744749021004, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 8 Criticality : 48.97959183673469
+{1: 48.97959183673469, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+WORST AGENT: 0 With 49.01960784313725
 #################################################
 Cycle: 18
 #################################################
-Agent 0 Criticality : 29.466666666666672
-{1: 29.466666666666672, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 1 Criticality : 31.2
-{1: 31.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 2 Criticality : 31.2
-{1: 31.2, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 3 Criticality : 31.2
-{1: 31.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 4 Criticality : 24.933333333333334
-{1: 24.933333333333334, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 5 Criticality : 24.933333333333334
-{1: 24.933333333333334, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 6 Criticality : 29.466666666666672
-{1: 29.466666666666672, 2: 0.0, 3: 0} CommCapa: 4
-Agent 7 Criticality : 27.733333333333334
-{1: 27.733333333333334, 2: 0.0, 3: 0} CommCapa: 3
-Agent 8 Criticality : 23.466666666666665
-{1: 23.466666666666665, 2: 0.0, 3: 0} CommCapa: 3
-WORST AGENT: 1 With 31.2
+Agent 0 Criticality : 39.202870690759966
+{1: 39.202870690759966, 2: 0.0, 3: 0} CommCapa: 3
+Agent 1 Criticality : 41.23650172065978
+{1: 41.23650172065978, 2: 0.0, 3: 0} CommCapa: 3 Modif : 1
+Agent 2 Criticality : 38.63636363636363
+{1: 38.63636363636363, 2: 0.0, 3: 0} CommCapa: 4
+Agent 3 Criticality : 37.02623906705539
+{1: 37.02623906705539, 2: 0.0, 3: 0} CommCapa: 3
+Agent 4 Criticality : 38.12744749021004
+{1: 38.12744749021004, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 5 Criticality : 41.66666666666667
+{1: 41.66666666666667, 2: 0.0, 3: 0} CommCapa: 3
+Agent 6 Criticality : 40.42553191489361
+{1: 40.42553191489361, 2: 0.0, 3: 0} CommCapa: 3
+Agent 7 Criticality : 35.30319212056485
+{1: 35.30319212056485, 2: 0.0, 3: 0} CommCapa: 3
+Agent 8 Criticality : 44.89795918367347
+{1: 44.89795918367347, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 8 With 44.89795918367347
 #################################################
 Cycle: 19
 #################################################
-Agent 0 Criticality : 30.0
-{1: 30.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 1 Criticality : 27.733333333333334
-{1: 27.733333333333334, 2: 0.0, 3: 0} CommCapa: 5
-Agent 2 Criticality : 34.0
-{1: 34.0, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
-Agent 3 Criticality : 34.0
-{1: 34.0, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
-Agent 4 Criticality : 26.0
-{1: 26.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 26.0
-{1: 26.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 6 Criticality : 26.0
-{1: 26.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 7 Criticality : 24.26666666666667
-{1: 24.26666666666667, 2: 0.0, 3: 0} CommCapa: 3
-Agent 8 Criticality : 20.533333333333335
-{1: 20.533333333333335, 2: 0.0, 3: 0} CommCapa: 3
-WORST AGENT: 2 With 34.0
+Agent 0 Criticality : 37.49839805203128
+{1: 37.49839805203128, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 1 Criticality : 37.937581583007
+{1: 37.937581583007, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : 34.090909090909086
+{1: 34.090909090909086, 2: 0.0, 3: 0} CommCapa: 4
+Agent 3 Criticality : 33.49993058447868
+{1: 33.49993058447868, 2: 0.0, 3: 0} CommCapa: 3
+Agent 4 Criticality : 36.715319805387445
+{1: 36.715319805387445, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
+Agent 5 Criticality : 37.5
+{1: 37.5, 2: 0.0, 3: 0} CommCapa: 3
+Agent 6 Criticality : 36.17021276595745
+{1: 36.17021276595745, 2: 0.0, 3: 0} CommCapa: 3
+Agent 7 Criticality : 32.478936750919665
+{1: 32.478936750919665, 2: 0.0, 3: 0} CommCapa: 3
+Agent 8 Criticality : 40.816326530612244
+{1: 40.816326530612244, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 8 With 40.816326530612244
 #################################################
 Cycle: 20
 #################################################
-Agent 0 Criticality : 28.000000000000004
-{1: 28.000000000000004, 2: 0.0, 3: 0} CommCapa: 4
-Agent 1 Criticality : 26.0
-{1: 26.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 2 Criticality : 32.0
-{1: 32.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 3 Criticality : 32.0
-{1: 32.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 24.26666666666667
-{1: 24.26666666666667, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 24.26666666666667
-{1: 24.26666666666667, 2: 0.0, 3: 0} CommCapa: 4
-Agent 6 Criticality : 24.26666666666667
-{1: 24.26666666666667, 2: 0.0, 3: 0} CommCapa: 4
-Agent 7 Criticality : 22.533333333333335
-{1: 22.533333333333335, 2: 0.0, 3: 0} CommCapa: 3
-Agent 8 Criticality : 20.533333333333335
-{1: 20.533333333333335, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-WORST AGENT: 2 With 32.0
+Agent 0 Criticality : 30.680507497116498
+{1: 30.680507497116498, 2: 0.0, 3: 0} CommCapa: 4
+Agent 1 Criticality : 31.33974130770143
+{1: 31.33974130770143, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : 27.27272727272727
+{1: 27.27272727272727, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 3 Criticality : 26.447313619325282
+{1: 26.447313619325282, 2: 0.0, 3: 0} CommCapa: 3
+Agent 4 Criticality : 32.478936750919665
+{1: 32.478936750919665, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
+Agent 5 Criticality : 31.25
+{1: 31.25, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 6 Criticality : 29.78723404255319
+{1: 29.78723404255319, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 7 Criticality : 26.830426011629285
+{1: 26.830426011629285, 2: 0.0, 3: 0} CommCapa: 3
+Agent 8 Criticality : 32.6530612244898
+{1: 32.6530612244898, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 8 With 32.6530612244898
 #################################################
 Cycle: 21
 #################################################
-Agent 0 Criticality : 26.0
-{1: 26.0, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 1 Criticality : 22.533333333333335
-{1: 22.533333333333335, 2: 0.0, 3: 0} CommCapa: 5
-Agent 2 Criticality : 28.000000000000004
-{1: 28.000000000000004, 2: 0.0, 3: 0} CommCapa: 6
-Agent 3 Criticality : 28.000000000000004
-{1: 28.000000000000004, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 20.8
-{1: 20.8, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 20.8
-{1: 20.8, 2: 0.0, 3: 0} CommCapa: 4
-Agent 6 Criticality : 22.533333333333335
-{1: 22.533333333333335, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 7 Criticality : 19.066666666666666
-{1: 19.066666666666666, 2: 0.0, 3: 0} CommCapa: 3
-Agent 8 Criticality : 17.599999999999998
-{1: 17.599999999999998, 2: 0.0, 3: 0} CommCapa: 4
-WORST AGENT: 2 With 28.000000000000004
+Agent 0 Criticality : 27.271562219659106
+{1: 27.271562219659106, 2: 0.0, 3: 0} CommCapa: 4
+Agent 1 Criticality : 28.04082117004865
+{1: 28.04082117004865, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : 22.727272727272727
+{1: 22.727272727272727, 2: 0.0, 3: 0} CommCapa: 5
+Agent 3 Criticality : 24.684159378036927
+{1: 24.684159378036927, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 4 Criticality : 29.654681381274475
+{1: 29.654681381274475, 2: 0.0, 3: 0} CommCapa: 7
+Agent 5 Criticality : 27.083333333333332
+{1: 27.083333333333332, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 25.53191489361702
+{1: 25.53191489361702, 2: 0.0, 3: 0} CommCapa: 4
+Agent 7 Criticality : 17.858312566749728
+{1: 19.971520113919542, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 30.612244897959183
+{1: 30.612244897959183, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+WORST AGENT: 8 With 30.612244897959183
 #################################################
 Cycle: 22
 #################################################
-Agent 0 Criticality : 26.0
-{1: 26.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 1 Criticality : 22.533333333333335
-{1: 22.533333333333335, 2: 0.0, 3: 0} CommCapa: 5
-Agent 2 Criticality : 28.000000000000004
-{1: 28.000000000000004, 2: 0.0, 3: 0} CommCapa: 6
-Agent 3 Criticality : 28.000000000000004
-{1: 28.000000000000004, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 20.8
-{1: 20.8, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 20.8
-{1: 20.8, 2: 0.0, 3: 0} CommCapa: 4
-Agent 6 Criticality : 22.533333333333335
-{1: 22.533333333333335, 2: 0.0, 3: 0} CommCapa: 5
-Agent 7 Criticality : 19.066666666666666
-{1: 19.066666666666666, 2: 0.0, 3: 0} CommCapa: 3
-Agent 8 Criticality : 17.599999999999998
-{1: 17.599999999999998, 2: 0.0, 3: 0} CommCapa: 4
-WORST AGENT: 2 With 28.000000000000004
+Agent 0 Criticality : 27.271562219659106
+{1: 27.271562219659106, 2: 0.0, 3: 0} CommCapa: 4
+Agent 1 Criticality : 28.04082117004865
+{1: 28.04082117004865, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : 22.727272727272727
+{1: 22.727272727272727, 2: 0.0, 3: 0} CommCapa: 5
+Agent 3 Criticality : 24.684159378036927
+{1: 24.684159378036927, 2: 0.0, 3: 0} CommCapa: 4
+Agent 4 Criticality : 29.654681381274475
+{1: 29.654681381274475, 2: 0.0, 3: 0} CommCapa: 7
+Agent 5 Criticality : 27.083333333333332
+{1: 27.083333333333332, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 25.53191489361702
+{1: 25.53191489361702, 2: 0.0, 3: 0} CommCapa: 4
+Agent 7 Criticality : 17.858312566749728
+{1: 19.971520113919542, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 30.612244897959183
+{1: 30.612244897959183, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 8 With 30.612244897959183
 #################################################
 Cycle: 23
 #################################################
-Agent 0 Criticality : 17.333333333333336
-{1: 17.333333333333336, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
-Agent 1 Criticality : 14.666666666666666
-{1: 14.666666666666666, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
-Agent 2 Criticality : 17.333333333333336
-{1: 17.333333333333336, 2: 0.0, 3: 0} CommCapa: 6
-Agent 3 Criticality : 20.0
-{1: 20.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 15.6
-{1: 15.6, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 5 Criticality : 11.733333333333333
-{1: 11.733333333333333, 2: 0.0, 3: 0} CommCapa: 4
-Agent 6 Criticality : 13.2
-{1: 13.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 7 Criticality : 11.733333333333333
-{1: 11.733333333333333, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
-Agent 8 Criticality : 6.399999999999997
-{1: 9.6, 2: 0.0, 3: 3.200000000000003} CommCapa: 4
-WORST AGENT: 3 With 20.0
+Agent 0 Criticality : 27.271562219659106
+{1: 27.271562219659106, 2: 0.0, 3: 0} CommCapa: 4
+Agent 1 Criticality : 28.04082117004865
+{1: 28.04082117004865, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : 22.727272727272727
+{1: 22.727272727272727, 2: 0.0, 3: 0} CommCapa: 5
+Agent 3 Criticality : 24.684159378036927
+{1: 24.684159378036927, 2: 0.0, 3: 0} CommCapa: 4
+Agent 4 Criticality : 29.654681381274475
+{1: 29.654681381274475, 2: 0.0, 3: 0} CommCapa: 7
+Agent 5 Criticality : 27.083333333333332
+{1: 27.083333333333332, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 25.53191489361702
+{1: 25.53191489361702, 2: 0.0, 3: 0} CommCapa: 4
+Agent 7 Criticality : 17.858312566749728
+{1: 19.971520113919542, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 30.612244897959183
+{1: 30.612244897959183, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 8 With 30.612244897959183
 #################################################
 Cycle: 24
 #################################################
-Agent 0 Criticality : 18.0
-{1: 18.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 1 Criticality : 15.6
-{1: 15.6, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 18.0
-{1: 18.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 3 Criticality : 18.0
-{1: 18.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 16.0
-{1: 16.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 5 Criticality : 13.866666666666667
-{1: 13.866666666666667, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 6 Criticality : 11.733333333333333
-{1: 11.733333333333333, 2: 0.0, 3: 0} CommCapa: 5
-Agent 7 Criticality : 12.133333333333335
-{1: 12.133333333333335, 2: 0.0, 3: 0} CommCapa: 4
-Agent 8 Criticality : 10.266666666666667
-{1: 10.266666666666667, 2: 0.0, 3: 0} CommCapa: 4
-WORST AGENT: 0 With 18.0
+Agent 0 Criticality : 23.862616942201722
+{1: 23.862616942201722, 2: 0.0, 3: 0} CommCapa: 4
+Agent 1 Criticality : 26.39136110122226
+{1: 26.39136110122226, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 2 Criticality : 18.181818181818183
+{1: 18.181818181818183, 2: 0.0, 3: 0} CommCapa: 5
+Agent 3 Criticality : 21.157850895460225
+{1: 21.157850895460225, 2: 0.0, 3: 0} CommCapa: 4
+Agent 4 Criticality : 20.207903168387322
+{1: 22.321110715557136, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : 22.916666666666664
+{1: 22.916666666666664, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 21.27659574468085
+{1: 21.27659574468085, 2: 0.0, 3: 0} CommCapa: 4
+Agent 7 Criticality : 16.68351726593093
+{1: 18.796724813100745, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4 Modif : 1
+Agent 8 Criticality : 26.53061224489796
+{1: 26.53061224489796, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 8 With 26.53061224489796
 #################################################
 Cycle: 25
 #################################################
-Agent 0 Criticality : 12.0
-{1: 12.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 1 Criticality : 10.4
-{1: 10.4, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 14.000000000000002
-{1: 14.000000000000002, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
-Agent 3 Criticality : 14.000000000000002
-{1: 14.000000000000002, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
-Agent 4 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 5 Criticality : 8.666666666666668
-{1: 8.666666666666668, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 7.333333333333333
-{1: 7.333333333333333, 2: 0.0, 3: 0} CommCapa: 5
-Agent 7 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 4
-Agent 8 Criticality : 7.333333333333333
-{1: 7.333333333333333, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-WORST AGENT: 2 With 14.000000000000002
+Agent 0 Criticality : 18.74919902601564
+{1: 18.74919902601564, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 1 Criticality : 19.793520825916694
+{1: 19.793520825916694, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : 11.363636363636363
+{1: 11.363636363636363, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
+Agent 3 Criticality : 14.105233930306815
+{1: 14.105233930306815, 2: 0.0, 3: 0} CommCapa: 4
+Agent 4 Criticality : 16.68351726593093
+{1: 18.796724813100745, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8 Modif : 1
+Agent 5 Criticality : 10.532407407407408
+{1: 10.532407407407408, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 12.76595744680851
+{1: 12.76595744680851, 2: 0.0, 3: 0} CommCapa: 4
+Agent 7 Criticality : 3.0986116055535753
+{1: 11.249555001779992, 2: 0.0, 3: 8.150943396226417} CommCapa: 4
+Agent 8 Criticality : 20.408163265306122
+{1: 20.408163265306122, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
+WORST AGENT: 8 With 20.408163265306122
 #################################################
 Cycle: 26
 #################################################
-Agent 0 Criticality : 8.666666666666668
-{1: 8.666666666666668, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
-Agent 1 Criticality : 5.866666666666666
-{1: 5.866666666666666, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 8.666666666666668
-{1: 8.666666666666668, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 8.666666666666668
-{1: 8.666666666666668, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 5 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 5.866666666666666
-{1: 5.866666666666666, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
-Agent 7 Criticality : 2.933333333333333
-{1: 2.933333333333333, 2: 0.0, 3: 0} CommCapa: 4
-Agent 8 Criticality : 0.3999999999999968
-{1: 3.5999999999999996, 2: 0.0, 3: 3.200000000000003} CommCapa: 5
-WORST AGENT: 0 With 8.666666666666668
+Agent 0 Criticality : 15.340253748558249
+{1: 15.340253748558249, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 16.494600688263912
+{1: 16.494600688263912, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : 6.8181818181818175
+{1: 6.8181818181818175, 2: 0.0, 3: 0} CommCapa: 6
+Agent 3 Criticality : 10.578925447730112
+{1: 10.578925447730112, 2: 0.0, 3: 0} CommCapa: 4
+Agent 4 Criticality : 14.33392666429334
+{1: 16.447134211463155, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 9.027777777777779
+{1: 9.027777777777779, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 6 Criticality : 10.638297872340425
+{1: 10.638297872340425, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 7 Criticality : 1.2236857719235772
+{1: 9.374629168149994, 2: 0.0, 3: 8.150943396226417} CommCapa: 4
+Agent 8 Criticality : 16.3265306122449
+{1: 16.3265306122449, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 16.494600688263912
 #################################################
 Cycle: 27
 #################################################
-Agent 0 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 4.3999999999999995
-{1: 4.3999999999999995, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 5
-Agent 5 Criticality : 2.933333333333333
-{1: 2.933333333333333, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 6
-Agent 7 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-Agent 8 Criticality : -0.8000000000000029
-{1: 2.4, 2: 0.0, 3: 3.200000000000003} CommCapa: 5
-WORST AGENT: 0 With 6.933333333333334
+Agent 0 Criticality : 13.635781109829553
+{1: 13.635781109829553, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 14.84514061943752
+{1: 14.84514061943752, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : 4.545454545454546
+{1: 4.545454545454546, 2: 0.0, 3: 0} CommCapa: 6
+Agent 3 Criticality : 10.578925447730112
+{1: 10.578925447730112, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 4 Criticality : 13.159131363474543
+{1: 15.272338910644358, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 7.523148148148149
+{1: 7.523148148148149, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 5
+Agent 7 Criticality : 0.28622285510857637
+{1: 8.437166251334993, 2: 0.0, 3: 8.150943396226417} CommCapa: 4
+Agent 8 Criticality : 14.285714285714285
+{1: 14.285714285714285, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 14.84514061943752
 #################################################
 Cycle: 28
 #################################################
-Agent 0 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 2.933333333333333
-{1: 2.933333333333333, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 6
-Agent 7 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 5
-Agent 8 Criticality : 1.4666666666666666
-{1: 1.4666666666666666, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 6.0
+Agent 0 Criticality : 4.327566320645905
+{1: 7.151095732410612, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6 Modif : 1
+Agent 1 Criticality : 9.884893793758158
+{1: 9.884893793758158, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 6
+Agent 3 Criticality : 4.456476468138275
+{1: 4.456476468138275, 2: 0.0, 3: 0} CommCapa: 5
+Agent 4 Criticality : 1.2236857719235772
+{1: 9.374629168149994, 2: 0.0, 3: 8.150943396226417} CommCapa: 8
+Agent 5 Criticality : -1.5694444444444446
+{1: 2.4305555555555554, 2: 0.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : 1.8258638901463708
+{1: 1.8258638901463708, 2: 0.0, 3: 0} CommCapa: 5
+Agent 7 Criticality : -9.287765515604608
+{1: 4.900913729678414, 2: 0.0, 3: 14.188679245283023} CommCapa: 5 Modif : 1
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 9.884893793758158
 #################################################
 Cycle: 29
 #################################################
-Agent 0 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
-Agent 2 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8 Modif : 1
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6 Modif : 1
-Agent 6 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 8 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-WORST AGENT: 7 With -6.4
+Agent 0 Criticality : 0.7520184544405994
+{1: 3.575547866205306, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 5.6485107392903755
+{1: 5.6485107392903755, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 6
+Agent 3 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
+Agent 4 Criticality : -1.5887029785214217
+{1: 6.562240417704995, 2: 0.0, 3: 8.150943396226417} CommCapa: 8
+Agent 5 Criticality : -7.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 6 Modif : 1
+Agent 7 Criticality : -3.46362881215142
+{1: 4.687314584074997, 2: 0.0, 3: 8.150943396226417} CommCapa: 6 Modif : 1
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 30
 #################################################
-Agent 0 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8 Modif : 1
-Agent 1 Criticality : -9.600000000000003
-{1: 0.0, 2: 6.4, 3: 3.200000000000003} CommCapa: 7
-Agent 2 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 7
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 4 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 5 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 6 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 7 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 5
-Agent 8 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6 Modif : 1
-WORST AGENT: 7 With -12.8
+Agent 0 Criticality : 4.344482891195694
+{1: 4.344482891195694, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 6.597840275305565
+{1: 6.597840275305565, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 6
+Agent 3 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
+Agent 4 Criticality : 6.110359558561763
+{1: 8.223567105731577, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -7.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 6
+Agent 7 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 6
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 7
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 31
 #################################################
-Agent 0 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 1 Criticality : -16.000000000000004
-{1: 0.0, 2: 12.8, 3: 3.200000000000003} CommCapa: 7
-Agent 2 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8 Modif : 1
-Agent 3 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 4 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-Agent 5 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 7 Modif : 1
-Agent 7 Criticality : -19.200000000000003
-{1: 0.0, 2: 19.200000000000003, 3: 0} CommCapa: 5
-Agent 8 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-WORST AGENT: 7 With -19.200000000000003
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 1.4121276848225939
+{1: 1.4121276848225939, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -21.818181818181817
+{1: 0.0, 2: 21.818181818181817, 3: 0} CommCapa: 7 Modif : 1
+Agent 3 Criticality : -9.795918367346939
+{1: 0.0, 2: 9.795918367346939, 3: 0} CommCapa: 5
+Agent 4 Criticality : -3.46362881215142
+{1: 4.687314584074997, 2: 0.0, 3: 8.150943396226417} CommCapa: 9 Modif : 1
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 6 Modif : 1
+Agent 6 Criticality : -13.617021276595745
+{1: 0.0, 2: 13.617021276595745, 3: 0} CommCapa: 6
+Agent 7 Criticality : -12.788418179660619
+{1: 1.400261065622404, 2: 0.0, 3: 14.188679245283023} CommCapa: 6
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 7
+WORST AGENT: 2 With -21.818181818181817
 #################################################
 Cycle: 32
 #################################################
-Agent 0 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 8
-Agent 1 Criticality : -19.200000000000003
-{1: 0.0, 2: 16.0, 3: 3.200000000000003} CommCapa: 7
-Agent 2 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 8
-Agent 3 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 8
-Agent 4 Criticality : -19.200000000000003
-{1: 0.0, 2: 19.200000000000003, 3: 0} CommCapa: 6
-Agent 5 Criticality : -19.200000000000003
-{1: 0.0, 2: 19.200000000000003, 3: 0} CommCapa: 6
-Agent 6 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -19.200000000000003
-{1: 0.0, 2: 19.200000000000003, 3: 0} CommCapa: 6 Modif : 1
-Agent 8 Criticality : -19.200000000000003
-{1: 0.0, 2: 19.200000000000003, 3: 0} CommCapa: 6
-WORST AGENT: 1 With -19.200000000000003
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 1.6494600688263912
+{1: 1.6494600688263912, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -21.818181818181817
+{1: 0.0, 2: 21.818181818181817, 3: 0} CommCapa: 7
+Agent 3 Criticality : -9.795918367346939
+{1: 0.0, 2: 9.795918367346939, 3: 0} CommCapa: 5
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 6
+Agent 6 Criticality : -13.617021276595745
+{1: 0.0, 2: 13.617021276595745, 3: 0} CommCapa: 6
+Agent 7 Criticality : -6.276017562596419
+{1: 1.8749258336299985, 2: 0.0, 3: 8.150943396226417} CommCapa: 6
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 7
+WORST AGENT: 2 With -21.818181818181817
 #################################################
 Cycle: 33
 #################################################
-Agent 0 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 1 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 7
-Agent 2 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 3 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 4 Criticality : -19.200000000000003
-{1: 0.0, 2: 19.200000000000003, 3: 0} CommCapa: 5 Modif : -1
-Agent 5 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 7
-Agent 7 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-WORST AGENT: 4 With -19.200000000000003
+Agent 0 Criticality : -12.235294117647058
+{1: 0.0, 2: 3.1372549019607843, 3: 9.098039215686274} CommCapa: 7 Modif : 1
+Agent 1 Criticality : -3.018867924528302
+{1: 0.0, 2: 3.018867924528302, 3: 0} CommCapa: 5
+Agent 2 Criticality : -29.090909090909093
+{1: 0.0, 2: 29.090909090909093, 3: 0} CommCapa: 7
+Agent 3 Criticality : -13.061224489795919
+{1: 0.0, 2: 13.061224489795919, 3: 0} CommCapa: 6 Modif : 1
+Agent 4 Criticality : -12.088287646849416
+{1: 2.100391598433606, 2: 0.0, 3: 14.188679245283023} CommCapa: 9
+Agent 5 Criticality : -34.0
+{1: 0.0, 2: 16.666666666666668, 3: 17.333333333333336} CommCapa: 6
+Agent 6 Criticality : -20.425531914893618
+{1: 0.0, 2: 20.425531914893618, 3: 0} CommCapa: 6
+Agent 7 Criticality : -20.22641509433963
+{1: 0.0, 2: 0.0, 3: 20.22641509433963} CommCapa: 6
+Agent 8 Criticality : -9.795918367346939
+{1: 0.0, 2: 9.795918367346939, 3: 0} CommCapa: 7
+WORST AGENT: 5 With -34.0
 #################################################
 Cycle: 34
 #################################################
-Agent 0 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 1 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 7
-Agent 2 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 3 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 8
-Agent 4 Criticality : -19.200000000000003
-{1: 0.0, 2: 19.200000000000003, 3: 0} CommCapa: 5
-Agent 5 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 7
-Agent 7 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : -16.0
-{1: 0.0, 2: 16.0, 3: 0} CommCapa: 6
-WORST AGENT: 4 With -19.200000000000003
+Agent 0 Criticality : -5.96078431372549
+{1: 0.0, 2: 3.1372549019607843, 3: 2.8235294117647065} CommCapa: 7
+Agent 1 Criticality : -3.018867924528302
+{1: 0.0, 2: 3.018867924528302, 3: 0} CommCapa: 5
+Agent 2 Criticality : -29.090909090909093
+{1: 0.0, 2: 29.090909090909093, 3: 0} CommCapa: 7
+Agent 3 Criticality : -13.061224489795919
+{1: 0.0, 2: 13.061224489795919, 3: 0} CommCapa: 6
+Agent 4 Criticality : 1.4111783552865758
+{1: 3.52438590245639, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9
+Agent 5 Criticality : -27.333333333333332
+{1: 0.0, 2: 16.666666666666668, 3: 10.666666666666664} CommCapa: 6
+Agent 6 Criticality : -20.425531914893618
+{1: 0.0, 2: 20.425531914893618, 3: 0} CommCapa: 6
+Agent 7 Criticality : -8.150943396226417
+{1: 0.0, 2: 0.0, 3: 8.150943396226417} CommCapa: 6
+Agent 8 Criticality : -9.795918367346939
+{1: 0.0, 2: 9.795918367346939, 3: 0} CommCapa: 7
+WORST AGENT: 2 With -29.090909090909093
 #################################################
 Cycle: 35
 #################################################
-Agent 0 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 1 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6 Modif : -1
-Agent 2 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 4 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 5
-Agent 5 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 5 Modif : -1
-Agent 6 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 7
-Agent 7 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 8 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-WORST AGENT: 4 With -12.8
+Agent 0 Criticality : 1.4481609637318982
+{1: 1.4481609637318982, 2: 0.0, 3: 0} CommCapa: 7
+Agent 1 Criticality : 1.6494600688263912
+{1: 1.6494600688263912, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -21.818181818181817
+{1: 0.0, 2: 21.818181818181817, 3: 0} CommCapa: 7
+Agent 3 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 6
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9
+Agent 5 Criticality : -17.333333333333332
+{1: 0.0, 2: 13.333333333333332, 3: 4.0} CommCapa: 5 Modif : -1
+Agent 6 Criticality : -13.617021276595745
+{1: 0.0, 2: 13.617021276595745, 3: 0} CommCapa: 6
+Agent 7 Criticality : 0.23638305446777874
+{1: 2.349590601637593, 2: 0.0, 3: 2.1132075471698144} CommCapa: 6
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 6 Modif : -1
+WORST AGENT: 2 With -21.818181818181817
 #################################################
 Cycle: 36
 #################################################
-Agent 0 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 1 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 2 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 4 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 5
-Agent 5 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 5
-Agent 6 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 7
-Agent 7 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 8 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-WORST AGENT: 4 With -12.8
+Agent 0 Criticality : 2.8963219274637964
+{1: 2.8963219274637964, 2: 0.0, 3: 0} CommCapa: 7
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -18.181818181818183
+{1: 0.0, 2: 18.181818181818183, 3: 0} CommCapa: 7
+Agent 3 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 6
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -10.212765957446809
+{1: 0.0, 2: 10.212765957446809, 3: 0} CommCapa: 6
+Agent 7 Criticality : 0.23638305446777874
+{1: 2.349590601637593, 2: 0.0, 3: 2.1132075471698144} CommCapa: 5 Modif : -1
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -18.181818181818183
 #################################################
 Cycle: 37
 #################################################
-Agent 0 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 1 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 2 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 8
-Agent 4 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 5
-Agent 5 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 5
-Agent 6 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 7
-Agent 7 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-Agent 8 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 6
-WORST AGENT: 4 With -12.8
+Agent 0 Criticality : 4.344482891195694
+{1: 4.344482891195694, 2: 0.0, 3: 0} CommCapa: 7
+Agent 1 Criticality : 4.9483802064791735
+{1: 4.9483802064791735, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 7
+Agent 3 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8 Modif : -1
+Agent 5 Criticality : -10.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -6.808510638297872
+{1: 0.0, 2: 6.808510638297872, 3: 0} CommCapa: 6
+Agent 7 Criticality : -5.338554645781419
+{1: 2.812388750444998, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 38
 #################################################
-Agent 0 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 2 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 4 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5
-Agent 5 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5
-Agent 6 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 8 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5 Modif : -1
-WORST AGENT: 4 With -9.600000000000001
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 6 Modif : -1
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -2.7847222222222223
+{1: 1.2152777777777777, 2: 0.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -2.5261658953364208
+{1: 5.624777500889996, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 4 With 8.459950160199355
 #################################################
 Cycle: 39
 #################################################
-Agent 0 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 2 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 4 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5
-Agent 5 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5
-Agent 6 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 8 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5
-WORST AGENT: 4 With -9.600000000000001
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 6
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 1.5046296296296298
+{1: 1.5046296296296298, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -2.5261658953364208
+{1: 5.624777500889996, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 4 With 8.459950160199355
 #################################################
 Cycle: 40
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7 Modif : -1
-Agent 3 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7 Modif : -1
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 6
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 1.5046296296296298
+{1: 1.5046296296296298, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -2.5261658953364208
+{1: 5.624777500889996, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 4 With 8.459950160199355
 #################################################
 Cycle: 41
 #################################################
-Agent 0 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
-Agent 5 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 5 Modif : -1
-Agent 8 Criticality : 1.4666666666666666
-{1: 1.4666666666666666, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
-WORST AGENT: 0 With 10.0
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 6
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 1.5046296296296298
+{1: 1.5046296296296298, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -2.5261658953364208
+{1: 5.624777500889996, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 4 With 8.459950160199355
 #################################################
 Cycle: 42
 #################################################
-Agent 0 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 8 Criticality : 1.4666666666666666
-{1: 1.4666666666666666, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
-WORST AGENT: 0 With 8.0
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 5 Modif : -1
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 3.0092592592592595
+{1: 3.0092592592592595, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -1.5887029785214217
+{1: 6.562240417704995, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 9.896760412958347
 #################################################
 Cycle: 43
 #################################################
-Agent 0 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 8 Criticality : 1.4666666666666666
-{1: 1.4666666666666666, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 8.0
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 5
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 3.0092592592592595
+{1: 3.0092592592592595, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -1.5887029785214217
+{1: 6.562240417704995, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 9.896760412958347
 #################################################
 Cycle: 44
 #################################################
-Agent 0 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 8 Criticality : 1.4666666666666666
-{1: 1.4666666666666666, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 8.0
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 5
+Agent 3 Criticality : 5.289462723865056
+{1: 5.289462723865056, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 0.28622285510857637
+{1: 8.437166251334993, 2: 0.0, 3: 8.150943396226417} CommCapa: 8
+Agent 5 Criticality : -2.7847222222222223
+{1: 1.2152777777777777, 2: 0.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : 1.8258638901463708
+{1: 1.8258638901463708, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -9.987896048415811
+{1: 4.200783196867212, 2: 0.0, 3: 14.188679245283023} CommCapa: 5
+Agent 8 Criticality : 5.289462723865056
+{1: 5.289462723865056, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -10.909090909090908
 #################################################
 Cycle: 45
 #################################################
-Agent 0 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 8
-Agent 1 Criticality : -12.800000000000004
-{1: 0.0, 2: 9.600000000000001, 3: 3.200000000000003} CommCapa: 7 Modif : 1
-Agent 2 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 8 Modif : 1
-Agent 3 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 7
-Agent 4 Criticality : -19.200000000000003
-{1: 0.0, 2: 16.0, 3: 3.200000000000003} CommCapa: 5 Modif : 1
-Agent 5 Criticality : -16.000000000000004
-{1: 0.0, 2: 12.8, 3: 3.200000000000003} CommCapa: 6 Modif : 1
-Agent 6 Criticality : -12.800000000000004
-{1: 0.0, 2: 9.600000000000001, 3: 3.200000000000003} CommCapa: 7
-Agent 7 Criticality : -12.8
-{1: 0.0, 2: 12.8, 3: 0} CommCapa: 6 Modif : 1
-Agent 8 Criticality : -16.000000000000004
-{1: 0.0, 2: 12.8, 3: 3.200000000000003} CommCapa: 6 Modif : 1
-WORST AGENT: 4 With -19.200000000000003
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 7
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 5
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -2.7847222222222223
+{1: 1.2152777777777777, 2: 0.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -2.5261658953364208
+{1: 5.624777500889996, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -10.909090909090908
 #################################################
 Cycle: 46
 #################################################
-Agent 0 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7 Modif : -1
-Agent 1 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7
-Agent 2 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7 Modif : -1
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7
-Agent 4 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5
-Agent 5 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 6 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 8 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-WORST AGENT: 4 With -9.600000000000001
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 7
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 5
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -2.7847222222222223
+{1: 1.2152777777777777, 2: 0.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -2.5261658953364208
+{1: 5.624777500889996, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -10.909090909090908
 #################################################
 Cycle: 47
 #################################################
-Agent 0 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 2 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 4 Modif : -1
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 6 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-WORST AGENT: 4 With -9.600000000000001
+Agent 0 Criticality : 11.931308471100861
+{1: 11.931308471100861, 2: 0.0, 3: 0} CommCapa: 7
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 3 Modif : -1
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 5
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 3.0092592592592595
+{1: 3.0092592592592595, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -1.5887029785214217
+{1: 6.562240417704995, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 0 With 11.931308471100861
 #################################################
 Cycle: 48
 #################################################
-Agent 0 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 4
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5 Modif : -1
-WORST AGENT: 4 With -6.4
+Agent 0 Criticality : 11.931308471100861
+{1: 11.931308471100861, 2: 0.0, 3: 0} CommCapa: 7
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 5
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 3.0092592592592595
+{1: 3.0092592592592595, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -1.5887029785214217
+{1: 6.562240417704995, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 0 With 11.931308471100861
 #################################################
 Cycle: 49
 #################################################
-Agent 0 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 4
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 4 With -6.4
+Agent 0 Criticality : 11.931308471100861
+{1: 11.931308471100861, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 5
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 4.513888888888889
+{1: 4.513888888888889, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -0.6512400617064227
+{1: 7.499703334519994, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 0 With 11.931308471100861
 #################################################
 Cycle: 50
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 4
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 11.931308471100861
+{1: 11.931308471100861, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 3
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 5
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 4.513888888888889
+{1: 4.513888888888889, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 6
+Agent 7 Criticality : -0.6512400617064227
+{1: 7.499703334519994, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 0 With 11.931308471100861
 #################################################
 Cycle: 51
 #################################################
-Agent 0 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
-Agent 4 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 5 Modif : -1
-Agent 6 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
-Agent 7 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : 4.3999999999999995
-{1: 4.3999999999999995, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 10.0
+Agent 0 Criticality : 1.9438677431757014
+{1: 4.767397154940408, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 5.6485107392903755
+{1: 5.6485107392903755, 2: 0.0, 3: 0} CommCapa: 4 Modif : 1
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 5
+Agent 3 Criticality : 3.5263084825767037
+{1: 3.5263084825767037, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : -0.6512400617064227
+{1: 7.499703334519994, 2: 0.0, 3: 8.150943396226417} CommCapa: 8
+Agent 5 Criticality : -4.0
+{1: 0.0, 2: 0.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : 1.8258638901463708
+{1: 1.8258638901463708, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
+Agent 7 Criticality : -2.5261658953364208
+{1: 5.624777500889996, 2: 0.0, 3: 8.150943396226417} CommCapa: 6 Modif : 1
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 52
 #################################################
-Agent 0 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 7 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : 4.3999999999999995
-{1: 4.3999999999999995, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 10.0
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 4 Modif : -1
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 1.5046296296296298
+{1: 1.5046296296296298, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 6.110359558561763
+{1: 8.223567105731577, 2: 0.0, 3: 2.1132075471698144} CommCapa: 6
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 53
 #################################################
-Agent 0 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 7 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : 4.3999999999999995
-{1: 4.3999999999999995, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 10.0
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 5 Modif : -1
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 4
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 3.0092592592592595
+{1: 3.0092592592592595, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 11.297021478580751
+{1: 11.297021478580751, 2: 0.0, 3: 0} CommCapa: 6
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 7 With 11.297021478580751
 #################################################
 Cycle: 54
 #################################################
-Agent 0 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 10.0
-{1: 10.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 3 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 6.933333333333334
-{1: 6.933333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 7 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : 4.3999999999999995
-{1: 4.3999999999999995, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 10.0
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 4
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 3.0092592592592595
+{1: 3.0092592592592595, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 11.297021478580751
+{1: 11.297021478580751, 2: 0.0, 3: 0} CommCapa: 6
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 7 With 11.297021478580751
 #################################################
 Cycle: 55
 #################################################
-Agent 0 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 1 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 8.0
-{1: 8.0, 2: 0.0, 3: 0} CommCapa: 8 Modif : 1
-Agent 3 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 5
-Agent 6 Criticality : 5.2
-{1: 5.2, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
-Agent 7 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 8 Criticality : 1.4666666666666666
-{1: 1.4666666666666666, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 2 With 8.0
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 11.546220481784738
+{1: 11.546220481784738, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 4
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 4.513888888888889
+{1: 4.513888888888889, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 11.297021478580751
+{1: 11.297021478580751, 2: 0.0, 3: 0} CommCapa: 5 Modif : -1
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 11.546220481784738
 #################################################
 Cycle: 56
 #################################################
-Agent 0 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8 Modif : 1
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 4 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 4
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6 Modif : 1
-Agent 6 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 8 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-WORST AGENT: 4 With -9.600000000000001
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 11.546220481784738
+{1: 11.546220481784738, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 4
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 4.513888888888889
+{1: 4.513888888888889, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 5
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 11.546220481784738
 #################################################
 Cycle: 57
 #################################################
-Agent 0 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7
-Agent 2 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 4 Criticality : -9.600000000000001
-{1: 0.0, 2: 9.600000000000001, 3: 0} CommCapa: 5 Modif : 1
-Agent 5 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 6 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 6
-Agent 8 Criticality : -12.800000000000004
-{1: 0.0, 2: 9.600000000000001, 3: 3.200000000000003} CommCapa: 5
-WORST AGENT: 8 With -12.800000000000004
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 11.546220481784738
+{1: 11.546220481784738, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 4
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 4.513888888888889
+{1: 4.513888888888889, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 5
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 11.546220481784738
 #################################################
 Cycle: 58
 #################################################
-Agent 0 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 4 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 6 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5 Modif : -1
-Agent 8 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-WORST AGENT: 4 With -6.4
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 11.546220481784738
+{1: 11.546220481784738, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 4
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 4.513888888888889
+{1: 4.513888888888889, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 5
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 11.546220481784738
 #################################################
 Cycle: 59
 #################################################
-Agent 0 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 4 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 6 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 8 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-WORST AGENT: 4 With -6.4
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 5 Modif : 1
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : 3.0092592592592595
+{1: 3.0092592592592595, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : 6.110359558561763
+{1: 8.223567105731577, 2: 0.0, 3: 2.1132075471698144} CommCapa: 5
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 1 With 9.896760412958347
 #################################################
 Cycle: 60
 #################################################
-Agent 0 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 4 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 6 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 8 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-WORST AGENT: 4 With -6.4
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6 Modif : 1
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 2 Criticality : -25.454545454545453
+{1: 0.0, 2: 25.454545454545453, 3: 0} CommCapa: 5
+Agent 3 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8 Modif : 1
+Agent 7 Criticality : -6.276017562596419
+{1: 1.8749258336299985, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7 Modif : 1
+WORST AGENT: 2 With -25.454545454545453
 #################################################
 Cycle: 61
 #################################################
-Agent 0 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -25.454545454545453
+{1: 0.0, 2: 25.454545454545453, 3: 0} CommCapa: 5
+Agent 3 Criticality : 0.0
 {1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 2 Criticality : 2.0
-{1: 2.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 4 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 5 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 6
-Agent 6 Criticality : 0.0
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -6.276017562596419
+{1: 1.8749258336299985, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
+Agent 8 Criticality : 0.0
 {1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-Agent 8 Criticality : -6.4
-{1: 0.0, 2: 6.4, 3: 0} CommCapa: 5
-WORST AGENT: 4 With -6.4
+WORST AGENT: 2 With -25.454545454545453
 #################################################
 Cycle: 62
 #################################################
-Agent 0 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
-Agent 2 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 8
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -25.454545454545453
+{1: 0.0, 2: 25.454545454545453, 3: 0} CommCapa: 5
 Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5 Modif : -1
-Agent 4 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -6.276017562596419
+{1: 1.8749258336299985, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
 Agent 8 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 6.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
+WORST AGENT: 2 With -25.454545454545453
 #################################################
 Cycle: 63
 #################################################
-Agent 0 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 8
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -25.454545454545453
+{1: 0.0, 2: 25.454545454545453, 3: 0} CommCapa: 5
 Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 4 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -6.276017562596419
+{1: 1.8749258336299985, 2: 0.0, 3: 8.150943396226417} CommCapa: 5
 Agent 8 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 6.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 7
+WORST AGENT: 2 With -25.454545454545453
 #################################################
 Cycle: 64
 #################################################
-Agent 0 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 6.0
-{1: 6.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 4 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 5 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 3.466666666666667
-{1: 3.466666666666667, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-Agent 8 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 6.0
+Agent 0 Criticality : 7.24080481865949
+{1: 7.24080481865949, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 5
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7 Modif : -1
+Agent 5 Criticality : 1.7939814814814814
+{1: 1.7939814814814814, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : -3.46362881215142
+{1: 4.687314584074997, 2: 0.0, 3: 8.150943396226417} CommCapa: 4 Modif : -1
+Agent 8 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
+WORST AGENT: 2 With -10.909090909090908
 #################################################
 Cycle: 65
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 5 Modif : -1
+Agent 1 Criticality : 11.546220481784738
+{1: 11.546220481784738, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 5
+Agent 3 Criticality : 12.244897959183673
+{1: 12.244897959183673, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : 3.587962962962963
+{1: 3.587962962962963, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
+Agent 6 Criticality : 10.638297872340425
+{1: 10.638297872340425, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : -1.5887029785214217
+{1: 6.562240417704995, 2: 0.0, 3: 8.150943396226417} CommCapa: 4
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 3 With 12.244897959183673
 #################################################
 Cycle: 66
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 10.137126746123288
+{1: 10.137126746123288, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 13.19568055061113
+{1: 13.19568055061113, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
+Agent 3 Criticality : 14.285714285714285
+{1: 14.285714285714285, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : 5.381944444444445
+{1: 5.381944444444445, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 10.638297872340425
+{1: 10.638297872340425, 2: 0.0, 3: 0} CommCapa: 7 Modif : -1
+Agent 7 Criticality : -0.6512400617064227
+{1: 7.499703334519994, 2: 0.0, 3: 8.150943396226417} CommCapa: 4
+Agent 8 Criticality : 12.244897959183673
+{1: 12.244897959183673, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 3 With 14.285714285714285
 #################################################
 Cycle: 67
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 10.137126746123288
+{1: 10.137126746123288, 2: 0.0, 3: 0} CommCapa: 5
+Agent 1 Criticality : 13.19568055061113
+{1: 13.19568055061113, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
+Agent 3 Criticality : 14.285714285714285
+{1: 14.285714285714285, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 10.80954076183695
+{1: 12.922748309006764, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : 5.381944444444445
+{1: 5.381944444444445, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 10.638297872340425
+{1: 10.638297872340425, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : -0.6512400617064227
+{1: 7.499703334519994, 2: 0.0, 3: 8.150943396226417} CommCapa: 4
+Agent 8 Criticality : 12.244897959183673
+{1: 12.244897959183673, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 3 With 14.285714285714285
 #################################################
 Cycle: 68
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 10.137126746123288
+{1: 10.137126746123288, 2: 0.0, 3: 0} CommCapa: 6 Modif : 1
+Agent 1 Criticality : 11.546220481784738
+{1: 11.546220481784738, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 5
+Agent 3 Criticality : 12.244897959183673
+{1: 12.244897959183673, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 9.634745461018154
+{1: 11.747953008187968, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : 3.587962962962963
+{1: 3.587962962962963, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : -9.287765515604608
+{1: 4.900913729678414, 2: 0.0, 3: 14.188679245283023} CommCapa: 4
+Agent 8 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 3 With 12.244897959183673
 #################################################
 Cycle: 69
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 8.688965782391389
+{1: 8.688965782391389, 2: 0.0, 3: 0} CommCapa: 6
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 5
+Agent 3 Criticality : 12.244897959183673
+{1: 12.244897959183673, 2: 0.0, 3: 0} CommCapa: 8 Modif : 1
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : 1.7939814814814814
+{1: 1.7939814814814814, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 7
+Agent 7 Criticality : -9.987896048415811
+{1: 4.200783196867212, 2: 0.0, 3: 14.188679245283023} CommCapa: 4
+Agent 8 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 3 With 12.244897959183673
 #################################################
 Cycle: 70
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 2 Criticality : -21.818181818181817
+{1: 0.0, 2: 21.818181818181817, 3: 0} CommCapa: 6 Modif : 1
+Agent 3 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 9 Modif : 1
+Agent 4 Criticality : 2.585973656105372
+{1: 4.699181203275186, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : -10.0
+{1: 0.0, 2: 10.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8 Modif : 1
+Agent 7 Criticality : -13.488548712471822
+{1: 0.700130532811202, 2: 0.0, 3: 14.188679245283023} CommCapa: 4
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -21.818181818181817
 #################################################
 Cycle: 71
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
+Agent 0 Criticality : -0.43983083429450254
+{1: 2.383698577470204, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 4.9483802064791735
+{1: 4.9483802064791735, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -18.181818181818183
+{1: 0.0, 2: 18.181818181818183, 3: 0} CommCapa: 6
+Agent 3 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 8 Modif : -1
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : -6.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 0} CommCapa: 5
+Agent 6 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : -12.788418179660619
+{1: 1.400261065622404, 2: 0.0, 3: 14.188679245283023} CommCapa: 4
+Agent 8 Criticality : 0.0
 {1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+WORST AGENT: 2 With -18.181818181818183
 #################################################
 Cycle: 72
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 0.7520184544405994
+{1: 3.575547866205306, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 6.597840275305565
+{1: 6.597840275305565, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 6
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : -6.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 0} CommCapa: 4 Modif : -1
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : -12.088287646849416
+{1: 2.100391598433606, 2: 0.0, 3: 14.188679245283023} CommCapa: 4
+Agent 8 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 73
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 0.7520184544405994
+{1: 3.575547866205306, 2: 0.0, 3: 2.8235294117647065} CommCapa: 6
+Agent 1 Criticality : 6.597840275305565
+{1: 6.597840275305565, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 6
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : -6.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 0} CommCapa: 4
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : -12.088287646849416
+{1: 2.100391598433606, 2: 0.0, 3: 14.188679245283023} CommCapa: 4
+Agent 8 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 6
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 74
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
+Agent 0 Criticality : 1.9438677431757014
+{1: 4.767397154940408, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5 Modif : -1
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 6
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
 Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 5 Modif : -1
+WORST AGENT: 3 With 10.204081632653061
 #################################################
 Cycle: 75
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
+Agent 0 Criticality : 1.9438677431757014
+{1: 4.767397154940408, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 6
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
 Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 3 With 10.204081632653061
 #################################################
 Cycle: 76
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 0.7520184544405994
+{1: 3.575547866205306, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 6
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8 Modif : 1
+Agent 5 Criticality : -7.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 4.0} CommCapa: 4
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 2.585973656105372
+{1: 4.699181203275186, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -10.909090909090908
 #################################################
 Cycle: 77
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
+Agent 0 Criticality : 4.344482891195694
+{1: 4.344482891195694, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 7 Modif : 1
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
 Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 3 With 10.204081632653061
 #################################################
 Cycle: 78
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
+Agent 0 Criticality : 4.344482891195694
+{1: 4.344482891195694, 2: 0.0, 3: 0} CommCapa: 4
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 4
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 7
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
 Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 3 With 10.204081632653061
 #################################################
 Cycle: 79
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -0.43983083429450254
+{1: 2.383698577470204, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 5 Modif : 1
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 7
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 4
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 2.585973656105372
+{1: 4.699181203275186, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 5
+WORST AGENT: 1 With 8.247300344131956
 #################################################
 Cycle: 80
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5 Modif : 1
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 8 Modif : 1
+Agent 3 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5 Modif : 1
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -0.9384122463510178
+{1: 1.1747953008187966, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 81
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 8
+Agent 3 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -0.9384122463510178
+{1: 1.1747953008187966, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 82
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 8
+Agent 3 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -0.9384122463510178
+{1: 1.1747953008187966, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 83
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 8
+Agent 3 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -0.9384122463510178
+{1: 1.1747953008187966, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 84
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -14.545454545454547
+{1: 0.0, 2: 14.545454545454547, 3: 0} CommCapa: 8
+Agent 3 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 5
+Agent 6 Criticality : -3.404255319148936
+{1: 0.0, 2: 3.404255319148936, 3: 0} CommCapa: 8
+Agent 7 Criticality : -0.9384122463510178
+{1: 1.1747953008187966, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -14.545454545454547
 #################################################
 Cycle: 85
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 0.7520184544405994
+{1: 3.575547866205306, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 8
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 6.110359558561763
+{1: 8.223567105731577, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7 Modif : -1
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 4 Modif : -1
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 2.585973656105372
+{1: 4.699181203275186, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4
+Agent 8 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4 Modif : -1
+WORST AGENT: 1 With 8.247300344131956
 #################################################
 Cycle: 86
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : 1.9438677431757014
+{1: 4.767397154940408, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4 Modif : -1
+Agent 1 Criticality : 11.546220481784738
+{1: 11.546220481784738, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : 2.272727272727273
+{1: 2.272727272727273, 2: 0.0, 3: 0} CommCapa: 8
+Agent 3 Criticality : 12.244897959183673
+{1: 12.244897959183673, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 8.459950160199355
+{1: 10.57315770736917, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
+Agent 5 Criticality : 1.7939814814814814
+{1: 1.7939814814814814, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 8
+Agent 7 Criticality : 3.76076895692417
+{1: 5.873976504093984, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3 Modif : -1
+Agent 8 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 3 With 12.244897959183673
 #################################################
 Cycle: 87
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
+Agent 0 Criticality : 0.7520184544405994
+{1: 3.575547866205306, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 9.896760412958347
+{1: 9.896760412958347, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 8
+Agent 3 Criticality : 10.204081632653061
+{1: 10.204081632653061, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 7
 Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+Agent 6 Criticality : 8.51063829787234
+{1: 8.51063829787234, 2: 0.0, 3: 0} CommCapa: 9 Modif : 1
+Agent 7 Criticality : 2.585973656105372
+{1: 4.699181203275186, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 3 With 10.204081632653061
 #################################################
 Cycle: 88
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -0.43983083429450254
+{1: 2.383698577470204, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 8
+Agent 3 Criticality : 8.16326530612245
+{1: 8.16326530612245, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8 Modif : 1
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 1.4111783552865758
+{1: 3.52438590245639, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 1 With 8.247300344131956
 #################################################
 Cycle: 89
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 5 Modif : 1
+Agent 1 Criticality : 4.9483802064791735
+{1: 4.9483802064791735, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 9 Modif : 1
+Agent 3 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 8
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -14.0
+{1: 0.0, 2: 10.0, 3: 4.0} CommCapa: 4
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : -0.9384122463510178
+{1: 1.1747953008187966, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 4
+WORST AGENT: 5 With -14.0
 #################################################
 Cycle: 90
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -0.43983083429450254
+{1: 2.383698577470204, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4 Modif : -1
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 9
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 7 Modif : -1
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 1.4111783552865758
+{1: 3.52438590245639, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 1 With 8.247300344131956
 #################################################
 Cycle: 91
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -0.43983083429450254
+{1: 2.383698577470204, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 9
+Agent 3 Criticality : 6.122448979591836
+{1: 6.122448979591836, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 4
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 1.4111783552865758
+{1: 3.52438590245639, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 1 With 8.247300344131956
 #################################################
 Cycle: 92
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 6.597840275305565
+{1: 6.597840275305565, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 9
+Agent 3 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 6.110359558561763
+{1: 8.223567105731577, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 5 Modif : 1
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 0.23638305446777874
+{1: 2.349590601637593, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 4
+WORST AGENT: 1 With 6.597840275305565
 #################################################
 Cycle: 93
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 4.9483802064791735
+{1: 4.9483802064791735, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 9
+Agent 3 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -6.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 0.23638305446777874
+{1: 2.349590601637593, 2: 0.0, 3: 2.1132075471698144} CommCapa: 4 Modif : 1
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 4
+WORST AGENT: 2 With -7.272727272727273
 #################################################
 Cycle: 94
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 6.597840275305565
+{1: 6.597840275305565, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 9
+Agent 3 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 7
+Agent 4 Criticality : 6.110359558561763
+{1: 8.223567105731577, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 5
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 0.23638305446777874
+{1: 2.349590601637593, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3 Modif : -1
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 4
+WORST AGENT: 1 With 6.597840275305565
 #################################################
 Cycle: 95
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
+Agent 0 Criticality : -0.43983083429450254
+{1: 2.383698577470204, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 8.247300344131956
+{1: 8.247300344131956, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 9
+Agent 3 Criticality : 4.081632653061225
+{1: 4.081632653061225, 2: 0.0, 3: 0} CommCapa: 6 Modif : -1
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 8
 Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 5
+Agent 6 Criticality : 6.382978723404255
+{1: 6.382978723404255, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 1.4111783552865758
+{1: 3.52438590245639, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 4
+WORST AGENT: 1 With 8.247300344131956
 #################################################
 Cycle: 96
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -1.6316801230296045
+{1: 1.191849288735102, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 6.597840275305565
+{1: 6.597840275305565, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -3.6363636363636367
+{1: 0.0, 2: 3.6363636363636367, 3: 0} CommCapa: 9
+Agent 3 Criticality : 2.0408163265306123
+{1: 2.0408163265306123, 2: 0.0, 3: 0} CommCapa: 6
+Agent 4 Criticality : 7.285154859380558
+{1: 9.398362406550373, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9 Modif : 1
+Agent 5 Criticality : -3.333333333333333
+{1: 0.0, 2: 3.333333333333333, 3: 0} CommCapa: 5
+Agent 6 Criticality : 4.25531914893617
+{1: 4.25531914893617, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : 0.23638305446777874
+{1: 2.349590601637593, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 4
+WORST AGENT: 4 With 7.285154859380558
 #################################################
 Cycle: 97
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
+Agent 0 Criticality : -2.8235294117647065
+{1: 0.0, 2: 0.0, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 4.9483802064791735
+{1: 4.9483802064791735, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -7.272727272727273
+{1: 0.0, 2: 7.272727272727273, 3: 0} CommCapa: 9
 Agent 3 Criticality : 0.0
 {1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 4 Criticality : 6.110359558561763
+{1: 8.223567105731577, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9
+Agent 5 Criticality : -6.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 0} CommCapa: 5
+Agent 6 Criticality : 2.127659574468085
+{1: 2.127659574468085, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : -0.9384122463510178
+{1: 1.1747953008187966, 2: 0.0, 3: 2.1132075471698144} CommCapa: 3
+Agent 8 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 5 Modif : 1
+WORST AGENT: 2 With -7.272727272727273
 #################################################
 Cycle: 98
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -5.96078431372549
+{1: 0.0, 2: 3.1372549019607843, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 9
+Agent 3 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 6
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9
+Agent 5 Criticality : -6.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 0} CommCapa: 6 Modif : 1
+Agent 6 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : -8.150943396226417
+{1: 0.0, 2: 0.0, 3: 8.150943396226417} CommCapa: 3
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -10.909090909090908
 #################################################
 Cycle: 99
 #################################################
-Agent 0 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 1 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 2 Criticality : 4.0
-{1: 4.0, 2: 0.0, 3: 0} CommCapa: 8
-Agent 3 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 4 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 5 Criticality : 0.0
-{1: 0.0, 2: 0.0, 3: 0} CommCapa: 6
-Agent 6 Criticality : 1.7333333333333334
-{1: 1.7333333333333334, 2: 0.0, 3: 0} CommCapa: 7
-Agent 7 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-Agent 8 Criticality : -3.2
-{1: 0.0, 2: 3.2, 3: 0} CommCapa: 5
-WORST AGENT: 0 With 4.0
+Agent 0 Criticality : -5.96078431372549
+{1: 0.0, 2: 3.1372549019607843, 3: 2.8235294117647065} CommCapa: 4
+Agent 1 Criticality : 3.2989201376527824
+{1: 3.2989201376527824, 2: 0.0, 3: 0} CommCapa: 5
+Agent 2 Criticality : -10.909090909090908
+{1: 0.0, 2: 10.909090909090908, 3: 0} CommCapa: 9
+Agent 3 Criticality : -3.2653061224489797
+{1: 0.0, 2: 3.2653061224489797, 3: 0} CommCapa: 6
+Agent 4 Criticality : 4.935564257742966
+{1: 7.04877180491278, 2: 0.0, 3: 2.1132075471698144} CommCapa: 9
+Agent 5 Criticality : -6.666666666666666
+{1: 0.0, 2: 6.666666666666666, 3: 0} CommCapa: 6
+Agent 6 Criticality : 0.0
+{1: 0.0, 2: 0.0, 3: 0} CommCapa: 9
+Agent 7 Criticality : -8.150943396226417
+{1: 0.0, 2: 0.0, 3: 8.150943396226417} CommCapa: 3
+Agent 8 Criticality : -6.530612244897959
+{1: 0.0, 2: 6.530612244897959, 3: 0} CommCapa: 5
+WORST AGENT: 2 With -10.909090909090908
