@@ -131,10 +131,14 @@ class Amas:
             agent.computeCriticality()
             total += agent.computeEfficiencyLimit()
         self.__drawAgent__()
-        for agent in self.agents:
-            tirage = random.random()
-            if tirage < self.all_var["proba_destr_agent"]:
-                ag_to_remove.append(agent)
+        # for agent in self.agents:
+        # tirage = random.random()
+        # if tirage < self.all_var["proba_destr_agent"]:
+        #    ag_to_remove.append(agent)
+        tirage = random.random()
+        if tirage < self.all_var["proba_destr_agent"]:
+            ind_ag = random.randint(0, len(self.agents) - 1)
+            ag_to_remove.append(self.agents[ind_ag])
         print("Total for the cycle : " + str(total))
         print("NBMESSAGES : " + str(self.network.nb_messages()))
         cpt = 0

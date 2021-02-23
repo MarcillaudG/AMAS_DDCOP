@@ -43,7 +43,7 @@ COEFF_A_TS = (MAX_TS - MIN_TS) / ((THRESHOLD_SCORE_MAX - THRESHOLD_SCORE_MIN) * 
 COEFF_B_TS = MAX_TS - COEFF_A_TS * (THRESHOLD_SCORE_MAX * 100)
 
 # IMPROVEMENT THRESHOLD
-IMPROVEMENT_THRESHOLD = 10.0
+IMPROVEMENT_THRESHOLD = 5.0
 
 
 class AgentStation:
@@ -67,6 +67,7 @@ class AgentStation:
         self.sent = []
         self.received_messages = []
         self.received_crit = []
+        self.last_crit_sent = 0.0
         self.last_score = 0
         self.last_worst_crit = 0.0
         self.scores = {"min": 0, "max": 0}
@@ -109,7 +110,7 @@ class AgentStation:
     def decide(self):
         # print("DECIDE PHASE " + str(self.id_ag))
         # compute the best variable to send (to put at 1)
-        nb_useless, nb_useful, less_reliable = self.computeUselessMessage()
+        nb_useless, nb_useful, less_reliable, more_reliable = self.computeUselessMessage()
 
         # MANAGE USELESS MESSAGES
         # when an information is no longer shared  because of an agent missing and i can share it, i share it
@@ -121,34 +122,42 @@ class AgentStation:
         best_crit = 100.0
         for criticalities in self.received_crit:
             if criticalities.sender != self.id_ag and criticalities.sender in self.neighborhood.keys():
-                if abs(worst_crit) < abs(criticalities.crit):
-                    worst_crit = criticalities.crit
-                if best_crit > abs(criticalities.crit):
-                    best_crit = abs(criticalities.crit)
+                # if abs(worst_crit) < abs(criticalities.crit):
+                #    worst_crit = criticalities.crit
+                # if best_crit > abs(criticalities.crit):
+                #    best_crit = abs(criticalities.crit)
                 self.neighborhood[criticalities.sender] = criticalities.crit
 
-        self.histoAVT(worst_crit)
-        if worst_crit < 0:
-            impact_reduce = COEFF_A_TMR + COEFF_A_TMU
+        for other_ag in self.neighborhood.keys():
+            criticalities = self.neighborhood[other_ag]
+            if abs(worst_crit) < abs(criticalities):
+                worst_crit = criticalities
+            if best_crit > abs(criticalities):
+                best_crit = abs(criticalities)
 
-            tirage = random.random()
-            # if tirage * 100 < IMPROVEMENT_THRESHOLD:
-            if tirage * 100 < self.avt.score:
-                if self.communication_capacity > 0:
-                    self.communication_capacity -= 1
-                self.avt.clean()
-            # if self.criticality > 0 or abs(self.criticality) <= best_crit:
-            #     self.communication_capacity = max(0, self.communication_capacity - 1)
-        if worst_crit > 0:
-            impact_reduce = COEFF_A_NE
-            tirage = random.random()
-            # if tirage * 100 < IMPROVEMENT_THRESHOLD:
-            if tirage * 100 < self.avt.score:
-                if self.communication_capacity < len(self.decision_variable.keys()) - len(less_reliable):
-                    self.communication_capacity += 1
-                self.avt.clean()
-            # if self.criticality < 0 or abs(self.criticality) <= best_crit:
-            #    self.communication_capacity = min(len(self.decision_variable.keys()), self.communication_capacity + 1)
+        self.histoAVT(worst_crit)
+        if abs(worst_crit) >= IMPROVEMENT_THRESHOLD:
+            if worst_crit < 0:
+                impact_reduce = COEFF_A_TMR + COEFF_A_TMU
+
+                tirage = random.random()
+                # if tirage * 100 < IMPROVEMENT_THRESHOLD:
+                if tirage * 100 < self.avt.score:
+                    if self.communication_capacity > 0:
+                        self.communication_capacity -= 1
+                    self.avt.clean()
+                # if self.criticality > 0 or abs(self.criticality) <= best_crit:
+                #     self.communication_capacity = max(0, self.communication_capacity - 1)
+            if worst_crit > 0:
+                impact_reduce = COEFF_A_NE
+                tirage = random.random()
+                # if tirage * 100 < IMPROVEMENT_THRESHOLD:
+                if tirage * 100 < self.avt.score:
+                    if self.communication_capacity < len(self.decision_variable.keys()) - len(less_reliable):
+                        self.communication_capacity += 1
+                    self.avt.clean()
+                # if self.criticality < 0 or abs(self.criticality) <= best_crit:
+                #    self.communication_capacity = min(len(self.decision_variable.keys()), self.communication_capacity + 1)
         '''if worst_crit < 0:
             self.communication_capacity -= 1
         if worst_crit > 0:
@@ -156,13 +165,20 @@ class AgentStation:
         self.received_crit.clear()
         cumul_weight = 0
         self.last_worst_crit = worst_crit
+        # for var in more_reliable:
+        #    var_weight = self.decision_variable[var].size
+        #    if cumul_weight + var_weight <= self.communication_capacity:
+        #        self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
+        #        cumul_weight += var_weight
+
         # pour toutes les variables
         for var in self.decision_variable.keys():
             # si je suis encore capable d'en envoyer
             var_weight = self.decision_variable[var].size
-            if var not in less_reliable and cumul_weight + var_weight <= self.communication_capacity:
-                self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
-                cumul_weight += var_weight
+            if var not in less_reliable:
+                if cumul_weight + var_weight <= self.communication_capacity:
+                    self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
+                    cumul_weight += var_weight
 
     def act(self):
         # print("ACT PHASE " + str(self.id_ag))
@@ -252,9 +268,10 @@ class AgentStation:
         self.scores["max"] = max(self.last_score, self.scores["max"])
         return int(efficiency)
 
-    def computeUselessMessage(self) -> (int, int, []):
+    def computeUselessMessage(self) -> (int, int, [], []):
         best_messages = {}
         less_reliable = []
+        more_reliable = []
         nb_useless_message = 0
         nb_usefull = 0
         for mess in self.received_messages:
@@ -262,28 +279,33 @@ class AgentStation:
             #     worst_crit = max(mess.crit, worst_crit)
             #     self.received_messages.remove(mess)
             # else:
-            if mess.name in self.decision_variable.keys() and mess.sender in self.neighborhood.keys():
-                var_tmp = self.analyse_message(mess)
-                if var_tmp.reliability > self.decision_variable[mess.name].reliability:
-                    if mess.name not in best_messages.keys():
-                        best_messages[mess.name] = mess
-                        nb_usefull += 1
+            if mess.sender in self.neighborhood.keys():
+                if mess.name in self.decision_variable.keys():
+                    var_tmp = self.analyse_message(mess)
+                    if var_tmp.reliability > self.decision_variable[mess.name].reliability:
+                        if mess.name not in best_messages.keys():
+                            best_messages[mess.name] = mess
+                            nb_usefull += 1
+                        else:
+                            # CCRIT
+                            nb_useless_message += 1
+
+                            var_best = self.analyse_message(best_messages[mess.name])
+                            if var_best.reliability < var_tmp.reliability:
+                                best_messages[mess.name] = mess
+                        if mess.name not in less_reliable:
+                            less_reliable.append(mess.name)
+                        if mess.name in more_reliable:
+                            more_reliable.remove(mess.name)
                     else:
                         # CCRIT
                         nb_useless_message += 1
-
-                        var_best = self.analyse_message(best_messages[mess.name])
-                        if var_best.reliability < var_tmp.reliability:
-                            best_messages[mess.name] = mess
-                    if mess.name not in less_reliable:
-                        less_reliable.append(mess.name)
+                        if mess.name not in less_reliable and mess.name not in more_reliable:
+                            more_reliable.append(mess.name)
                 else:
                     # CCRIT
                     nb_useless_message += 1
-            else:
-                # CCRIT
-                nb_useless_message += 1
-        return nb_useless_message, nb_usefull, less_reliable
+        return nb_useless_message, nb_usefull, less_reliable, more_reliable
 
     # compute the agent criticality
     def computeCriticality(self) -> None:
@@ -295,6 +317,7 @@ class AgentStation:
         self.weight_messages = sum_weight
         # CCRIT
         # CRIT 2 -> TROP DE MESSAGES
+        old_crit = self.criticality
         self.criticality = 0.0
         crit_neg = 0.0
         nb_exced_message = max(0, sum_weight - self.computing_capacity)
@@ -303,7 +326,7 @@ class AgentStation:
             crit_neg = min(MAX_TMR, COEFF_A_TMR * pourcent_exced + COEFF_B_TMR)
 
         # MANAGE USELESS MESSAGES
-        nb_useless, nb_useful, less_reliable = self.computeUselessMessage()
+        nb_useless, nb_useful, less_reliable, more_reliable = self.computeUselessMessage()
         self.nb_useless = nb_useless
         self.crits[2] = crit_neg
         # useless_over_threshold = max(nb_useless - self.computing_capacity * THRESHOLD_TOO_MUCH_USELESS_MIN, 0)
@@ -343,7 +366,17 @@ class AgentStation:
 
         self.criticality = crit_pos - crit_neg - crit_useless
 
-        self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
+        worst_crit = 0.0
+        worst_not_abs = 0.0
+        for other_ag in self.neighborhood.keys():
+            if abs(self.neighborhood[other_ag]) > worst_crit:
+                worst_crit = abs(self.neighborhood[other_ag])
+                worst_not_abs = self.neighborhood[other_ag]
+        # print("OLD : " + str(self.last_crit_sent)  + " WORST : " + str(worst_not_abs) + "  self : " + str(self.criticality))
+        if abs(self.last_crit_sent) >= abs(self.last_worst_crit) or abs(self.criticality) >= abs(worst_crit):
+            self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
+            self.last_crit_sent = self.criticality
+        # self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
         # print("NBUSELESS : " + str(nb_useless))
 
     def histoAVT(self, worst_crit: float):

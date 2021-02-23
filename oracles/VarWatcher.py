@@ -1,7 +1,7 @@
 def compareVar(scenario: str) -> None:
-    file_pulp = open("oracles/result_" + scenario + ".yaml.csv", "r")
+    file_pulp = open("Solvers/result_" + scenario + ".yaml.csv", "r")
     file_network = open("logs/" + scenario + "_network.csv", "r")
-    file_result = open("oracles/varWatch" + scenario + ".csv", "w")
+    file_result = open("VarWatchers/varWatch" + scenario + ".csv", "w")
     file_result.write("Cycle;Sum_good;Sum_bad;Missing\n")
     var_pulp = []
     for line in file_pulp.readlines():
@@ -9,7 +9,6 @@ def compareVar(scenario: str) -> None:
             line_rmf_split = line[1:].split(";")
             if "1.0" in line_rmf_split[1]:
                 var_pulp.append(line_rmf_split[0])
-    print(str(var_pulp))
     for line in file_network.readlines():
         line_split = line[:len(line)-2].split(";")
         cycle = line_split[0]

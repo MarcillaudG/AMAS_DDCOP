@@ -36,11 +36,9 @@ def run(scenario: str) -> None:
             if "constraints" in line_split[0]:
                 switch = 2
                 dict_vars = LpVariable.dicts("", variables.keys(), lowBound=0, upBound=1, cat="Integer")
-                print(str(dict_vars.keys()))
         if "agents" in line:
             switch = 4
         if switch == 2 and "constraints" not in line_split[0]:
-            print(line)
             if "congestion" in line_split[0] or "C_utility" in line_split[0]:
                 name_constraint = line_split[0].lstrip()
                 all_var_in_constraint.clear()
@@ -84,7 +82,7 @@ def run(scenario: str) -> None:
     model.writeLP("oracles/SocialCAV.lp")
     model.solve()
 
-    file_result = open("oracles/result_" + file_name + ".csv", "w")
+    file_result = open("Solvers/result_" + file_name + ".csv", "w")
     result = 0.0
     sum_message = 0
     for v in model.variables():
