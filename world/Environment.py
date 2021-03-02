@@ -5,7 +5,7 @@ from world.Variables import Variables
 
 class Environment:
 
-    def __init__(self, nb_var: int) -> object:
+    def __init__(self, nb_var: int):
         # Creation of nb_var variables
         self.variables = {}
         self.distribution_gauss_sensed = {}

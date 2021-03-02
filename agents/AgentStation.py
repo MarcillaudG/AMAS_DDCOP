@@ -44,6 +44,7 @@ COEFF_B_TS = MAX_TS - COEFF_A_TS * (THRESHOLD_SCORE_MAX * 100)
 
 # IMPROVEMENT THRESHOLD
 IMPROVEMENT_THRESHOLD = 5.0
+REPLACING_BONUS = 2.0
 
 
 class AgentStation:
@@ -63,6 +64,7 @@ class AgentStation:
         self.communication_capacity = communication_capacity
         self.useless_variable = []
         self.to_send = []
+        self.to_replace = []
         self.weight_before = 0
         self.sent = []
         self.received_messages = []
@@ -83,6 +85,7 @@ class AgentStation:
             if utility >= 2:
                 self.decision_variable[env_var] = Variables(env_var, utility, self.environment.variables[env_var].size)
         score = self.computeEfficiencyLimit()
+        print("LEN DV : " + str(len(self.decision_variable.keys())))
         self.scores["min"] = score
         self.scores["max"] = score
         self.last_score = score
@@ -101,9 +104,11 @@ class AgentStation:
         # what my sensors gather
         # not used for now
         self.sent = []
-        self.sent.extend(self.to_send)
+        for mess in self.to_send:
+            self.sent.append(mess.name)
         self.communication_capacity = len(self.sent)
         self.to_send.clear()
+        self.to_replace.clear()
         # perceive the variable sorted by reliability
         self.decision_variable = dict(sorted(self.decision_variable.items(), key=lambda item: item[1], reverse=True))
 
@@ -152,6 +157,8 @@ class AgentStation:
                 impact_reduce = COEFF_A_NE
                 tirage = random.random()
                 # if tirage * 100 < IMPROVEMENT_THRESHOLD:
+                if len(more_reliable) > 0:
+                    tirage = tirage / REPLACING_BONUS
                 if tirage * 100 < self.avt.score:
                     if self.communication_capacity < len(self.decision_variable.keys()) - len(less_reliable):
                         self.communication_capacity += 1
@@ -163,22 +170,14 @@ class AgentStation:
         if worst_crit > 0:
             self.communication_capacity += 1'''
         self.received_crit.clear()
-        cumul_weight = 0
         self.last_worst_crit = worst_crit
         # for var in more_reliable:
         #    var_weight = self.decision_variable[var].size
         #    if cumul_weight + var_weight <= self.communication_capacity:
         #        self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
         #        cumul_weight += var_weight
-
+        self.decideMessageToSend(less_reliable, more_reliable)
         # pour toutes les variables
-        for var in self.decision_variable.keys():
-            # si je suis encore capable d'en envoyer
-            var_weight = self.decision_variable[var].size
-            if var not in less_reliable:
-                if cumul_weight + var_weight <= self.communication_capacity:
-                    self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
-                    cumul_weight += var_weight
 
     def act(self):
         # print("ACT PHASE " + str(self.id_ag))
@@ -191,6 +190,49 @@ class AgentStation:
 
     def receive_messages(self, sent: [Message]):
         self.received_messages = sent
+
+    # The agent decides which variables send
+    def decideMessageToSend(self, less_reliable: [], more_reliable: []) -> None:
+        cumul_weight = 0
+        # What was sent is still sent unless it is less relaible
+        var_to_sent = []
+        for var in self.sent:
+            var_weight = self.decision_variable[var].size
+            if var not in less_reliable:
+                if cumul_weight + var_weight <= self.communication_capacity:
+                    self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
+                    cumul_weight += var_weight
+                    var_to_sent.append(var)
+
+        # I know that i am better, so if I have room i send in priority
+        if cumul_weight < self.communication_capacity:
+            for var in more_reliable:
+                var_weight = self.decision_variable[var].size
+                if var not in less_reliable and var not in self.sent:
+                    if cumul_weight + var_weight <= self.communication_capacity:
+                        self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
+                        cumul_weight += var_weight
+                        if var in var_to_sent:
+                            print("ERROR 1")
+                        var_to_sent.append(var)
+
+
+        # If i don t have any idea, trust myself
+        if cumul_weight < self.communication_capacity:
+            i = 0
+            while i < len(self.decision_variable) and cumul_weight < self.communication_capacity:
+                var = list(self.decision_variable.keys())[i]
+                # si je suis encore capable d'en envoyer
+                var_weight = self.decision_variable[var].size
+                if var not in less_reliable and var not in self.sent and var not in more_reliable:
+                    if cumul_weight + var_weight <= self.communication_capacity:
+                        self.to_send.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
+                        cumul_weight += var_weight
+                        if var in var_to_sent:
+                            print("ERROR 2")
+                        var_to_sent.append(var)
+                i += 1
+
 
     # Receives messages sent by neighbors
     def receive_message_from_netowrk(self):
@@ -415,4 +457,6 @@ class AgentStation:
 
     def getComputingCapacity(self):
         return self.computing_capacity
+
+
 
