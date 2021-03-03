@@ -99,7 +99,12 @@ class Amas:
                                             environment=self.environment, network=self.network))'''
             self.agents.append(agent)
             self.writer.addAgent(agent, 0)
+            self.environment.addAgentToGrid(self.all_id_ag)
             self.all_id_ag += 1
+        self.environment.drawGrid()
+        for j in range(self.all_id_ag):
+            print(str(self.environment.getNeighbours(j, 2)))
+        sleep(10000)
         self.writerCSV = CSVWriter(self.experiment, self.agents)
         self.writerNetwork = NetworkWriter(self.experiment)
 

@@ -4,7 +4,7 @@ from oracles import VarWatcher
 
 if __name__ == '__main__':
     print('BEGIN')
-    scenario = "scenario1"
+    scenario = "scenario_high_dynamic"
     amas = Amas(experiment=scenario)
     amas.__run__(100)
     pulpSolver.run(scenario)
