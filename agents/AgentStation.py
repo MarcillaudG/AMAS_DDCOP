@@ -51,12 +51,13 @@ class AgentStation:
     id_ag = None
 
     def __init__(self, id_ag: int, computing_capacity: int, communication_capacity: int,
-                 environment: Environment, network: Network):
+                 environment: Environment, network: Network, com_range=999999):
         self.id_ag = id_ag
         self.criticality = 0.0
         self.crits = {1: 0.0, 2: 0.0, 3: 0.0}
         self.environment = environment
         self.network = network
+        self.com_range = com_range
         self.var = {}
         self.neighborhood = {}
         self.decision_variable = {}
@@ -65,7 +66,6 @@ class AgentStation:
         self.useless_variable = []
         self.to_send = []
         self.to_replace = []
-        self.weight_before = 0
         self.sent = []
         self.received_messages = []
         self.received_crit = []
@@ -73,8 +73,6 @@ class AgentStation:
         self.last_score = 0
         self.last_worst_crit = 0.0
         self.scores = {"min": 0, "max": 0}
-        self.weight_messages = 0
-        self.nb_useless = 0
         self.nb_messages_sent = 0
         self.avt = AVT(IMPROVEMENT_THRESHOLD)
         self.__initUtility__()
@@ -356,7 +354,6 @@ class AgentStation:
         for mess in self.received_messages:
             if mess.sender != self.id_ag:
                 sum_weight += mess.weight
-        self.weight_messages = sum_weight
         # CCRIT
         # CRIT 2 -> TROP DE MESSAGES
         old_crit = self.criticality

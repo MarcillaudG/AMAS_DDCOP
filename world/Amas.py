@@ -15,7 +15,7 @@ from writers.NetworkWriter import NetworkWriter
 class Amas:
     def __init__(self, experiment="DEFAULT", init_ag=9, proba_destr_agent=0.01, appar_ag=0.01, nb_data=20,
                  computation_max=10, variation_comp=0.25, communication_max=10, variation_comm=0.25,
-                 network_size=10000, max_cycle=20):
+                 network_size=10000, max_cycle=20, neighbourhood=0):
         self.agents = []
         self.variables = {}
         self.experiment = experiment
@@ -30,7 +30,8 @@ class Amas:
             "communication_max": communication_max,
             "variation_comm": variation_comm,
             "network_size": network_size,
-            "max_cycle": max_cycle
+            "max_cycle": max_cycle,
+            "neighbourhood": neighbourhood
         }
         self.mailbox = []
         self.all_id_ag = 0
@@ -87,13 +88,16 @@ class Amas:
         self.network = Network(self.all_var["network_size"])
         self.environment = Environment(self.all_var["nb_data"])
         self.writer = DCOPWriter(self.experiment, self.environment.variables.keys())
+        com_range = 999999
+        if self.all_var["neighbourhood"] != 0:
+            com_range = self.all_var["neighbourhood"]
         # Creation of agents
         for i in range(0, self.all_var["init_ag"]):
             # Specification of agent
             agent = AgentStation(self.all_id_ag,
                                  computing_capacity=int(self.distri_capa[self.all_id_ag % len(self.distri_capa)]),
                                  communication_capacity=self.all_var["communication_max"],
-                                 environment=self.environment, network=self.network)
+                                 environment=self.environment, network=self.network, com_range=com_range)
             '''self.agents.append(AgentStation(self.all_id_ag, computing_capacity=self.all_var["computation_max"],
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''
@@ -101,10 +105,6 @@ class Amas:
             self.writer.addAgent(agent, 0)
             self.environment.addAgentToGrid(self.all_id_ag)
             self.all_id_ag += 1
-        self.environment.drawGrid()
-        for j in range(self.all_id_ag):
-            print(str(self.environment.getNeighbours(j, 2)))
-        sleep(10000)
         self.writerCSV = CSVWriter(self.experiment, self.agents)
         self.writerNetwork = NetworkWriter(self.experiment)
 
@@ -122,6 +122,7 @@ class Amas:
 
     def __agentsCycle__(self) -> None:
         for agent in self.agents:
+            # neighbours = self.environment.getNeighbours(agent.id_ag, agent.com_range)
             neighbours = []
             for other in self.agents:
                 if other.id_ag != agent.id_ag:
@@ -160,10 +161,14 @@ class Amas:
             cpt += 1
         if cpt > 0:
             print("DESTRUCTION -> " + str(ag_to_remove))
+
+        com_range = 999999
+        if self.all_var["neighbourhood"] != 0:
+            com_range = self.all_var["neighbourhood"]
         while cpt > 0:
             agent = AgentStation(self.all_id_ag, computing_capacity=self.all_var["computation_max"],
                                  communication_capacity=self.all_var["communication_max"],
-                                 environment=self.environment, network=self.network)
+                                 environment=self.environment, network=self.network, com_range=com_range)
             '''self.agents.append(AgentStation(self.all_id_ag, computing_capacity=self.all_var["computation_max"],
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''

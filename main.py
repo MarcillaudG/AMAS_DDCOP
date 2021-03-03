@@ -4,8 +4,8 @@ from oracles import VarWatcher
 
 if __name__ == '__main__':
     print('BEGIN')
-    scenario = "scenario_high_dynamic"
+    scenario = "scenario_neighb"
     amas = Amas(experiment=scenario)
-    amas.__run__(100)
+    amas.__run__(300)
     pulpSolver.run(scenario)
     VarWatcher.compareVar(scenario)
