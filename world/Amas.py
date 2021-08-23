@@ -1,4 +1,4 @@
-from time import sleep
+from time import sleep, time
 import random
 from agents.AgentStation import AgentStation
 from agents.Messages import Message
@@ -8,18 +8,26 @@ from writers.CSVWriter import CSVWriter
 from writers.DCOPWriter import DCOPWriter
 from writers.LogCriticality import LogCriticality
 from colorama import *
+from datetime import datetime
 
 from writers.NetworkWriter import NetworkWriter
 
 
 class Amas:
-    def __init__(self, experiment="DEFAULT", init_ag=9, proba_destr_agent=0.01, appar_ag=0.01, nb_data=20,
+    def __init__(self, root="", experiment="DEFAULT", init_ag=9, proba_destr_agent=0.01, appar_ag=0.01, nb_data=20,
                  computation_max=10, variation_comp=0.25, communication_max=10, variation_comm=0.25,
-                 network_size=10000, max_cycle=20, neighbourhood=0):
+                 network_size=10000, max_cycle=20, neighbourhood=0, test=True, id=0, explo=False):
         self.agents = []
         self.variables = {}
         self.experiment = experiment
-        self.logCriticality = LogCriticality(experiment)
+        self.test = test
+        self.id = id
+        self.nb_nego_messages = 0
+        self.root = root
+        if test:
+            self.logCriticality = LogCriticality("test_" + experiment)
+        else:
+            self.logCriticality = LogCriticality(experiment + "/run_" + str(self.id))
         self.all_var = {
             "init_ag": init_ag,
             "proba_destr_agent": proba_destr_agent,
@@ -31,7 +39,8 @@ class Amas:
             "variation_comm": variation_comm,
             "network_size": network_size,
             "max_cycle": max_cycle,
-            "neighbourhood": neighbourhood
+            "neighbourhood": neighbourhood,
+            "newagents": {}
         }
         self.mailbox = []
         self.all_id_ag = 0
@@ -40,17 +49,25 @@ class Amas:
         else:
             self.__readScenario__(self.experiment)
             self.__beginExperiment__()
+        self.explo = explo
 
     # read the file and create the corresponding experiment
     def __readScenario__(self, experiment: str) -> None:
-        file = open("scenarios/" + experiment, "r")
+        file = open("scenarios/" + self.root + experiment, "r")
         for line in file.read().split("\n"):
             print(line)
-            line_split = line.split("=")
-            if "." in line_split[1]:
-                self.all_var[line_split[0]] = float(line_split[1])
+            if "{" in line:
+                inform = line.split("{")[1][:-1]
+                inform_split = inform.split(",")
+                for even in inform_split:
+                    even_split = even.split(":")
+                    self.all_var["newagents"][int(even_split[0])] = int(even_split[1])
             else:
-                self.all_var[line_split[0]] = int(line_split[1])
+                line_split = line.split("=")
+                if "." in line_split[1]:
+                    self.all_var[line_split[0]] = float(line_split[1])
+                else:
+                    self.all_var[line_split[0]] = int(line_split[1])
         print(str(self.all_var))
 
     # Return a list with all neighbors ofthe given agent
@@ -105,7 +122,12 @@ class Amas:
             self.writer.addAgent(agent, 0)
             self.environment.addAgentToGrid(self.all_id_ag)
             self.all_id_ag += 1
-        self.writerCSV = CSVWriter(self.experiment, self.agents)
+        self.environment.drawGrid()
+        # sleep(100000)
+        if not self.test:
+            self.writerCSV = CSVWriter(self.experiment + "/run_" + str(self.id), self.agents)
+        else:
+            self.writerCSV = CSVWriter(self.experiment, self.agents)
         self.writerNetwork = NetworkWriter(self.experiment)
 
     # First implementation, messages are sent to all
@@ -122,11 +144,11 @@ class Amas:
 
     def __agentsCycle__(self) -> None:
         for agent in self.agents:
-            # neighbours = self.environment.getNeighbours(agent.id_ag, agent.com_range)
-            neighbours = []
-            for other in self.agents:
-                if other.id_ag != agent.id_ag:
-                    neighbours.append(other.id_ag)
+            neighbours = self.environment.getNeighbours(agent.id_ag, agent.com_range)
+            # neighbours = []
+            # for other in self.agents:
+            #    if other.id_ag != agent.id_ag:
+            #        neighbours.append(other.id_ag)
             agent.perceive(neighbours)
             agent.decide()
             agent.act()
@@ -134,6 +156,7 @@ class Amas:
     def __endCycle__(self) -> None:
         total = 0
         ag_to_remove = []
+        self.nb_nego_messages += len(self.network.releaseMessagesCrit())
         self.network.__cycleEnd__()
         for agent in self.agents:
             agent.receive_message_from_netowrk()
@@ -154,10 +177,12 @@ class Amas:
         self.logCriticality.writeCriticality(self.cycle, self.agents)
         self.writerCSV.writeLine(self.agents, total)
         self.writerNetwork.writeCycle(self.cycle, self.network)
+        positions = []
         for agent_to_r in ag_to_remove:
-            self.agents.remove(agent_to_r)
+            # self.agents.remove(agent_to_r)
+            positions.append(self.environment.getPosition(agent_to_r.id_ag))
             # self.writer.destroyAgent(agent_to_r.id_ag, self.cycle)
-            del agent_to_r
+            # del agent_to_r
             cpt += 1
         if cpt > 0:
             print("DESTRUCTION -> " + str(ag_to_remove))
@@ -173,17 +198,43 @@ class Amas:
                                             communication_capacity=self.all_var["communication_max"],
                                             environment=self.environment, network=self.network))'''
             self.agents.append(agent)
+            x,y = positions[cpt-1]
+            # self.environment.replaceAgent(self.all_id_ag, x, y)
+            self.environment.addAgentToGrid(self.all_id_ag)
             self.writer.addAgent(agent, self.cycle)
             self.all_id_ag += 1
             cpt -= 1
 
-    def __run__(self, max_cycle: int, mode="auto", time=1) -> None:
+        # EVENTS
+        if self.cycle + 1 in self.all_var["newagents"].keys():
+            agent = AgentStation(self.all_id_ag, computing_capacity=self.all_var["newagents"][self.cycle+1],
+                                 communication_capacity=self.all_var["newagents"][self.cycle+1],
+                                 environment=self.environment, network=self.network, com_range=com_range)
+            '''self.agents.append(AgentStation(self.all_id_ag, computing_capacity=self.all_var["computation_max"],
+                                            communication_capacity=self.all_var["communication_max"],
+                                            environment=self.environment, network=self.network))'''
+            self.agents.append(agent)
+            # x, y = positions[cpt - 1]
+            # self.environment.replaceAgent(self.all_id_ag, x, y)
+            self.environment.addAgentToGrid(self.all_id_ag)
+            self.writer.addAgent(agent, self.cycle)
+            self.all_id_ag += 1
+
+    def __run__(self, max_cycle: int, mode="auto", run=1) -> None:
+        init_time = datetime.now()
+        all_cycle_time = []
+        max_cycle_time = 0
         if mode == "auto":
             for i in range(0, max_cycle):
                 self.cycle = i
                 print("Begin cyle " + str(i))
                 self.__beginCycle__()
+                init_cycle_time = datetime.now()
                 self.__agentsCycle__()
+                cycle_time = datetime.now() - init_cycle_time
+                all_cycle_time.append(cycle_time)
+                if cycle_time > max_cycle_time:
+                    max_cycle_time = cycle_time
                 self.__endCycle__()
                 print("END cyle " + str(i))
                 # sleep(time)
@@ -197,10 +248,28 @@ class Amas:
                 i = i + 1
                 stop = input("Continue ? 0 stop / 1 continue")
         print("RUN ENDED WITHOUT ERROR")
+        total_time = datetime.now() - init_time
         self.writer.writeDCOP(self.environment)
         self.logCriticality.endLog()
-        self.writerCSV.end()
+        self.writerCSV.end(total_time)
         self.writerNetwork.end()
+
+        if self.explo:
+            # Time Exploration
+            alltimefile = open("scenarios/scenario_exploration/alltime_" + str(datetime.now().day)
+                            + "_" + str(datetime.now().month) + ".csv", 'a')
+            meantimefile = open("scenarios/scenario_exploration/meantime_" + str(datetime.now().day)
+                               + "_" + str(datetime.now().month) + ".csv", 'a')
+            maxtimefile = open("scenarios/scenario_exploration/maxtime_" + str(datetime.now().day)
+                               + "_" + str(datetime.now().month) + ".csv", 'a')
+            meantime = 0.0
+            for timecycle in all_cycle_time:
+                alltimefile.write(str(timecycle) + ";")
+                meantime += timecycle
+            alltimefile.write("\n")
+            meantime = meantime / len(all_cycle_time)
+            meantimefile.write(str(meantime) + "\n")
+            maxtimefile.write(str(max_cycle_time) + "\n")
 
     def __drawAgent__(self) -> None:
         i = 0

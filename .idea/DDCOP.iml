@@ -7,5 +7,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="pyDcop" />
+    <orderEntry type="module" module-name="Tools" />
   </component>
 </module>

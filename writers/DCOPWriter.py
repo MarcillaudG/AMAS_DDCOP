@@ -83,6 +83,7 @@ class DCOPWriter:
         # constraints
         ##################################################################################################
         file.write("constraints:\n")
+        ind = 0
         for id_ag in self.agents.keys():
             line_cong = "a= " + str(all_var_ag[id_ag][0])
             for i in range(1, len(all_var_ag[id_ag])):
@@ -91,10 +92,15 @@ class DCOPWriter:
             # charge computation
             file.write(space + "congestion_comput_ag" + str(id_ag) + ":\n" + space + space + "type: intention\n")
             # function
-            file.write(space + space + "function: |\n" + space + space + space + line_cong)
+            # file.write(space + space + "function: |\n" + space + space + space + line_cong)
+            file.write(space + space + "function: |\n")
+            file.write(space + space + space + line_cong + "\n")
+
             # TODO Function
-            file.write("\n" + space + space + space +
-                       "return - max(a - " + str(self.agents[id_ag]["Computing"]) + ", 0)\n\n")
+            file.write(space + space + space + "if a > " + str(self.agents[id_ag]["Computing"]) + ":\n")
+            file.write(space + space + space + space + "return -10000\n")
+            file.write(space + space + space + "else:\n")
+            file.write(space + space + space + space + "return 0\n")
 
             # Rempli chaque variable
             for var in self.dict_env_var_to_ag_var.keys():

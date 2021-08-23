@@ -1,0 +1,10 @@
+init_ag=30
+proba_destr_agent=0.0
+proba_appar_agent=0.0
+nb_data=1000
+computation_max=500
+variation_comp=0.0
+communication_max=15
+variation_comm=0.25
+network_size=10000
+newagents={40:300,70:400,90:300,150:200}

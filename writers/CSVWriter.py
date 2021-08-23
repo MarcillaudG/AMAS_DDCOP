@@ -5,13 +5,14 @@ class CSVWriter:
 
     def __init__(self, file_name: str, agents: []) -> None:
         self.file = open("logs/" + file_name + ".csv", "w")
-        for agent in agents:
-            self.file.write(str(agent.id_ag) + separator)
+        # for agent in agents:
+        #    self.file.write(str(agent.id_ag) + separator)
         self.file.write("max_crit" + separator)
         self.file.write("moyenne" + separator)
-        self.file.write("resultat" + separator)
+        '''self.file.write("resultat" + separator)
         self.file.write("creation" + separator)
-        self.file.write("destruction" + "\n")
+        self.file.write("destruction" + "\n")'''
+        self.file.write("\n")
         self.last_agents = []
         self.last_agents.extend(agents)
 
@@ -21,7 +22,7 @@ class CSVWriter:
         new = []
         destr = []
         for agent in agents:
-            self.file.write(str(agent.criticality) + separator)
+            # self.file.write(str(agent.criticality) + separator)
             if abs(agent.criticality) > max_crit:
                 max_crit = abs(agent.criticality)
             moyenne += abs(agent.criticality)
@@ -35,14 +36,16 @@ class CSVWriter:
         self.file.write(str(moyenne) + separator)
         self.file.write(str(total) + separator)
 
-        for ag in new:
+        '''for ag in new:
             self.file.write(str(ag.id_ag) + "|")
         self.file.write(separator)
         for ag in destr:
-            self.file.write(str(ag.id_ag) + "|")
+            self.file.write(str(ag.id_ag) + "|")'''
         self.file.write("\n")
         self.last_agents.clear()
         self.last_agents.extend(agents)
 
-    def end(self):
+    def end(self, total_time=0):
+        if total_time != 0:
+            self.file.write("Time = " + str(total_time))
         self.file.close()

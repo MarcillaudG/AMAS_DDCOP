@@ -50,10 +50,14 @@ def run(scenario: str) -> None:
                             all_var_in_constraint.append(all_var_split[i].split("\n")[0])
                         else:
                             all_var_in_constraint.append(all_var_split[i])
-            if "return" in line:
+            '''if "return" in line:
                 split_coma = line.split(",")
                 split_coma_minus = split_coma[0].split("-")[2]
                 capa = split_coma_minus.lstrip()
+                model += lpSum([dict_vars[vn] for vn in all_var_in_constraint]) <= int(capa), name_constraint'''
+            if "a > " in line:
+                split_coma = line.split(" > ")
+                capa = split_coma[1][:2]
                 model += lpSum([dict_vars[vn] for vn in all_var_in_constraint]) <= int(capa), name_constraint
 
             if "C_utili" in line:
@@ -99,5 +103,5 @@ def run(scenario: str) -> None:
 
 if __name__ == '__main__':
     print("SOLVING BEGIN")
-    file_name = "scenario1.yaml"
+    file_name = sys.argv[1]
     run(file_name)

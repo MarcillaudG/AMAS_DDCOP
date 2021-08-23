@@ -98,3 +98,11 @@ class Environment:
                     strgrid += " |"
             strgrid += "\n"
         print(strgrid)
+
+    def getPosition(self, id_ag):
+        return self.agents[id_ag]
+
+    def replaceAgent(self, new_id, x, y):
+        self.agents.pop(self.grid[x][y])
+        self.agents[new_id] = (x, y)
+        self.grid[x][y] = new_id

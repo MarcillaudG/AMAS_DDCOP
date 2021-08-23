@@ -1,6 +1,9 @@
 import math
 import random
 from time import sleep
+
+import numpy
+
 from agents.Messages import Message, MessageCrit
 from tool.AVT import AVT
 
@@ -9,9 +12,9 @@ from world.Network import Network
 from world.Variables import Variables
 
 # TOO MUCH RECEIVED CRIT
-THRESHOLD_TOO_MUCH_RECEIVED_MIN = 0.0
-THRESHOLD_TOO_MUCH_RECEIVED_MAX = 0.50
-MAX_TMR = 80.0
+THRESHOLD_TOO_MUCH_RECEIVED_MIN = 0.90
+THRESHOLD_TOO_MUCH_RECEIVED_MAX = 1.00
+MAX_TMR = 100.0
 MIN_TMR = 0.0
 COEFF_A_TMR = (MAX_TMR - MIN_TMR) / ((THRESHOLD_TOO_MUCH_RECEIVED_MAX - THRESHOLD_TOO_MUCH_RECEIVED_MIN) * 100)
 COEFF_B_TMR = MAX_TMR - COEFF_A_TMR * (THRESHOLD_TOO_MUCH_RECEIVED_MAX * 100)
@@ -47,6 +50,7 @@ IMPROVEMENT_THRESHOLD = 5.0
 REPLACING_BONUS = 2.0
 
 
+
 class AgentStation:
     id_ag = None
 
@@ -75,6 +79,7 @@ class AgentStation:
         self.scores = {"min": 0, "max": 0}
         self.nb_messages_sent = 0
         self.avt = AVT(IMPROVEMENT_THRESHOLD)
+        self.improv = IMPROVEMENT_THRESHOLD
         self.__initUtility__()
 
     def __initUtility__(self):
@@ -87,6 +92,8 @@ class AgentStation:
         self.scores["min"] = score
         self.scores["max"] = score
         self.last_score = score
+        self.impact_com_neg = 1 / self.computing_capacity * (COEFF_A_TMR + COEFF_A_TMU)
+        self.impact_com_pos = 1 / self.computing_capacity * COEFF_A_NE
 
     def perceive(self, neighbors: []):
         # print("PERCEIVE PHASE " + str(self.id_ag))
@@ -109,6 +116,14 @@ class AgentStation:
         self.to_replace.clear()
         # perceive the variable sorted by reliability
         self.decision_variable = dict(sorted(self.decision_variable.items(), key=lambda item: item[1], reverse=True))
+        # self.impact_com_neg = 1 / self.computing_capacity * (COEFF_A_TMR + COEFF_A_TMU) * len(self.neighborhood.keys())
+        # self.impact_com_neg = 1 / self.computing_capacity * (COEFF_A_TMR) * len(self.neighborhood.keys())
+        self.impact_com_neg = self.comput_crit_neg(round(THRESHOLD_TOO_MUCH_RECEIVED_MIN * self.computing_capacity) + 1)
+        if self.impact_com_neg == 0:
+            print("bla")
+        # self.impact_com_pos = 1 / self.computing_capacity * COEFF_A_NE * len(self.neighborhood.keys())
+        self.impact_com_pos = self.comput_crit_pos(1)
+        # print(str(self.impact_com))
 
     def decide(self):
         # print("DECIDE PHASE " + str(self.id_ag))
@@ -139,29 +154,51 @@ class AgentStation:
                 best_crit = abs(criticalities)
 
         self.histoAVT(worst_crit)
-        if abs(worst_crit) >= IMPROVEMENT_THRESHOLD:
-            if worst_crit < 0:
-                impact_reduce = COEFF_A_TMR + COEFF_A_TMU
+        nb_tour = 0
+        if abs(worst_crit) < self.improv:
+            self.improv = abs(worst_crit)
+        if abs(worst_crit) > IMPROVEMENT_THRESHOLD:
+            self.improv = IMPROVEMENT_THRESHOLD
+        nb_message_needed = 0
+        if worst_crit > 0:
+            nb_message_needed = self.improv / self.impact_com_pos
+        else:
+            nb_message_needed = self.improv / self.impact_com_neg
+        cut_improv = nb_message_needed / len(self.neighborhood)
+        #if abs(worst_crit) >= IMPROVEMENT_THRESHOLD:
 
-                tirage = random.random()
-                # if tirage * 100 < IMPROVEMENT_THRESHOLD:
-                if tirage * 100 < self.avt.score:
-                    if self.communication_capacity > 0:
-                        self.communication_capacity -= 1
-                    self.avt.clean()
-                # if self.criticality > 0 or abs(self.criticality) <= best_crit:
-                #     self.communication_capacity = max(0, self.communication_capacity - 1)
-            if worst_crit > 0:
-                impact_reduce = COEFF_A_NE
-                tirage = random.random()
-                # if tirage * 100 < IMPROVEMENT_THRESHOLD:
-                if len(more_reliable) > 0:
-                    tirage = tirage / REPLACING_BONUS
-                if tirage * 100 < self.avt.score:
-                    if self.communication_capacity < len(self.decision_variable.keys()) - len(less_reliable):
-                        self.communication_capacity += 1
-                    self.avt.clean()
-                # if self.criticality < 0 or abs(self.criticality) <= best_crit:
+        if abs(worst_crit) >= self.improv and self.analyse_effect(worst_crit, -numpy.sign(worst_crit)):
+            improvement = 0.0
+            # while improvement <= IMPROVEMENT_THRESHOLD:
+            # while self.analyse_effect(worst_crit, -numpy.sign(worst_crit),
+            # improvement) and improvement <= self.improv:
+            while improvement < cut_improv:
+                if worst_crit < 0:
+                    impact_reduce = COEFF_A_TMR + COEFF_A_TMU
+
+                    tirage = random.random()
+                    # if tirage * 100 < IMPROVEMENT_THRESHOLD:
+                    if tirage < cut_improv - improvement:
+                        if self.communication_capacity > 0:
+                            self.communication_capacity -= 1
+                        self.avt.clean()
+                    improvement += abs(self.impact_com_neg)
+                        # if self.criticality > 0 or abs(self.criticality) <= best_crit:
+                    #     self.communication_capacity = max(0, self.communication_capacity - 1)
+                if worst_crit > 0:
+                    impact_reduce = COEFF_A_NE
+                    tirage = random.random()
+                    # if tirage * 100 < IMPROVEMENT_THRESHOLD:
+                    if len(more_reliable) > 0:
+                        tirage = tirage / REPLACING_BONUS
+                    if tirage < cut_improv - improvement:
+                        if self.communication_capacity < len(self.decision_variable.keys()) - len(less_reliable):
+                            self.communication_capacity += 1
+                        self.avt.clean()
+
+                    improvement += abs(self.impact_com_pos)
+                nb_tour += 1
+                        # if self.criticality < 0 or abs(self.criticality) <= best_crit:
                 #    self.communication_capacity = min(len(self.decision_variable.keys()), self.communication_capacity + 1)
         '''if worst_crit < 0:
             self.communication_capacity -= 1
@@ -185,6 +222,20 @@ class AgentStation:
         #    messages.append(Message(var, self.id_ag, self.decision_variable[var].size, 0.0))
         self.network.sendMessages(self.to_send)
         self.nb_messages_sent = len(self.to_send)
+
+    # look if acting does not create a new worst critical worst than before
+    def analyse_effect(self, worst_crit: float, action: int) -> bool:
+        for criticalities in self.received_crit:
+            if criticalities.sender != self.id_ag and criticalities.sender in self.neighborhood.keys():
+                new_crit = 0
+                if criticalities.crit < 0 and action == -1:
+                    new_crit = abs(criticalities.crit) + self.improv
+                if criticalities.crit > 0 and action == 1:
+                    new_crit = abs(criticalities.crit) + self.improv
+                if new_crit > abs(worst_crit):
+                    return False
+                # if criticalities
+        return True
 
     def receive_messages(self, sent: [Message]):
         self.received_messages = sent
@@ -231,11 +282,10 @@ class AgentStation:
                         var_to_sent.append(var)
                 i += 1
 
-
     # Receives messages sent by neighbors
     def receive_message_from_netowrk(self):
         for mess in self.network.releaseMessages():
-            if mess.sender != self.id_ag:
+            if mess.sender != self.id_ag and mess.sender in self.neighborhood:
                 if isinstance(mess, MessageCrit):
                     self.received_crit.append(mess)
                 else:
@@ -359,8 +409,9 @@ class AgentStation:
         old_crit = self.criticality
         self.criticality = 0.0
         crit_neg = 0.0
-        nb_exced_message = max(0, sum_weight - self.computing_capacity)
-        pourcent_exced = nb_exced_message / self.computing_capacity * 100
+        # nb_exced_message = max(0, sum_weight - self.computing_capacity)
+        # pourcent_exced = nb_exced_message / self.computing_capacity * 100
+        pourcent_exced = sum_weight / self.computing_capacity * 100
         if pourcent_exced > THRESHOLD_TOO_MUCH_RECEIVED_MIN * 100:
             crit_neg = min(MAX_TMR, COEFF_A_TMR * pourcent_exced + COEFF_B_TMR)
 
@@ -375,22 +426,19 @@ class AgentStation:
         # CRIT 3 -> TROP DE MESSAGES INUTILES
         # crit_neg = math.pow(nb_exced_message + useless_over_threshold, POW_BASE)
         crit_useless = 0
-        if pourcent_useless > THRESHOLD_TOO_MUCH_USELESS_MIN * 100:
-            crit_useless = min(MAX_TMU, COEFF_A_TMU * pourcent_useless + COEFF_B_TMU)
+        '''if pourcent_useless > THRESHOLD_TOO_MUCH_USELESS_MIN * 100:
+            crit_useless = min(MAX_TMU, COEFF_A_TMU * pourcent_useless + COEFF_B_TMU)'''
         usefull_missing = len(self.received_messages) - nb_useful
         self.crits[3] = crit_useless
 
         # CCRIT
         # CRIT 1 -> PAS ASSEZ DE MESSAGES INUTILES
-        nb_envie = max(nb_useless - self.computing_capacity * THRESHOLD_NOT_ENOUGH_USELESS_MIN, 0)
         pourcent_envie = nb_useless / self.computing_capacity * 100
-        # pourcent_envie = nb_useless / len(self.received_messages) * 100
-        nb_envie = min(nb_envie, usefull_missing)
-        crit_pos = 0
         taux_envie = 0.0
         if pourcent_envie < THRESHOLD_NOT_ENOUGH_USELESS_MIN * 100:
             taux_envie = min(MAX_NE, COEFF_A_NE * pourcent_envie + COEFF_B_NE)
-        crit_pos = taux_envie * max(0, (self.computing_capacity - sum_weight) / self.computing_capacity)
+        # crit_pos = taux_envie * max(0, (self.computing_capacity - sum_weight) / self.computing_capacity)
+        crit_pos = taux_envie
         self.crits[1] = crit_pos
 
         # CCRIT
@@ -401,7 +449,6 @@ class AgentStation:
             pourcent_diff = (self.scores["max"] - self.last_score) / max_diff_score
             crit_score = min(MAX_TS, COEFF_A_TS * pourcent_diff + COEFF_B_TS)
         # crit_pos += crit_score
-        # crit_pos = math.log(nb_envie, LOG_BASE)
 
         self.criticality = crit_pos - crit_neg - crit_useless
 
@@ -412,11 +459,26 @@ class AgentStation:
                 worst_crit = abs(self.neighborhood[other_ag])
                 worst_not_abs = self.neighborhood[other_ag]
         # print("OLD : " + str(self.last_crit_sent)  + " WORST : " + str(worst_not_abs) + "  self : " + str(self.criticality))
-        if abs(self.last_crit_sent) >= abs(self.last_worst_crit) or abs(self.criticality) >= abs(worst_crit):
+        '''if abs(self.last_crit_sent) >= abs(self.last_worst_crit) or abs(self.criticality) >= abs(worst_crit)\
+                or abs(self.last_crit_sent) >= abs(worst_crit) or abs(self.criticality) > abs(self.last_crit_sent):
             self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
-            self.last_crit_sent = self.criticality
-        # self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
+            self.last_crit_sent = self.criticality'''
+        self.network.sendCriticality(MessageCrit(id_ag=self.id_ag, crit=self.criticality))
         # print("NBUSELESS : " + str(nb_useless))
+
+    '''Compute the criticality neg according to the number of messages received'''
+    def comput_crit_neg(self, nb_messages: int):
+        res = 0
+        if nb_messages > self.computing_capacity * THRESHOLD_TOO_MUCH_RECEIVED_MIN:
+            res = COEFF_A_TMR * nb_messages / self.computing_capacity * 100 + COEFF_B_TMR
+        return res
+
+    '''Compute the criticality pos according to the number of useless messages received'''
+    def comput_crit_pos(self, nb_messages_useless: int):
+        res = 0
+        if nb_messages_useless > 0:
+            res = 100 - (COEFF_A_NE * nb_messages_useless / self.computing_capacity * 100 + COEFF_B_NE)
+        return res
 
     def histoAVT(self, worst_crit: float):
         if worst_crit > 0 and self.last_worst_crit < 0:
